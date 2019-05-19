@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol>3</defaultcontrol>
+	<include>Animation_DialogPopupOpenClose</include>
+	<controls>
+		<include>DialogOverlayExtra</include>
+		<control type="group">
+			<centertop>50%</centertop>
+			<centerleft>50%</centerleft>
+			<width>1820</width>
+			<height>870</height>
+			
+			<!-- background panel -->
+			<control type="image">
+				<width>1820</width>
+				<height>870</height>
+				<texture border="15">diffuse/bgpanel.png</texture>
+				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+			</control>
+			<control type="image">
+				<width>1820</width>
+				<height>870</height>
+				<texture border="15">diffuse/bgpanel.png</texture>
+				<bordersize>10</bordersize>
+				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
+			</control>
+			
+			<!--Header-->
+			<control type="label">
+                    <!-- <posx>473</posx> -->
+                    <posy>20</posy>
+                    <width>1820</width>
+                    <include>DialogHeader</include>
+                    <label>$LOCALIZE[35058]</label>
+                    <align>center</align>
+            </control>
+
+			<control type="group">
+				<description>Controller list</description>
+				<top>90</top>
+				<left>30</left>
+				<width>410</width>
+				<height>580</height>
+				<control type="label">
+					<description>Controller profiles grouplist heading</description>
+					<height>25</height>
+					<right>20</right>
+					<!-- <font>font12</font> -->
+					<label>$LOCALIZE[35050]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<include>DialogButton</include>
+				</control>
+				
+				<control type="image">
+					<description>Controller profiles grouplist background</description>
+					<top>30</top>
+					<!-- <bottom>200</bottom> -->
+					<left>0</left>
+					<width>400</width>
+					<height>580</height>
+					<visible>true</visible>
+					<!-- <right>300</right> -->
+					<!-- <texture>buttons/dialogbutton-nofo.png</texture> -->
+					<colordiffuse>$INFO[Skin.String(ButtonColor)]</colordiffuse>
+									<!-- <texture>diffuse/bgpanel.png</texture> -->
+									<texture border="15">diffuse/bgpanel.png</texture>
+				<!-- <bordersize>10</bordersize> -->
+				
+				</control> 
+				<control type="grouplist" id="3">
+					<description>Controller profiles grouplist</description>
+					<top>40</top>
+					<!-- <right>20</right> -->
+					<onleft>9001</onleft>
+					<onright>5</onright>
+					<onup>3</onup>
+					<ondown>3</ondown>
+					<pagecontrol>62</pagecontrol>
+				</control>
+				<control type="scrollbar" id="62">
+					<top>40</top>
+					<right>-10</right>
+					<width>20</width>
+					<orientation>vertical</orientation>
+				</control>
+				<control type="button" id="10">
+					<description>Default controller button</description>
+					<left>0</left>
+					<width>400</width>
+					<height>60</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font25_title</font>
+					<!-- <texture border="5">diffuse/panel.png</texture><colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse> -->
+					<!-- <texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus> -->
+					
+					<!-- <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">lists/focus.png</texturefocus> -->  <!-- oder dies hier? -->
+					
+					<texture border="5">diffuse/panel.png</texture><colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+					
+					<texturenofocus />
+				</control>
+			</control>
+			<control type="gamecontroller" id="31">
+				<top>130</top>
+				<left>470</left>
+				<width>540</width>
+				<height>540</height>
+			</control>
+			<!--
+			<control type="image">
+				<top>110</top>
+				<left>440</left>
+				<width>580</width>
+				<height>580</height>
+				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+			</control>
+			-->
+			<control type="group">
+				<description>Feature list</description>
+				<top>90</top>
+				<left>1040</left>
+				<width>410</width>
+				<height>580</height>
+				<control type="label">
+					<description>Feature list heading</description>
+					<height>25</height>
+					<!-- <font>font12</font> -->
+					<label>$LOCALIZE[35059]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<include>DialogButton</include>
+				</control>
+				
+<!-- 				<control type="image">
+					<top>20</top>
+					<bottom>-20</bottom>
+					<left>-20</left>
+					<right>0</right>
+					<texture border="40">buttons/dialogbutton-nofo.png</texture>
+				</control> -->
+				
+				
+				
+				<control type="image">
+					<description>Feature list background</description>
+					<top>30</top>
+					<!-- <bottom>200</bottom> -->
+					<left>0</left>
+					<width>400</width>
+					<height>580</height>
+					<visible>true</visible>
+					<!-- <right>300</right> -->
+					<!-- <texture>buttons/dialogbutton-nofo.png</texture> -->
+					<colordiffuse>$INFO[Skin.String(ButtonColor)]</colordiffuse>
+									<!-- <texture>diffuse/bgpanel.png</texture> -->
+									<texture border="15">diffuse/bgpanel.png</texture>
+				<!-- <bordersize>10</bordersize> -->
+				
+				</control> 
+				
+				<control type="grouplist" id="5">
+					<description>Features grouplist</description>
+					<top>40</top>
+					<!-- <right>20</right> -->
+					<onleft>3</onleft>
+					<onright>9001</onright>
+					<onup>5</onup>
+					<ondown>5</ondown>
+					<pagecontrol>61</pagecontrol>
+				</control>
+				<control type="scrollbar" id="61">
+					<right>-10</right>
+					<top>40</top>
+					<width>20</width>
+					<orientation>vertical</orientation>
+				</control>
+				<control type="button" id="7">
+					<description>Default feature button</description>
+					<width>400</width>
+					<height>60</height>
+<!-- 					<left>20</left>
+					<right>20</right> -->
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font27</font>
+					<texture border="5">diffuse/panel.png</texture><colordiffuse>$INFO[Skin.String(ButtonFocusColor)]</colordiffuse>
+					<!-- <texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus> -->
+					<texturenofocus />
+				</control>
+				<control type="label" id="8">
+					<description>Feature group title</description>
+					<width>400</width>
+					<height>40</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font20_title</font>
+					<textcolor>grey</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="image" id="9">
+					<description>Feature separator image</description>
+					<height>3</height>
+					<width>400</width>
+					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
+				</control>
+			</control>
+			<control type="grouplist" id="9001">
+				<top>110</top>
+				<right>20</right>
+				<width>340</width>
+				<onleft>5</onleft>
+				<onright>3</onright>
+				<itemgap>15</itemgap>
+				<control type="button" id="18">
+						<description>Add Group</description>
+						<width>350</width>
+						<label>$LOCALIZE[186]</label>
+						<include>DialogButtonOther</include>
+				</control>
+				<control type="button" id="19">
+						<description>Add Group</description>
+						<width>350</width>
+						<label>$LOCALIZE[13007]</label>
+						<include>DialogButtonOther</include>
+				</control>
+				<control type="button" id="20">
+						<description>Add Group</description>
+						<width>350</width>
+						<label>$LOCALIZE[21452]</label>
+						<include>DialogButtonOther</include>
+				</control>
+				<control type="button" id="22">
+						<description>Add Group</description>
+						<width>350</width>
+						<label>$LOCALIZE[35021]</label>
+						<include>DialogButtonOther</include>
+				</control>
+				<control type="button" id="17">
+						<description>Add Group</description>
+						<width>350</width>
+						<label>$LOCALIZE[10043]</label>
+						<include>DialogButtonOther</include>
+				</control>
+				<control type="button" id="21">
+						<description>Add Group</description>
+						<width>350</width>
+						<label>$LOCALIZE[35019]</label>
+						<include>DialogButtonOther</include>
+				</control>				
+			</control>
+			<control type="group">
+				<description>Bottom controller description</description>
+				<bottom>30</bottom>
+				<left>30</left>
+				<right>30</right>
+				<height>120</height>
+				<control type="image">
+					<description>Controller description background image</description>
+					<!-- <top>0</top> -->
+					<!-- <bottom>0</bottom> -->
+					<left>0</left>
+					<right>0</right>
+					<!-- <texture border="40">buttons/dialogbutton-nofo.png</texture> -->
+					<colordiffuse>$INFO[Skin.String(ButtonColor)]</colordiffuse>
+									<!-- <texture>diffuse/bgpanel.png</texture> -->
+									<texture border="15">diffuse/bgpanel.png</texture>
+				</control>
+				<control type="textbox" id="32">
+					<top>5</top>
+					<bottom>5</bottom>
+					<left>10</left>
+					<right>10</right>
+					<description>Controller description</description>
+					<textcolor>grey</textcolor>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
