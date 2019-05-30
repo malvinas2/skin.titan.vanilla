@@ -3058,3 +3058,39 @@ msgstr ""
 msgctxt "#70012"
 msgid "Search Term"
 msgstr ""
+
+msgctxt "#70013"
+msgid "Teletext"
+msgstr ""
+
+msgctxt "#70014"
+msgid "Visualisation"
+msgstr ""
+
+msgctxt "#70015"
+msgid "Playlist"
+msgstr ""
+
+msgctxt "#70016"
+msgid "Previous Track"
+msgstr ""
+
+msgctxt "#70017"
+msgid "Rewind"
+msgstr ""
+
+msgctxt "#70018"
+msgid "Forward"
+msgstr ""
+
+msgctxt "#70019"
+msgid "Next Track"
+msgstr ""
+
+msgctxt "#70020"
+msgid "Play"
+msgstr ""
+
+msgctxt "#70021"
+msgid "Pause"
+msgstr ""
