@@ -2,7 +2,6 @@
 <!--Titan-->
 <window>
     <defaultcontrol always="true">5000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <include>allViewIds</include>
 	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload>ClearProperty(ShowViewSubMenu, Home)</onload>

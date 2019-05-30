@@ -2858,3 +2858,39 @@ msgstr "Auflösung auswählen"
 msgctxt "#70012"
 msgid "Search Term"
 msgstr "Suchbegriff"
+
+msgctxt "#70013"
+msgid "Teletext"
+msgstr "Videotext"
+
+msgctxt "#70014"
+msgid "Visualisation"
+msgstr "Visualisierung"
+
+msgctxt "#70015"
+msgid "Playlist"
+msgstr "Wiedergabeliste"
+
+msgctxt "#70016"
+msgid "Previous Track"
+msgstr "Vorheriger Titel"
+
+msgctxt "#70017"
+msgid "Rewind"
+msgstr "Zurückspulen"
+
+msgctxt "#70018"
+msgid "Forward"
+msgstr "Vorspulen"
+
+msgctxt "#70019"
+msgid "Next Track"
+msgstr "Nächster Titel"
+
+msgctxt "#70020"
+msgid "Play"
+msgstr "Wiedergabe"
+
+msgctxt "#70021"
+msgid "Pause"
+msgstr "Pause"

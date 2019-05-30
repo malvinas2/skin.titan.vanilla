@@ -11,8 +11,6 @@
     </coordinates>
     <controls>
 	
-	<allowoverlay>no</allowoverlay>
-	
 	<include>DialogOverlayExtra</include>
 
 		

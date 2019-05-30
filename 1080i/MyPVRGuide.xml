@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Titan-->
 
-<!-- used includes and where to find them: 
-NowPlayingBackground				IncludesNowPlaying.xml
-animation_window_open_close			IncludesAnimations.xml
-animation_view_change_pvr			
-altEpgOnScreen7						IncludesViews.xml
-altEpgOnScreen9
-altEpgOnScreen10
-EpgProgressIndicatorNormal
-EpgProgressIndicatorAlt
-PVRGuideChannelItemLayout
-PVRGuideItemLayout
-PVRGuideItemLayoutFocus
-PVRChannelNumberInput				Includes.xml
--->
+<!-- used includes and where to find them:  -->
+<!-- NowPlayingBackground				IncludesNowPlaying.xml -->
+<!-- animation_window_open_close			IncludesAnimations.xml -->
+<!-- animation_view_change_pvr			 -->
+<!-- altEpgOnScreen7						IncludesViews.xml -->
+<!-- altEpgOnScreen9 -->
+<!-- altEpgOnScreen10 -->
+<!-- EpgProgressIndicatorNormal -->
+<!-- EpgProgressIndicatorAlt -->
+<!-- PVRGuideChannelItemLayout -->
+<!-- PVRGuideItemLayout -->
+<!-- PVRGuideItemLayoutFocus -->
+<!-- PVRChannelNumberInput				Includes.xml -->
+
 
 
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
 	<views>10</views>
     <menucontrol>9000</menucontrol>
     <onunload>ClearProperty(pvrGuideOnFullscreenVideo,home)</onunload>

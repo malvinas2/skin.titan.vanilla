@@ -6,7 +6,6 @@
 	<onunload>ClearProperty(shutdownmenuactive,Home)</onunload>
     <onload>Dialog.Close(busydialognocancel)</onload>
 	<!-- malvinas2 <onload>Dialog.Close(busydialog)</onload>    -->
-    <allowoverlay>no</allowoverlay>
     <controls>
 	
 	<include>DialogOverlayExtra</include>

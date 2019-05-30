@@ -588,7 +588,7 @@
 			<!-- Tag: stars -->
 			<!--Stars music-->							<!-- Sterne-Bewertung fur Leute mit zuviel Zeit all ihre Lieder zu bewerten... -->
 			<!-- bezieht sich auf OSD mit Seekbar und auf die OSD mit Buttons   -->
-			<visible>Window.IsActive(visualisation)</visible>	
+			<visible>Window.IsActive(visualisation) + !Window.IsActive(musicosd)</visible>	
 			<right>55</right>
 			<posy>240</posy>
 			<width>200</width>
@@ -1986,22 +1986,39 @@
     <include name="OSDButtons_Layout">
 	
 		<!-- malvinas2 -->
-		<!-- <control type="label"> -->		<!-- Hilfstext unten recht, zeigt an was der fokus-button macht -->
+		<control type="label">
+		<!-- Hilfstext unten recht, zeigt an was der fokus-button macht -->
 				<!-- <animation effect="slide" end="0,-20" time="150" condition="VideoPlayer.Content(LiveTV)">conditional</animation> -->
-				<!-- <right>60</right> -->
-<!-- 				<bottom>292</bottom> -->
-				<!-- <align>right</align> -->
-				<!-- <aligny>center</aligny> -->
-				<!-- <width>1000</width -->>
-				<!-- <height>10</height> -->
-				<!-- <font>Bold30</font> -->
+				<right>60</right>
+				<bottom>40</bottom>
+				<align>right</align>
+				<aligny>center</aligny>
+				<width>1000</width>
+				<height>10</height>
+				<font>Bold30</font>
                  <!-- colors should be hardcoded because display on video -->
-               <!--  <textcolor>white</textcolor> -->
-               <!--  <shadowcolor>black</shadowcolor> -->
-				<!-- <label>blabla$VAR[VideoOSDHelpTextVar]</label> -->
-				<!-- <visible>![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(subtitlesearch) | Window.IsVisible(selectdialog) | Window.IsVisible(OSDSubtitleSettings)]</visible> -->
-				<!-- <visible>!Player.ShowInfo</visible> -->
-		<!-- </control> -->
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+				<label>$VAR[VideoOSDHelpTextVar]</label>
+				<visible>![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(subtitlesearch) | Window.IsVisible(selectdialog) | Window.IsVisible(OSDSubtitleSettings)]</visible>
+				<visible>!Player.ShowInfo + Player.hasvideo + !Skin.HasSetting(UseSlimOSDPanel)</visible>
+		</control>
+		
+		
+		<control type="label">
+			<!-- <animation effect="slide" end="0,-20" time="150" condition="MusicPlayer.Content(LiveTV)">conditional</animation> -->
+			<right>60</right>
+			<bottom>40</bottom>
+			<aligny>center</aligny>
+			<align>right</align>
+			<width>1000</width>
+			<height>10</height>
+			<font>Bold30</font>
+			<label>$VAR[MusicOSDHelpTextVar]</label>
+			<visible>![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(subtitlesearch) | Window.IsVisible(selectdialog) | Window.IsVisible(OSDSubtitleSettings)]</visible>
+			<visible>!Player.ShowInfo + Player.hasaudio + !Skin.HasSetting(UseSlimOSDPanel)</visible>
+		</control>
+		
 		<!-- Ende malvinas2 -->
 	
 		<control type="grouplist" id="200">
@@ -2108,19 +2125,19 @@
 				<!-- Ende malvinas2 -->
 			</control>
 			<control type="button" id="207">
-			<!-- repeat -->
-			  <width>$PARAM[size]</width>		
+				<description>repeat</description>		<!-- repeat -->
+				<width>$PARAM[size]</width>		
 				<height>$PARAM[size]</height>
-			  <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
-			  <font/>
-			  <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]Repeat.png</texturefocus>
-			  <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]Repeat.png</texturenofocus>
-			  <onclick>PlayerControl(Repeat)</onclick>
-			  <visible>!Playlist.IsRepeatOne + !Playlist.IsRepeat</visible>
-              <visible>!VideoPlayer.Content(livetv) + ![MusicPlayer.Content(LiveTV) | MusicPartyMode.Enabled]</visible>
+				<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
+				<font/>
+				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]Repeat.png</texturefocus>
+				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]Repeat.png</texturenofocus>
+				<onclick>PlayerControl(Repeat)</onclick>
+				<visible>!Playlist.IsRepeatOne + !Playlist.IsRepeat</visible>
+				<visible>!VideoPlayer.Content(livetv) + ![MusicPlayer.Content(LiveTV) | MusicPartyMode.Enabled]</visible>
 			</control>
 			<control type="button" id="208">
-			<!-- repeat one -->
+				<description>repeat one</description>	<!-- repeat one -->
 			  <width>$PARAM[size]</width>		
 			  <height>$PARAM[size]</height>
 			  <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]RepeatOne.png</texturefocus>
@@ -2130,7 +2147,7 @@
 			  <onclick>PlayerControl(Repeat)</onclick>
 			</control>
 			<control type="button" id="210">
-			<!-- repeat playlist -->
+				<description>repeat playlist</description><!-- repeat playlist -->
 			  <width>$PARAM[size]</width>		
 				<height>$PARAM[size]</height>
 			  <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]RepeatAll.png</texturefocus>
@@ -2141,7 +2158,7 @@
 			  <onclick>PlayerControl(Repeat)</onclick>
 			</control>
 			<control type="togglebutton" id="212">
-			<!-- random -->
+				<description>random</description>	<!-- random -->
 			  <width>$PARAM[size]</width> 	
               <height>$PARAM[size]</height>
 			  <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
@@ -2157,8 +2174,7 @@
 			  <visible>Player.HasAudio + ![MusicPlayer.Content(LiveTV) | MusicPartyMode.Enabled]</visible>
 			</control>
 			<control type="togglebutton" id="10">
-			<!-- record -->
-				<description>Record</description>		
+				<description>record</description>   <!-- record -->
 				<width>$PARAM[size]</width>
 				<height>$PARAM[size]</height>
 				<label>209</label>
@@ -2225,11 +2241,6 @@
 				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]Audio.png</texturefocus>
 				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]Audio.png</texturenofocus>
 				<onclick>ActivateWindow(osdaudiosettings)</onclick>
-				<!-- malvinas2 <onclick>ActivateWindow(124)</onclick> -->
-				<!-- ======================================================= -->
-				<!-- == Why was '124' used instead of 'osdaudiosettings'  == -->
-				<!-- ==                                                   == -->
-				<!-- ======================================================= -->
 			</control>
 			<control type="button" id="102">
 				<description>Video Settings</description>				<!-- video settings -->
@@ -2241,11 +2252,6 @@
 				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]Video.png</texturefocus>
 				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]Video.png</texturenofocus>
 				<onclick>ActivateWindow(osdvideosettings)</onclick>
-				<!-- malvinas2 <onclick>ActivateWindow(123)</onclick> -->
-				<!-- ======================================================= -->
-				<!-- == Why was '124' used instead of 'osdvideosettings'  == -->
-				<!-- ==                                                   == -->
-				<!-- ======================================================= -->
 				<visible>Player.HasVideo</visible>
 				<onfocus condition="String.IsEqual(Window(Home).Property(subtitlemenu), show)">ClearProperty(subtitlemenu,home)</onfocus>
 			</control>

@@ -283,7 +283,7 @@
             <include>SideBladeMenuButton</include>
             <label>$LOCALIZE[31305]: $INFO[Container.Viewmode]</label>
             <onclick>XBMC.RunScript(script.skin.helper.service,action=SETVIEW)</onclick>
-            <!-- <onclick>ActivateWindow(busydialognocancel)</onclick> -->
+            <onclick>ActivateWindow(busydialognocancel)</onclick>
             <visible>!Window.IsActive(tvguide)</visible>
         </control>
         
@@ -949,6 +949,25 @@
 					<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
 					<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
 				</control>
+				
+				<!-- the following entry is not working correctly, why not? -->
+				<!-- Seems to be something with the id --> 
+				<!-- reference implementatin Estuary: Includes_MediaMenu.xml, line 158-164 -->
+				
+				<control type="button" id="10">
+					<description>Watched Toggle</description>
+					<left>0</left>
+					<right>40</right>
+					<textwidth>400</textwidth>
+					<include>SideBladeMenuButton</include>
+					<label>$LOCALIZE[20367]</label>
+					<label2>[B]$INFO[Container.NumNonFolderItems][/B]</label2>
+					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
+					<!-- <visible>Window.IsActive(tvrecordings)</visible> -->
+				</control>
+
+				<!-- the following entry is not working correctly, as long as the above one does not work -->
+				
 				<control type="button" id="28">
 					<description>Channel Groups</description>
 					<left>0</left>
@@ -956,7 +975,7 @@
 					<textwidth>400</textwidth>
 					<include>SideBladeMenuButton</include>
 					<label/>
-					<visible>Window.IsActive(tvguide) | Window.IsActive(tvchannels)</visible>
+					<visible>Window.IsActive(tvguide)</visible>
 				</control>
 				<control type="radiobutton" id="5">
 					<description>Group recording items by folder structure</description>
@@ -974,11 +993,12 @@
 					<right>40</right>
 					<textwidth>400</textwidth>
 					<include>SideBladeMenuButton</include>
-					<label>$LOCALIZE[31305]: $INFO[Skin.String(GuideRows.label)]</label>
-                    <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=GuideRows,header=$LOCALIZE[31245])</onclick>
+					<label>$LOCALIZE[31305]: $INFO[Container.Viewmode]</label>
+                    <onclick>Container.NextViewMode</onclick>
                     <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
                     <visible>Window.IsActive(tvguide)</visible>
-				</control>				
+				</control>
+				
 				<control type="button" id="3">
 					<description>Sort by button</description>
 					<include>SideBladeMenuButton</include>

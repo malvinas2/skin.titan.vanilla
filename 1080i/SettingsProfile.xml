@@ -2,7 +2,6 @@
 <!--Titan-->
 <window type="dialog">
     <defaultcontrol always="true">2</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
 	
     <controls>
          <!--Global Background-->

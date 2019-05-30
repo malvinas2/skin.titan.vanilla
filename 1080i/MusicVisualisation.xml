@@ -2,7 +2,6 @@
 <!--Titan-->
 <window>
 	<defaultcontrol></defaultcontrol>
-	<allowoverlay>false</allowoverlay>
     <controls>
          <!--fallback background -->
         <control type="group">

@@ -2,7 +2,6 @@
 <!--Titan-->
 <window>
     <defaultcontrol always="true">1000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onload condition="Window.IsActive(loginscreen) + Skin.HasSetting(LoginScreen_DisableContextMenu)">Close</onload>
     <controls>
 		

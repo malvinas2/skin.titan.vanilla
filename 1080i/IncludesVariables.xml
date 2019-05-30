@@ -1290,20 +1290,57 @@
 	
 	<!-- malvinas2 -->
 	<variable name="VideoOSDHelpTextVar">
-		<value condition="Control.HasFocus(87) + [Player.Rewinding | Player.Forwarding]">$LOCALIZE[31050]</value>
-		<value condition="Control.HasFocus(70011)">$LOCALIZE[20060]</value>
-		<value condition="Control.HasFocus(700)">$LOCALIZE[298]</value>
-		<value condition="Control.HasFocus(703)">$LOCALIZE[31106]</value>
-		<value condition="Control.HasFocus(704)">$LOCALIZE[24012]</value>
-		<value condition="Control.HasFocus(204)">blabla$LOCALIZE[31092]</value>
-		<value condition="Control.HasFocus(70040)">$LOCALIZE[19033]</value>
-		<value condition="Control.HasFocus(70041)">$LOCALIZE[19019]</value>
-		<value condition="Control.HasFocus(70042)">$LOCALIZE[19069]</value>
-		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>
-		<value condition="Control.HasFocus(255)">$LOCALIZE[36501]</value>
-		<value condition="Control.HasFocus(606)+ PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>
-		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
-		<value condition="ControlGroup(6000).HasFocus + Player.SeekEnabled">$LOCALIZE[31054]</value>
+		<!-- <value condition="Control.HasFocus(87) + [Player.Rewinding | Player.Forwarding]">$LOCALIZE[31050]</value> -->
+		<value condition="Control.HasFocus(70011)">$LOCALIZE[20060]</value>	<!-- Media Info -->
+		<value condition="Control.HasFocus(214)">$LOCALIZE[298]</value>		<!-- ooo Lesezeichen -->
+		<value condition="Control.HasFocus(201)"></value>	<!-- vorheriger -->
+		<value condition="Control.HasFocus(203) + Player.Paused">$LOCALIZE[70020]</value>	<!-- ooo Play / Pause -->
+		<value condition="Control.HasFocus(203) + !Player.Paused">$LOCALIZE[70021]</value>	<!-- ooo Play / Pause -->
+		<value condition="Control.HasFocus(204)">$LOCALIZE[31954]</value>	<!-- ooo Stop -->
+		<value condition="Control.HasFocus(206)"></value>	<!-- nachster -->
+		<value condition="Control.HasFocus(105)">$LOCALIZE[70013]</value>	<!-- ooo Teletext -->
+		<value condition="Control.HasFocus(104)">$LOCALIZE[24012]</value>	<!-- ooo Untertitel -->
+		<value condition="Control.HasFocus(102)">$LOCALIZE[13395]</value>	<!-- ooo Video-Einstellungen -->
+		<value condition="Control.HasFocus(101)">$LOCALIZE[13396]</value>	<!-- ooo Audio-Einstellungen -->
+		<value condition="Control.HasFocus(808)">$LOCALIZE[19033]</value>	<!-- ooo Informationen -->
+		<value condition="Control.HasFocus(806)">$LOCALIZE[19019]</value>	<!-- ooo Kanale Seitenguide -->
+		<value condition="Control.HasFocus(807)">$LOCALIZE[19069]</value>	<!-- ooo Programm-Guide -->
+		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>		<!-- ooo Einstellungen -->
+		<value condition="Control.HasFocus(705)">$LOCALIZE[36501]</value>	<!-- ooo Stereoscopic 3D mode -->
+		<value condition="Control.HasFocus(10)+ PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>	<!-- ooo Aufnahme beenden -->
+		<value condition="Control.HasFocus(10)+ !PVR.IsRecordingPlayingChannel">$LOCALIZE[264]</value>	<!-- ooo Aufnehmen -->
+		<!-- <value condition="ControlGroup(6000).HasFocus + Player.SeekEnabled">$LOCALIZE[31054]</value> -->
+		<value condition="Control.HasFocus(202)">$LOCALIZE[70017]</value>
+		<value condition="Control.HasFocus(205)">$LOCALIZE[70018]</value>
+		<value condition="Control.HasFocus(207)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>	<!-- ooo Wiederholen -->
+		<value condition="Control.HasFocus(208)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>	<!-- ooo Wiederholen -->
+		<value condition="Control.HasFocus(210)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>	<!-- ooo Wiederholen -->
+	</variable>
+	
+	<variable name="MusicOSDHelpTextVar">
+		<value condition="Control.HasFocus(620)">$LOCALIZE[31033]$INFO[MusicPlayer.UserRating, : ]</value>	<!-- Personliche Bewertung -->
+		<value condition="Control.HasFocus(808)">$LOCALIZE[19033]</value>	<!-- ooo Informationen -->
+		<value condition="Control.HasFocus(806)">$LOCALIZE[19019]</value>		<!-- ooo Kanale -->
+		<value condition="Control.HasFocus(807)">$LOCALIZE[19069]</value>		<!-- ooo Programm-Guide -->
+		<value condition="Control.HasFocus(62043)">$LOCALIZE[29900]</value>		<!-- Radiotext Plus Information -->
+		<value condition="Control.HasFocus(207)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>	<!-- ooo Wiederholen -->
+		<value condition="Control.HasFocus(208)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>	<!-- ooo Wiederholen -->
+		<value condition="Control.HasFocus(210)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>	<!-- ooo Wiederholen -->
+		<value condition="Control.HasFocus(212) + Playlist.IsRandom">$LOCALIZE[590]: $LOCALIZE[16041]</value>	<!-- ooo Zufallig -->
+		<value condition="Control.HasFocus(212)">$LOCALIZE[590]: $LOCALIZE[16039]</value>	<!-- ooo Inaktiv -->
+		<value condition="Control.HasFocus(701)">$LOCALIZE[24013]</value>	<!-- ooo Liedtexte -->
+		<value condition="Control.HasFocus(5001)">$LOCALIZE[10004]</value>	<!-- ooo Einstellungen -->
+		<value condition="Control.HasFocus(101)">$LOCALIZE[13396]</value>	<!-- ooo Audio-Einstellungen -->
+		<value condition="Control.HasFocus(500)">$LOCALIZE[70014]</value>	<!-- ooo Visualisierung-Einstellungen -->
+		<value condition="Control.HasFocus(811)">$LOCALIZE[70015]</value>	<!-- ooo Playlist -->
+		<value condition="Control.HasFocus(203) + Player.Paused">$LOCALIZE[70020]</value>	<!-- ooo Play / Pause -->
+		<value condition="Control.HasFocus(203) + !Player.Paused">$LOCALIZE[70021]</value>	<!-- ooo Play / Pause -->
+		<value condition="Control.HasFocus(204)">$LOCALIZE[31954]</value>	<!-- ooo Stop -->	
+		<value condition="Control.HasFocus(201)">$LOCALIZE[70016]</value>
+		<value condition="Control.HasFocus(202)">$LOCALIZE[70017]</value>	
+		<value condition="Control.HasFocus(205)">$LOCALIZE[70018]</value>	
+		<value condition="Control.HasFocus(206)">$LOCALIZE[70019]</value>
+		
 	</variable>
 	<!-- malvinas2 --> 
 </includes>

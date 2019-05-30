@@ -1291,7 +1291,8 @@
             </control>
         </control>
 
-        <control type="label">		 <!-- album title (1st line below big picture) -->
+        <control type="label">		 
+		<!-- album title (1st line below big picture) -->
             <posy>370</posy>
             <posx>8</posx>
             <height>33</height>
@@ -1313,7 +1314,8 @@
             <label>[UPPERCASE]$INFO[ListItem.Artist][/UPPERCASE]</label>
             <visible>container.content(songs)</visible>
         </control>
-        <control type="label">       <!-- year and artist name (2nd line below big picture) -->
+        <control type="label">       
+		<!-- year and artist name (2nd line below big picture) -->
               <posy>410</posy>
               <posx>8</posx>
               <height>33</height>
@@ -1324,7 +1326,8 @@
               <label>$VAR[Details]</label>
               <animation effect="slide" end="0,45" time="0" condition="container.content(songs)">Conditional</animation>
         </control>
-        <control type="textbox">   <!-- text plot of album content -->
+        <control type="textbox">   
+		<!-- text plot of album content -->
           <left>8</left>
           <right>8</right>
           <posy>460</posy>
