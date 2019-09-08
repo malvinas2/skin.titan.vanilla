@@ -4,7 +4,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<label>$ADDON[script.skinshortcuts 32022]</label>
-			<label2>Live-TV</label2>
+			<label2>$ADDON[script.skinshortcuts 32022]</label2>
 			<icon>resource://resource.images.skinicons.wide/livetv.png</icon>
 			<thumb>$INFO[Window(Home).Property(SkinHelper.PvrBackground)]</thumb>
 			<property name="labelID">livetv</property>
@@ -29,7 +29,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<label>$LOCALIZE[342]</label>
-			<label2>Filme</label2>
+			<label2>$LOCALIZE[342]</label2>
 			<icon>resource://resource.images.skinicons.wide/titan.png</icon>
 			<thumb>$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</thumb>
 			<property name="labelID">movies</property>
@@ -39,8 +39,8 @@
 			<property name="widgetType">movies</property>
 			<property name="widgetPath">plugin://script.skin.helper.widgets/?action=INPROGRESSANDRECOMMENDED&amp;mediatype=MOVIES&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</property>
 			<property name="widgetTarget">videos</property>
-			<property name="background">special://home/addons/resource.images.skinbackgrounds.titanium/resources/curtains.jpg</property>
-			<property name="backgroundName">curtains.jpg</property>
+			<property name="background">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</property>
+			<property name="backgroundName">$ADDON[script.skin.helper.service 32039]</property>
 			<property name="widget.1">recentmovies</property>
 			<property name="widgetTarget.1">videos</property>
 			<property name="widgetType.1">movies</property>
@@ -51,7 +51,6 @@
 			<property name="widgetType.99">movies</property>
 			<property name="widgetPath.99">plugin://script.skin.helper.widgets/?action=random&amp;mediatype=movies&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</property>
 			<property name="widgetName.99">Spotlight</property>
-			<property name="background.name">curtains.jpg</property>
 			<visible>Library.HasContent(Movies)</visible>
 			<onclick condition="![Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0) + ![String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]]">ActivateWindow(10025,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(10025,videodb://movies/titles/,return)</property>
@@ -65,7 +64,7 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[20343]</label>
-			<label2>Serien</label2>
+			<label2>$LOCALIZE[20343]</label2>
 			<icon>resource://resource.images.skinicons.wide/titan.png</icon>
 			<thumb>$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</thumb>
 			<property name="labelID">tvshows</property>
@@ -100,10 +99,10 @@
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
 			<label>$LOCALIZE[10005]</label>
-			<label2>Nicht verfügbar</label2>
+			<label2>$LOCALIZE[10005]</label2>
 			<icon>resource://resource.images.skinicons.wide/music.png</icon>
 			<thumb>$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</thumb>
-			<property name="labelID">10005</property>
+			<property name="labelID">music</property>
 			<property name="defaultID">music</property>
 			<onclick condition="![Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0) + ![String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]]">ActivateWindow(10502,return)</onclick>
 			<property name="path">ActivateWindow(10502,return)</property>
@@ -112,12 +111,12 @@
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-10005</property>
 			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">True</property>
+			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[20389]</label>
-			<label2>Musikvideos</label2>
+			<label2>$LOCALIZE[20389]</label2>
 			<icon>resource://resource.images.skinbackgrounds.titanium/hover_my music.jpg</icon>
 			<thumb>$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</thumb>
 			<property name="labelID">musicvideos</property>
@@ -142,7 +141,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[12600]</label>
-			<label2>Wetter</label2>
+			<label2>$LOCALIZE[12600]</label2>
 			<icon>resource://resource.images.skinicons.wide/weather.png</icon>
 			<thumb>$VAR[WeatherFanArtSingleImage_Current]</thumb>
 			<property name="labelID">weather</property>
@@ -185,7 +184,7 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[10002]</label>
-			<label2>Bilder</label2>
+			<label2>$LOCALIZE[10002]</label2>
 			<icon>resource://resource.images.skinicons.wide/pictures.png</icon>
 			<thumb>$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</thumb>
 			<property name="labelID">pictures</property>
@@ -222,7 +221,7 @@
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[10040]</label>
-			<label2>Addon-Browser</label2>
+			<label2>$LOCALIZE[10040]</label2>
 			<icon>resource://resource.images.skinicons.wide/addons.png</icon>
 			<thumb />
 			<property name="labelID">10040</property>
@@ -241,11 +240,11 @@
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[10006]</label>
-			<label2>N/A</label2>
+			<label2>$LOCALIZE[10006]</label2>
 			<icon>resource://resource.images.skinicons.wide/videos.png</icon>
 			<thumb />
 			<property name="labelID">10006</property>
-			<property name="defaultID">videos</property>
+			<property name="defaultID">10006</property>
 			<onclick condition="![Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0) + ![String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]]">ActivateWindow(Videos,return)</onclick>
 			<property name="path">ActivateWindow(Videos,return)</property>
 			<property name="list">Videos</property>
@@ -258,7 +257,7 @@
 		<item id="12">
 			<property name="id">$NUMBER[12]</property>
 			<label>$LOCALIZE[10004]</label>
-			<label2>Einstellungen</label2>
+			<label2>$LOCALIZE[10004]</label2>
 			<icon>resource://resource.images.skinicons.wide/settings.png</icon>
 			<thumb />
 			<property name="labelID">settings</property>
@@ -276,79 +275,6 @@
 			<onclick condition="[Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0)] | [String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]">SetFocus(4444,0)</onclick>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">settings</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">True</property>
-		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
-			<label>Global Search</label>
-			<label2>Programm</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb>image://C%3a%5cUsers%5cMatthias%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.globalsearch%5cresources%5cicon.png/</thumb>
-			<property name="labelID">script.globalsearch</property>
-			<property name="defaultID">script.globalsearch</property>
-			<property name="translatedPath">RunAddOn(script.globalsearch)</property>
-			<onclick condition="![Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0) + ![String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]]">RunAddOn(script.globalsearch)</onclick>
-			<property name="path">RunAddOn(script.globalsearch)</property>
-			<property name="list">RunAddOn(script.globalsearch)</property>
-			<onclick condition="[Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0)] | [String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]">SetFocus(4444,0)</onclick>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">script-globalsearch</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
-		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
-			<label>$LOCALIZE[19021]</label>
-			<label2 />
-			<icon>resource://resource.images.skinicons.wide/radio.png</icon>
-			<thumb />
-			<property name="labelID">19021</property>
-			<property name="defaultID">19021</property>
-			<property name="translatedPath">ActivateWindow(radiochannels,return)</property>
-			<visible>System.HasPVRAddon</visible>
-			<onclick condition="![Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0) + ![String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]]">ActivateWindow(radiochannels,return)</onclick>
-			<property name="path">ActivateWindow(radiochannels,return)</property>
-			<property name="list">radiochannels</property>
-			<onclick condition="[Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0)] | [String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]">SetFocus(4444,0)</onclick>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-19021</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
-		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
-			<label>favs</label>
-			<label2>Benutzerdefinierte Einträge</label2>
-			<icon>common/skin-settings.png</icon>
-			<thumb />
-			<property name="labelID">favs</property>
-			<property name="defaultID">20077</property>
-			<property name="translatedPath">ActivateWindow(SkinSettings)</property>
-			<onclick condition="![Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0) + ![String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]]">ActivateWindow(1108)</onclick>
-			<property name="path">ActivateWindow(1108)</property>
-			<property name="list">1108</property>
-			<onclick condition="[Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0)] | [String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]">SetFocus(4444,0)</onclick>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">favs</property>
-			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
-		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
-			<label>Suche</label>
-			<label2>Benutzerdefinierte Einträge</label2>
-			<icon>resource://resource.images.skinicons.wide/videos.png</icon>
-			<thumb />
-			<property name="labelID">suche</property>
-			<property name="defaultID">dvd</property>
-			<property name="translatedPath">XBMC.PlayDVD()</property>
-			<onclick condition="![Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0) + ![String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]]">ActivateWindow(1107)</onclick>
-			<property name="path">ActivateWindow(1107)</property>
-			<property name="list">1107</property>
-			<onclick condition="[Skin.HasSetting(OpenSubMenuOnClick) + Integer.IsGreater(Container(4445).NumItems,0)] | [String.Contains(Skin.String(HomeLayout), netflix) | String.Contains(Skin.String(HomeLayout), win10)]">SetFocus(4444,0)</onclick>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">suche</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
@@ -586,106 +512,6 @@
 			<property name="list">videodb://tvshows/genres/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">tvshows</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[15100]</label>
-			<label2>Music</label2>
-			<icon>resource://resource.images.skinicons.wide/music.png</icon>
-			<thumb>$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</thumb>
-			<property name="labelID">15100</property>
-			<property name="defaultID">15100</property>
-			<onclick>ActivateWindow(10502,return)</onclick>
-			<property name="path">ActivateWindow(10502,return)</property>
-			<property name="list">10502</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-10005)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[19021]</label>
-			<label2 />
-			<icon>resource://resource.images.skinicons.wide/radio.png</icon>
-			<thumb />
-			<property name="labelID">19021</property>
-			<property name="defaultID">19021</property>
-			<visible>[System.HasPVRAddon] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(radiochannels,return)</onclick>
-			<property name="path">ActivateWindow(radiochannels,return)</property>
-			<property name="list">radiochannels</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[517]</label>
-			<label2>Music</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">517</property>
-			<property name="defaultID">517</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(10502,musicdb://recentlyplayedalbums/,return)</onclick>
-			<property name="path">ActivateWindow(10502,musicdb://recentlyplayedalbums/,return)</property>
-			<property name="list">musicdb://recentlyplayedalbums/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[359]</label>
-			<label2>Music</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">359</property>
-			<property name="defaultID">359</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(10502,musicdb://recentlyaddedalbums/,return)</onclick>
-			<property name="path">ActivateWindow(10502,musicdb://recentlyaddedalbums/,return)</property>
-			<property name="list">musicdb://recentlyaddedalbums/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[20389]</label2>
-			<icon>$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</icon>
-			<thumb />
-			<property name="labelID">musicvideos</property>
-			<property name="defaultID">musicvideos</property>
-			<visible>[Library.HasContent(MusicVideos)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(10025,videodb://musicvideos/titles/,return)</onclick>
-			<property name="path">ActivateWindow(10025,videodb://musicvideos/titles/,return)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[1038]</label>
-			<label2 />
-			<icon>resource://resource.images.skinicons.wide/music.png</icon>
-			<thumb />
-			<property name="labelID">1038</property>
-			<property name="defaultID">1038</property>
-			<onclick>ActivateWindow(10502,addons://sources/audio/,return)</onclick>
-			<property name="path">ActivateWindow(10502,addons://sources/audio/,return)</property>
-			<property name="list">addons://sources/audio/</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),num-10005)</visible>
-			<property name="group">10005</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
@@ -937,23 +763,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
-			<label>$ADDON[script.skinshortcuts 32033]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultDVDFull.png</icon>
-			<thumb />
-			<property name="labelID">32033</property>
-			<property name="defaultID">32033</property>
-			<onclick>EjectTray()</onclick>
-			<property name="path">EjectTray()</property>
-			<property name="list">EjectTray()</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(300).ListItem.Property(submenuVisibility),suche)</visible>
-			<property name="group">suche</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[20126]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/lock.png</icon>
@@ -971,7 +781,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/settings1.png</icon>
@@ -988,7 +798,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/exit1.png</icon>
@@ -1006,7 +816,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13016]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/shutdown1.png</icon>
@@ -1023,7 +833,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13013]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/reboot1.png</icon>
@@ -1518,208 +1328,10 @@
 		</item>
 	</include>
 	<include name="skinshortcuts-group-num-10005">
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[15100]</label>
-			<label2>Music</label2>
-			<icon>resource://resource.images.skinicons.wide/music.png</icon>
-			<thumb>$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</thumb>
-			<property name="labelID">15100</property>
-			<property name="defaultID">15100</property>
-			<onclick>ActivateWindow(10502,return)</onclick>
-			<property name="path">ActivateWindow(10502,return)</property>
-			<property name="list">10502</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[19021]</label>
-			<label2 />
-			<icon>resource://resource.images.skinicons.wide/radio.png</icon>
-			<thumb />
-			<property name="labelID">19021</property>
-			<property name="defaultID">19021</property>
-			<visible>System.HasPVRAddon</visible>
-			<onclick>ActivateWindow(radiochannels,return)</onclick>
-			<property name="path">ActivateWindow(radiochannels,return)</property>
-			<property name="list">radiochannels</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[517]</label>
-			<label2>Music</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">517</property>
-			<property name="defaultID">517</property>
-			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(10502,musicdb://recentlyplayedalbums/,return)</onclick>
-			<property name="path">ActivateWindow(10502,musicdb://recentlyplayedalbums/,return)</property>
-			<property name="list">musicdb://recentlyplayedalbums/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[359]</label>
-			<label2>Music</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">359</property>
-			<property name="defaultID">359</property>
-			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(10502,musicdb://recentlyaddedalbums/,return)</onclick>
-			<property name="path">ActivateWindow(10502,musicdb://recentlyaddedalbums/,return)</property>
-			<property name="list">musicdb://recentlyaddedalbums/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[20389]</label2>
-			<icon>$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</icon>
-			<thumb />
-			<property name="labelID">musicvideos</property>
-			<property name="defaultID">musicvideos</property>
-			<visible>Library.HasContent(MusicVideos)</visible>
-			<onclick>ActivateWindow(10025,videodb://musicvideos/titles/,return)</onclick>
-			<property name="path">ActivateWindow(10025,videodb://musicvideos/titles/,return)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[1038]</label>
-			<label2 />
-			<icon>resource://resource.images.skinicons.wide/music.png</icon>
-			<thumb />
-			<property name="labelID">1038</property>
-			<property name="defaultID">1038</property>
-			<onclick>ActivateWindow(10502,addons://sources/audio/,return)</onclick>
-			<property name="path">ActivateWindow(10502,addons://sources/audio/,return)</property>
-			<property name="list">addons://sources/audio/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
+		<description>No items</description>
 	</include>
 	<include name="skinshortcuts-group-alt-num-10005">
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[15100]</label>
-			<label2>Music</label2>
-			<icon>resource://resource.images.skinicons.wide/music.png</icon>
-			<thumb>$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</thumb>
-			<property name="labelID">15100</property>
-			<property name="defaultID">15100</property>
-			<onclick>ActivateWindow(10502,return)</onclick>
-			<property name="path">ActivateWindow(10502,return)</property>
-			<property name="list">10502</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10005)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[19021]</label>
-			<label2 />
-			<icon>resource://resource.images.skinicons.wide/radio.png</icon>
-			<thumb />
-			<property name="labelID">19021</property>
-			<property name="defaultID">19021</property>
-			<visible>[System.HasPVRAddon] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(radiochannels,return)</onclick>
-			<property name="path">ActivateWindow(radiochannels,return)</property>
-			<property name="list">radiochannels</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[517]</label>
-			<label2>Music</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">517</property>
-			<property name="defaultID">517</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(10502,musicdb://recentlyplayedalbums/,return)</onclick>
-			<property name="path">ActivateWindow(10502,musicdb://recentlyplayedalbums/,return)</property>
-			<property name="list">musicdb://recentlyplayedalbums/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[359]</label>
-			<label2>Music</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">359</property>
-			<property name="defaultID">359</property>
-			<visible>[Library.HasContent(Music)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(10502,musicdb://recentlyaddedalbums/,return)</onclick>
-			<property name="path">ActivateWindow(10502,musicdb://recentlyaddedalbums/,return)</property>
-			<property name="list">musicdb://recentlyaddedalbums/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[20389]</label2>
-			<icon>$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</icon>
-			<thumb />
-			<property name="labelID">musicvideos</property>
-			<property name="defaultID">musicvideos</property>
-			<visible>[Library.HasContent(MusicVideos)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10005)</visible>
-			<onclick>ActivateWindow(10025,videodb://musicvideos/titles/,return)</onclick>
-			<property name="path">ActivateWindow(10025,videodb://musicvideos/titles/,return)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[1038]</label>
-			<label2 />
-			<icon>resource://resource.images.skinicons.wide/music.png</icon>
-			<thumb />
-			<property name="labelID">1038</property>
-			<property name="defaultID">1038</property>
-			<onclick>ActivateWindow(10502,addons://sources/audio/,return)</onclick>
-			<property name="path">ActivateWindow(10502,addons://sources/audio/,return)</property>
-			<property name="list">addons://sources/audio/</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-10005)</visible>
-			<property name="group">10005</property>
-			<property name="isSubmenu">True</property>
-		</item>
+		<description>No items</description>
 	</include>
 	<include name="skinshortcuts-group-musicvideos">
 		<description>No items</description>
@@ -2257,64 +1869,10 @@
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-script-globalsearch">
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-alt-script-globalsearch">
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-num-19021">
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-alt-num-19021">
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-favs">
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-alt-favs">
-		<description>No items</description>
-	</include>
-	<include name="skinshortcuts-group-suche">
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
-			<label>$ADDON[script.skinshortcuts 32033]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultDVDFull.png</icon>
-			<thumb />
-			<property name="labelID">32033</property>
-			<property name="defaultID">32033</property>
-			<onclick>EjectTray()</onclick>
-			<property name="path">EjectTray()</property>
-			<property name="list">EjectTray()</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">suche</property>
-			<property name="isSubmenu">True</property>
-		</item>
-	</include>
-	<include name="skinshortcuts-group-alt-suche">
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">16</property>
-			<label>$ADDON[script.skinshortcuts 32033]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
-			<icon>DefaultDVDFull.png</icon>
-			<thumb />
-			<property name="labelID">32033</property>
-			<property name="defaultID">32033</property>
-			<onclick>EjectTray()</onclick>
-			<property name="path">EjectTray()</property>
-			<property name="list">EjectTray()</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),suche)</visible>
-			<property name="group">suche</property>
-			<property name="isSubmenu">True</property>
-		</item>
-	</include>
 	<include name="skinshortcuts-group-powermenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[20126]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/lock.png</icon>
@@ -2332,7 +1890,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/settings1.png</icon>
@@ -2349,7 +1907,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/exit1.png</icon>
@@ -2367,7 +1925,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13016]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/shutdown1.png</icon>
@@ -2384,7 +1942,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13013]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/reboot1.png</icon>
@@ -2403,7 +1961,7 @@
 	<include name="skinshortcuts-group-alt-powermenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[20126]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/lock.png</icon>
@@ -2421,7 +1979,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[5]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/settings1.png</icon>
@@ -2438,7 +1996,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13009]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/exit1.png</icon>
@@ -2456,7 +2014,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13016]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/shutdown1.png</icon>
@@ -2473,7 +2031,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">17</property>
+			<property name="mainmenuid">13</property>
 			<label>$LOCALIZE[13013]</label>
 			<label2>Kodi Command</label2>
 			<icon>common/reboot1.png</icon>
