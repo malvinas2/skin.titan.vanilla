@@ -16,10 +16,6 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# ################
-# Titan Strings #
-# ################
-
 msgctxt "#31001"
 msgid "Other settings"
 msgstr ""
@@ -3121,4 +3117,12 @@ msgstr ""
 
 msgctxt "#70028"
 msgid "Next Channel"
+msgstr ""
+
+msgctxt "#10005"
+msgid "Music"
+msgstr ""
+
+msgctxt "#10006"
+msgid "Videos"
 msgstr ""
