@@ -2922,3 +2922,7 @@ msgstr "Vorheriges Programm"
 msgctxt "#70028"
 msgid "Next Channel"
 msgstr "Nächstes Programm"
+
+msgctxt "#10005"
+msgid "Music"
+msgstr "Musik"
