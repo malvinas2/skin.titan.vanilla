@@ -2894,3 +2894,31 @@ msgstr "Wiedergabe"
 msgctxt "#70021"
 msgid "Pause"
 msgstr "Pause"
+
+msgctxt "#70022"
+msgid "RDS"
+msgstr "RDS"
+
+msgctxt "#70023"
+msgid "Previous Chapter"
+msgstr "Vorheriges Kapitel"
+
+msgctxt "#70024"
+msgid "Next Chapter"
+msgstr "Nächstes Kapitel"
+
+msgctxt "#70025"
+msgid "-10 min"
+msgstr "-10 Minuten"
+
+msgctxt "#70026"
+msgid "+10 min"
+msgstr "+10 Minuten"
+
+msgctxt "#70027"
+msgid "Previous Channel"
+msgstr "Vorheriges Programm"
+
+msgctxt "#70028"
+msgid "Next Channel"
+msgstr "Nächstes Programm"

@@ -16,9 +16,9 @@ msgstr ""
 "Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-###############
-#Titan Strings#
-###############
+# ################
+# Titan Strings #
+# ################
 
 msgctxt "#31001"
 msgid "Other settings"
@@ -32,13 +32,13 @@ msgctxt "#31003"
 msgid "Bordersize for unfocused thumbs/tiles"
 msgstr ""
 
-#empty string with id 31004
+# empty string with id 31004
 
 msgctxt "#31005"
 msgid "General skin settings"
 msgstr ""
 
-#empty strings from id 31006 to 31009
+# empty strings from id 31006 to 31009
 
 msgctxt "#31010"
 msgid "--- Use random fanart for tile image"
@@ -48,7 +48,7 @@ msgctxt "#31011"
 msgid "Set custom tile image"
 msgstr ""
 
-#empty string with id 31012
+# empty string with id 31012
 
 msgctxt "#31013"
 msgid "Configure shortcuts"
@@ -490,7 +490,7 @@ msgctxt "#31122"
 msgid "Homescreen options"
 msgstr ""
 
-#empty string with id 31123
+# empty string with id 31123
 
 msgctxt "#31124"
 msgid "Please select your preference for the homescreen layout"
@@ -1004,7 +1004,7 @@ msgctxt "#31251"
 msgid "PAUSED"
 msgstr ""
 
-#empty string with id 31252
+# empty string with id 31252
 
 msgctxt "#31253"
 msgid "FAST FORWARD"
@@ -1378,7 +1378,7 @@ msgctxt "#31345"
 msgid "Disable header completely"
 msgstr ""
 
-#empty strings from id 31346 to 31398
+# empty strings from id 31346 to 31398
 
 msgctxt "#31399"
 msgid "The skin has two different themes to change the look and feel [CR][CR][B]Classic[/B] Is the original look and feel of the MediaPortal skin. [CR][B]Default/Modern[/B] Is the evolution of the skin to a more modern approach by the creator of this skin. [CR] [CR]You can decide for yourself which theme you like best. [CR]To switch the theme press the button in the left menu or go to the appearance settings from Kodi."
@@ -1428,7 +1428,7 @@ msgctxt "#31410"
 msgid "[B]Live-TV[/B][CR][CR]Configure PVR settings"
 msgstr ""
 
-#empty strings from id 31411 to 31420
+# empty strings from id 31411 to 31420
 
 msgctxt "#31421"
 msgid "[B]SELECT YOUR KODI USER PROFILE[/B][CR][CR]to login and continue"
@@ -1826,7 +1826,7 @@ msgctxt "#31519"
 msgid "Hide animated discart on OSD"
 msgstr ""
 
-#empty string with id 31520
+# empty string with id 31520
 
 msgctxt "#31521"
 msgid "color for indicator image or text"
@@ -1944,7 +1944,7 @@ msgctxt "#31549"
 msgid "[B]Note[/B] After enabling smart shortcuts for a particular section you must manually add those shortcuts to your menu. Go to [I]configure shortcuts[/I] and press Add, you will see the smart shortcuts listed there."
 msgstr ""
 
-#empty strings from id 31550 to 31559
+# empty strings from id 31550 to 31559
 
 msgctxt "#31560"
 msgid "Back button in guide opens sideblade menu"
@@ -2006,7 +2006,7 @@ msgctxt "#31574"
 msgid "Background color diffuse"
 msgstr ""
 
-#empty strings from id 31575 to 31580
+# empty strings from id 31575 to 31580
 
 msgctxt "#31581"
 msgid "Forced view for PVR channels"
@@ -2056,7 +2056,7 @@ msgctxt "#31592"
 msgid "Color theme during night time"
 msgstr ""
 
-#empty string with id 31593
+# empty string with id 31593
 
 msgctxt "#31594"
 msgid "Hide power menu (and not disable it)"
@@ -2526,7 +2526,7 @@ msgctxt "#31710"
 msgid "Enable skin helper artwork lookups for addons"
 msgstr ""
 
-#empty string with id 31711
+# empty string with id 31711
 
 msgctxt "#31712"
 msgid "Auto-align widgets to the right"
@@ -3093,4 +3093,32 @@ msgstr ""
 
 msgctxt "#70021"
 msgid "Pause"
+msgstr ""
+
+msgctxt "#70022"
+msgid "RDS"
+msgstr ""
+
+msgctxt "#70023"
+msgid "Previous Chapter"
+msgstr ""
+
+msgctxt "#70024"
+msgid "Next Chapter"
+msgstr ""
+
+msgctxt "#70025"
+msgid "-10 min"
+msgstr ""
+
+msgctxt "#70026"
+msgid "+10 min"
+msgstr ""
+
+msgctxt "#70027"
+msgid "Previous Channel"
+msgstr ""
+
+msgctxt "#70028"
+msgid "Next Channel"
 msgstr ""

@@ -259,7 +259,7 @@
     <setting id="ClearLogoLocation" value="topleft" label="$LOCALIZE[31329]" condition="" icon="" description=""/>
     <setting id="ClearLogoLocation" value="topcenter" label="$LOCALIZE[31330]" condition="!Skin.HasSetting(ShowMovieTitleHeader)" icon="" description=""/>
     <setting id="ClearLogoLocation" value="topright" label="$LOCALIZE[31331]" condition="" icon="" description=""/>
-    <setting id="ClearLogoLocation" value="footer" label="$LOCALIZE[31328]" condition="!skin.hastheme(classic)" icon="" description="" default="true"/>
+    <setting id="ClearLogoLocation" value="footer" label="$LOCALIZE[31328]" condition="!Skin.HasTheme(classic)" icon="" description="" default="true"/>
     <setting id="ClearLogoLocation" value="disabled" label="$LOCALIZE[1223]" condition="" icon="" description=""/>
     
     <!-- default osd button -->
@@ -433,7 +433,7 @@
         <option id="videoinfo_button_cinemavision" label="CinemaVision" condition="System.HasAddon(script.cinemavision)" default="true"/>
         <option id="videoinfo_button_cinemaexperience" label="$INFO[System.AddonTitle(script.cinema.experience)]" condition="System.HasAddon(script.cinema.experience)" default="true"/>
         <option id="videoinfo_button_videoextras" label="$INFO[System.AddonTitle(script.videoextras)]" condition="System.HasAddon(script.videoextras)" default="true"/>
-        <option id="videoinfo_button_tvtunes" label="$LOCALIZE[31300]" condition="System.HasAddon(script.tvtunes)" default="true"/>
+        <!-- <option id="videoinfo_button_tvtunes" label="$LOCALIZE[31300]" condition="System.HasAddon(script.tvtunes)" default="true"/> -->
         <option id="videoinfo_button_artwork" label="$LOCALIZE[13511]" condition="" default="true"/>
         <option id="videoinfo_button_refresh" label="$LOCALIZE[184]" condition="" default="true"/>
         <option id="videoinfo_button_discart" label="$LOCALIZE[31200]" condition="" default="true"/>

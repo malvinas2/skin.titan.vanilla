@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1105">
+	<defaultcontrol always="true">5000</defaultcontrol>
+	<!-- <include>Animation_DialogPopupOpenClose</include> -->
+	<include>animation_window_open_close</include>
+	<controls>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>600</width>
+			<centertop>50%</centertop>
+			<height>700</height>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="600" />
+				<param name="height" value="80" />
+				<param name="header_label" value="$LOCALIZE[5]" />
+				<param name="header_id" value="" />
+			</include>
+			<control type="group">
+				<left>0</left>
+				<top>80</top>
+				<control type="grouplist" id="5000">
+					<width>600</width>
+					<height>700</height>
+					<itemgap>0</itemgap>
+					<onup>5000</onup>
+					<ondown>5000</ondown>
+					<orientation>vertical</orientation>
+					<control type="button" id="5099">
+						<width>600</width>
+						<include>DialogSettingButton</include>
+						<align>left</align>
+						<!-- <label>31341</label> -->
+						<label>Fanart</label>
+						<label2>$INFO[Skin.String(MusicArtistFanart.label)]</label2>
+						<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=MusicArtistFanart,header=$LOCALIZE[31341])</onclick>
+					</control>
+
+					<control type="button" id="5004">
+						<width>600</width>
+						<include>DialogSettingButton</include>
+						<align>left</align>
+						<label>$LOCALIZE[250]</label>
+						<label2>[B]$INFO[Visualisation.Name][/B]</label2>
+						<!-- <onclick>Dialog.Close(all)</onclick> -->
+						<onclick>SendClick(500)</onclick>
+					</control>
+					<control type="button" id="5005">
+						<width>600</width>
+						<include>DialogSettingButton</include>
+						<align>left</align>
+						<label>$LOCALIZE[70005]</label>
+						<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+					</control>
+					<control type="button" id="5006">
+						<width>600</width>
+						<include>DialogSettingButton</include>
+						<align>left</align>
+						<label>$LOCALIZE[70006]</label>
+						<onclick>ActivateWindow(visualisationpresetlist)</onclick>
+						<visible>Visualisation.HasPresets</visible>
+					</control>
+					<control type="button" id="5007">
+						<width>600</width>
+						<include>DialogSettingButton</include>
+						<align>left</align>
+						<label>$LOCALIZE[70007]</label>
+						<label2>[B]$INFO[Skin.String(LyricScript_Path)][/B]</label2>
+						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
+					</control>
+					<control type="button" id="5008">
+						<width>600</width>
+						<include>DialogSettingButton</include>
+						<align>left</align>
+						<label>$LOCALIZE[70008]</label>
+						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
+						<visible>!String.IsEmpty(Skin.String(LyricScript_Path))</visible>
+					</control>
+					<control type="button" id="14107">
+						<description>close</description>
+						<align>left</align>
+						<width>600</width>
+						<include>DialogSettingButton</include>
+						<label>$LOCALIZE[31308]</label>
+						<onclick>Action(close)</onclick>
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

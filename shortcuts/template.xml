@@ -406,7 +406,7 @@
             <variable name="$SKINSHORTCUTS[id]510-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath1]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]510">
@@ -429,7 +429,7 @@
             <variable name="$SKINSHORTCUTS[id]520-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath2]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]520">
@@ -452,7 +452,7 @@
             <variable name="$SKINSHORTCUTS[id]530-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath3]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]530">
@@ -474,7 +474,7 @@
             <variable name="$SKINSHORTCUTS[id]540-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath4]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]540">
@@ -496,7 +496,7 @@
             <variable name="$SKINSHORTCUTS[id]550-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath5]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]550">
@@ -518,7 +518,7 @@
             <variable name="$SKINSHORTCUTS[id]560-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath6]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]560">
@@ -540,7 +540,7 @@
             <variable name="$SKINSHORTCUTS[id]570-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath7]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]570">
@@ -562,7 +562,7 @@
             <variable name="$SKINSHORTCUTS[id]580-refresh">
                 <value condition="!String.IsEmpty(Window(Home).property(skinhelper-refreshvideowidgetsbusy))">special://skin/extras/emptywidget.xsp</value>
                 <value condition="!String.IsEmpty(Window(Home).property(favwidgetrefresh))">special://skin/extras/emptywidget.xsp</value>
-                <value condition="window.isactive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
+                <value condition="Window.IsActive(fullscreenvideo)">special://skin/extras/emptywidget.xsp</value>
                 <value>$SKINSHORTCUTS[widgetPath8]</value>
             </variable>
             <variable name="widgetinfolabel-$SKINSHORTCUTS[id]580">

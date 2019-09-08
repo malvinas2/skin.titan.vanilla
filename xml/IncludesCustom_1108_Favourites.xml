@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<includes>
+    
+    <include name="custom_content">
+
+
+
+					<item id="3">
+						<description>blabla</description>
+						<label>$INFO[System.AddonTitle(script.globalsearch)]</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(script.globalsearch)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(script.globalsearch)">RunScript(script.globalsearch)</onclick>
+						<visible>!System.hasAddon(script.globalsearch)</visible>
+					</item>
+					<item id="4">
+						<description>3plus TV</description>
+						<label>3plus TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.3plus)">RunScript(plugin.video.L0RE.3plus)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.3plus)</visible>
+					</item>
+					<item id="5">
+						<description>Bollithek</description>
+						<label>Bollithek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon( 	plugin.video.L0RE.Bollywood)">RunScript( 	plugin.video.L0RE.Bollywood)</onclick>
+						<visible>!System.hasAddon( 	plugin.video.L0RE.Bollywood)</visible>
+					</item>
+					<item id="6">
+						<description>1. FC Union Berlin Mediathek</description>
+						<label>1. FC Union Berlin Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.aftv)">RunScript(plugin.video.L0RE.aftv)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.aftv)</visible>
+					</item>
+					<item id="7">
+						<description>ARTE.TV</description>
+						<label>ARTE.TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.arte)">RunScript(plugin.video.L0RE.arte)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.arte)</visible>
+					</item>
+					<item id="8">
+						<description>Borussia Dortmund Mediathek</description>
+						<label>Borussia Dortmund Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.bvbtotal)">RunScript(plugin.video.L0RE.bvbtotal)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.bvbtotal)</visible>
+					</item>
+					<item id="9">
+						<description>Cinetrailer</description>
+						<label>Cinetrailer</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.cinetrailer)">RunScript(plugin.video.L0RE.cinetrailer)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.cinetrailer)</visible>
+					</item>
+					<item id="10">
+						<description>Comedycentral</description>
+						<label>Comedycentral</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.comedycentral)">RunScript(plugin.video.L0RE.comedycentral)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.comedycentral)</visible>
+					</item>
+					<item id="11">
+						<description>Disney Channel Deutschland</description>
+						<label>Disney Channel Deutschland</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.disneychannel)">RunScript(plugin.video.L0RE.disneychannel)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.disneychannel)</visible>
+					</item>
+					<item id="12">
+						<description>DMAX Mediathek</description>
+						<label>DMAX Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.dmax)">RunScript(plugin.video.L0RE.dmax)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.dmax)</visible>
+					</item>
+					<item id="13">
+						<description>1. FC Kaiserslautern Mediathek</description>
+						<label>1. FC Kaiserslautern Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon( 	plugin.video.L0RE.fck-tv)">RunScript( 	plugin.video.L0RE.fck-tv)</onclick>
+						<visible>!System.hasAddon( 	plugin.video.L0RE.fck-tv)</visible>
+					</item>
+					<item id="14">
+						<description>FC St. Pauli Mediathek</description>
+						<label>FC St. Pauli Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.fcstpauli)">RunScript(plugin.video.L0RE.fcstpauli)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.fcstpauli)</visible>
+					</item>
+					<item id="15">
+						<description>Filmfriend (dev)</description>
+						<label>Filmfriend (dev)</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.filmfriend)">RunScript(plugin.video.L0RE.filmfriend)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.filmfriend)</visible>
+					</item>
+					<item id="16">
+						<description>Fohlen TV(Borussia Mönchengladbach)</description>
+						<label>Fohlen TV(Borussia Mönchengladbach)</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.fohlentv)">RunScript(plugin.video.L0RE.fohlentv)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.fohlentv)</visible>
+					</item>
+					<item id="17">
+						<description>Hamburger SV Mediathek</description>
+						<label>Hamburger SV Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.hsv)">RunScript(plugin.video.L0RE.hsv)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.hsv)</visible>
+					</item>
+					<item id="18">
+						<description>Kinder Mediatheken</description>
+						<label>Kinder Mediatheken</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.kinder_mediatheken)">RunScript(plugin.video.L0RE.kinder_mediatheken)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.kinder_mediatheken)</visible>
+					</item>
+					<item id="19">
+						<description>Kividoo</description>
+						<label>Kividoo</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.kividoo)">RunScript(plugin.video.L0RE.kividoo)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.kividoo)</visible>
+					</item>
+					<item id="20">
+						<description>MTV Mediathek</description>
+						<label>MTV Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.mtv)">RunScript(plugin.video.L0RE.mtv)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.mtv)</visible>
+					</item>
+					<item id="21">
+						<description>Premiership Rugby</description>
+						<label>Premiership Rugby</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.premiershiprugby)">RunScript(plugin.video.L0RE.premiershiprugby)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.premiershiprugby)</visible>
+					</item>
+					<item id="22">
+						<description>SPIEGEL.TV</description>
+						<label>SPIEGEL.TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.spiegeltv)">RunScript(plugin.video.L0RE.spiegeltv)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.spiegeltv)</visible>
+					</item>
+					<item id="23">
+						<description>TLC Mediathek</description>
+						<label>TLC Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.tlc)">RunScript(plugin.video.L0RE.tlc)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.tlc)</visible>
+					</item>
+					<item id="24">
+						<description>Welt der Wunder</description>
+						<label>Welt der Wunder</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.L0RE.weltderwunder)">RunScript(plugin.video.L0RE.weltderwunder)</onclick>
+						<visible>!System.hasAddon(plugin.video.L0RE.weltderwunder)</visible>
+					</item>
+					<item id="25">
+						<description>Akibapass</description>
+						<label>Akibapass</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.akibapass)">RunScript(plugin.video.akibapass)</onclick>
+						<visible>!System.hasAddon(plugin.video.akibapass)</visible>
+					</item>
+					<item id="26">
+						<description>AMV News</description>
+						<label>AMV News</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.amvnews)">RunScript(plugin.video.amvnews)</onclick>
+						<visible>!System.hasAddon(plugin.video.amvnews)</visible>
+					</item>
+					<item id="27">
+						<description>Animexx Videos</description>
+						<label>Animexx Videos</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.animexx)">RunScript(plugin.video.animexx)</onclick>
+						<visible>!System.hasAddon(plugin.video.animexx)</visible>
+					</item>
+					<item id="28">
+						<description>Anime on Demand</description>
+						<label>Anime on Demand</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.aod)">RunScript(plugin.video.aod)</onclick>
+						<visible>!System.hasAddon(plugin.video.aod)</visible>
+					</item>
+					<item id="29">
+						<description>ATV.at - Mediathek</description>
+						<label>ATV.at - Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.atv_at)">RunScript(plugin.video.atv_at)</onclick>
+						<visible>!System.hasAddon(plugin.video.atv_at)</visible>
+					</item>
+					<item id="30">
+						<description>Bundesliga bei Bild</description>
+						<label>Bundesliga bei Bild</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.bild_bundesliga)">RunScript(plugin.video.bild_bundesliga)</onclick>
+						<visible>!System.hasAddon(plugin.video.bild_bundesliga)</visible>
+					</item>
+					<item id="31">
+						<description>Bayerisches Fernsehen</description>
+						<label>Bayerisches Fernsehen</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.br3)">RunScript(plugin.video.br3)</onclick>
+						<visible>!System.hasAddon(plugin.video.br3)</visible>
+					</item>
+					<item id="32">
+						<description>3. Liga</description>
+						<label>3. Liga</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.bundesliga3)">RunScript(plugin.video.bundesliga3)</onclick>
+						<visible>!System.hasAddon(plugin.video.bundesliga3)</visible>
+					</item>
+					<item id="33">
+						<description>Chefkoch.de</description>
+						<label>Chefkoch.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.chefkoch_de)">RunScript(plugin.video.chefkoch_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.chefkoch_de)</visible>
+					</item>
+					<item id="34">
+						<description>ChristTVRadio</description>
+						<label>ChristTVRadio</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.christtvradio)">RunScript(plugin.video.christtvradio)</onclick>
+						<visible>!System.hasAddon(plugin.video.christtvradio)</visible>
+					</item>
+					<item id="35">
+						<description>DailyMotion</description>
+						<label>DailyMotion</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.dailymotion)">RunScript(plugin.video.dailymotion)</onclick>
+						<visible>!System.hasAddon(plugin.video.dailymotion)</visible>
+					</item>
+					<item id="36">
+						<description>Deluxe Music</description>
+						<label>Deluxe Music</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.deluxemusic)">RunScript(plugin.video.deluxemusic)</onclick>
+						<visible>!System.hasAddon(plugin.video.deluxemusic)</visible>
+					</item>
+					<item id="37">
+						<description>DFB TV</description>
+						<label>DFB TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.dfb_tv)">RunScript(plugin.video.dfb_tv)</onclick>
+						<visible>!System.hasAddon(plugin.video.dfb_tv)</visible>
+					</item>
+					<item id="38">
+						<description>Doku-Stream.org</description>
+						<label>Doku-Stream.org</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.doku-stream.org)">RunScript(plugin.video.doku-stream.org)</onclick>
+						<visible>!System.hasAddon(plugin.video.doku-stream.org)</visible>
+					</item>
+					<item id="39">
+						<description>Doku5</description>
+						<label>Doku5</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.doku5.com)">RunScript(plugin.video.doku5.com)</onclick>
+						<visible>!System.hasAddon(plugin.video.doku5.com)</visible>
+					</item>
+					<item id="40">
+						<description>dokumonster.de</description>
+						<label>dokumonster.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.dokumonster)">RunScript(plugin.video.dokumonster)</onclick>
+						<visible>!System.hasAddon(plugin.video.dokumonster)</visible>
+					</item>
+					<item id="41">
+						<description>Dokustreams.de</description>
+						<label>Dokustreams.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.dokustreams.de)">RunScript(plugin.video.dokustreams.de)</onclick>
+						<visible>!System.hasAddon(plugin.video.dokustreams.de)</visible>
+					</item>
+					<item id="42">
+						<description>euronews.com</description>
+						<label>euronews.com</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.euronews_com)">RunScript(plugin.video.euronews_com)</onclick>
+						<visible>!System.hasAddon(plugin.video.euronews_com)</visible>
+					</item>
+					<item id="43">
+						<description>Eurosport</description>
+						<label>Eurosport</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.eurosport)">RunScript(plugin.video.eurosport)</onclick>
+						<visible>!System.hasAddon(plugin.video.eurosport)</visible>
+					</item>
+					<item id="44">
+						<description>Massengeschmack (Light)</description>
+						<label>Massengeschmack (Light)</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.fernsehkritik_tv)">RunScript(plugin.video.fernsehkritik_tv)</onclick>
+						<visible>!System.hasAddon(plugin.video.fernsehkritik_tv)</visible>
+					</item>
+					<item id="45">
+						<description>Filmstarts</description>
+						<label>Filmstarts</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.filmstarts)">RunScript(plugin.video.filmstarts)</onclick>
+						<visible>!System.hasAddon(plugin.video.filmstarts)</visible>
+					</item>
+					<item id="46">
+						<description>Galileo</description>
+						<label>Galileo</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.galileo)">RunScript(plugin.video.galileo)</onclick>
+						<visible>!System.hasAddon(plugin.video.galileo)</visible>
+					</item>
+					<item id="47">
+						<description>GIGA.de</description>
+						<label>GIGA.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.giga_de)">RunScript(plugin.video.giga_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.giga_de)</visible>
+					</item>
+					<item id="48">
+						<description>HLTV</description>
+						<label>HLTV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.hltv)">RunScript(plugin.video.hltv)</onclick>
+						<visible>!System.hasAddon(plugin.video.hltv)</visible>
+					</item>
+					<item id="49">
+						<description>JimPanseGamer</description>
+						<label>JimPanseGamer</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.jim_panse_gamer)">RunScript(plugin.video.jim_panse_gamer)</onclick>
+						<visible>!System.hasAddon(plugin.video.jim_panse_gamer)</visible>
+					</item>
+					<item id="50">
+						<description>Joyn</description>
+						<label>Joyn</label>
+						<label2>Video On Demand und Live TV von Joyn</label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.joyn)">RunScript(plugin.video.joyn)</onclick>
+						<visible>!System.hasAddon(plugin.video.joyn)</visible>
+					</item>
+					<item id="51">
+						<description>Kicker.tv</description>
+						<label>Kicker.tv</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.kicker_tv)">RunScript(plugin.video.kicker_tv)</onclick>
+						<visible>!System.hasAddon(plugin.video.kicker_tv)</visible>
+					</item>
+					<item id="52">
+						<description>KIKA+</description>
+						<label>KIKA+</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.kika_de)">RunScript(plugin.video.kika_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.kika_de)</visible>
+					</item>
+					<item id="53">
+						<description>Laola1 TV</description>
+						<label>Laola1 TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.laola1tv)">RunScript(plugin.video.laola1tv)</onclick>
+						<visible>!System.hasAddon(plugin.video.laola1tv)</visible>
+					</item>
+					<item id="54">
+						<description>Magine</description>
+						<label>Magine</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.magine)">RunScript(plugin.video.magine)</onclick>
+						<visible>!System.hasAddon(plugin.video.magine)</visible>
+					</item>
+					<item id="55">
+						<description>Maxdome</description>
+						<label>Maxdome</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.maxdome)">RunScript(plugin.video.maxdome)</onclick>
+						<visible>!System.hasAddon(plugin.video.maxdome)</visible>
+					</item>
+					<item id="56">
+						<description>Mediathek Direkt</description>
+						<label>Mediathek Direkt</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.mediathekdirekt)">RunScript(plugin.video.mediathekdirekt)</onclick>
+						<visible>!System.hasAddon(plugin.video.mediathekdirekt)</visible>
+					</item>
+					<item id="57">
+						<description>MediathekViewWeb</description>
+						<label>MediathekViewWeb</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.mediathekviewweb)">RunScript(plugin.video.mediathekviewweb)</onclick>
+						<visible>!System.hasAddon(plugin.video.mediathekviewweb)</visible>
+					</item>
+					<item id="58">
+						<description>Music Video Mix</description>
+						<label>Music Video Mix</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.mvmix)">RunScript(plugin.video.mvmix)</onclick>
+						<visible>!System.hasAddon(plugin.video.mvmix)</visible>
+					</item>
+					<item id="59">
+						<description>Myspass.de</description>
+						<label>Myspass.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.myspass_de)">RunScript(plugin.video.myspass_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.myspass_de)</visible>
+					</item>
+					<item id="60">
+						<description>N24.de</description>
+						<label>N24.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.n24_de)">RunScript(plugin.video.n24_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.n24_de)</visible>
+					</item>
+					<item id="61">
+						<description>NASA</description>
+						<label>NASA</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.nasa)">RunScript(plugin.video.nasa)</onclick>
+						<visible>!System.hasAddon(plugin.video.nasa)</visible>
+					</item>
+					<item id="62">
+						<description>Netzkino</description>
+						<label>Netzkino</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.netzkino_de)">RunScript(plugin.video.netzkino_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.netzkino_de)</visible>
+					</item>
+					<item id="63">
+						<description>Nickelodeon.at</description>
+						<label>Nickelodeon.at</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.nick_at)">RunScript(plugin.video.nick_at)</onclick>
+						<visible>!System.hasAddon(plugin.video.nick_at)</visible>
+					</item>
+					<item id="64">
+						<description>Nickelodeon.de</description>
+						<label>Nickelodeon.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.nick_de)">RunScript(plugin.video.nick_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.nick_de)</visible>
+					</item>
+					<item id="65">
+						<description>OSMOSIS</description>
+						<label>OSMOSIS</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.osmosis)">RunScript(plugin.video.osmosis)</onclick>
+						<visible>!System.hasAddon(plugin.video.osmosis)</visible>
+					</item>
+					<item id="66">
+						<description>ProSiebenSat.1</description>
+						<label>ProSiebenSat.1</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.prosiebensat1)">RunScript(plugin.video.prosiebensat1)</onclick>
+						<visible>!System.hasAddon(plugin.video.prosiebensat1)</visible>
+					</item>
+					<item id="67">
+						<description>ran</description>
+						<label>ran</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.ran_de)">RunScript(plugin.video.ran_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.ran_de)</visible>
+					</item>
+					<item id="68">
+						<description>Rocket Beans TV</description>
+						<label>Rocket Beans TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.rocketbeanstvlive)">RunScript(plugin.video.rocketbeanstvlive)</onclick>
+						<visible>!System.hasAddon(plugin.video.rocketbeanstvlive)</visible>
+					</item>
+					<item id="69">
+						<description>TV Now</description>
+						<label>TV Now</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.rtlnow)">RunScript(plugin.video.rtlnow)</onclick>
+						<visible>!System.hasAddon(plugin.video.rtlnow)</visible>
+					</item>
+					<item id="70">
+						<description>Russian TV</description>
+						<label>Russian TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.russiantv)">RunScript(plugin.video.russiantv)</onclick>
+						<visible>!System.hasAddon(plugin.video.russiantv)</visible>
+					</item>
+					<item id="71">
+						<description>ServusTV.com</description>
+						<label>ServusTV.com</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.servustv_com)">RunScript(plugin.video.servustv_com)</onclick>
+						<visible>!System.hasAddon(plugin.video.servustv_com)</visible>
+					</item>
+					<item id="72">
+						<description>Sesamstrasse.de</description>
+						<label>Sesamstrasse.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.sesamstrasse_de)">RunScript(plugin.video.sesamstrasse_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.sesamstrasse_de)</visible>
+					</item>
+					<item id="73">
+						<description>Sky Mediathek</description>
+						<label>Sky Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.sky_mediathek)">RunScript(plugin.video.sky_mediathek)</onclick>
+						<visible>!System.hasAddon(plugin.video.sky_mediathek)</visible>
+					</item>
+					<item id="74">
+						<description>Sky Go</description>
+						<label>Sky Go</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.skygo.de)">RunScript(plugin.video.skygo.de)</onclick>
+						<visible>!System.hasAddon(plugin.video.skygo.de)</visible>
+					</item>
+					<item id="75">
+						<description>Sky Sport Mediathek</description>
+						<label>Sky Sport Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.skysport.de)">RunScript(plugin.video.skysport.de)</onclick>
+						<visible>!System.hasAddon(plugin.video.skysport.de)</visible>
+					</item>
+					<item id="76">
+						<description>Sky Ticket</description>
+						<label>Sky Ticket</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.skyticket.de)">RunScript(plugin.video.skyticket.de)</onclick>
+						<visible>!System.hasAddon(plugin.video.skyticket.de)</visible>
+					</item>
+					<item id="77">
+						<description>Sovietmoviesonline</description>
+						<label>Sovietmoviesonline</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.sovietmoviesonline)">RunScript(plugin.video.sovietmoviesonline)</onclick>
+						<visible>!System.hasAddon(plugin.video.sovietmoviesonline)</visible>
+					</item>
+					<item id="78">
+						<description>Sport1</description>
+						<label>Sport1</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.sport1de)">RunScript(plugin.video.sport1de)</onclick>
+						<visible>!System.hasAddon(plugin.video.sport1de)</visible>
+					</item>
+					<item id="79">
+						<description>Sportdeutschland.TV</description>
+						<label>Sportdeutschland.TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.sportdeutschland_tv)">RunScript(plugin.video.sportdeutschland_tv)</onclick>
+						<visible>!System.hasAddon(plugin.video.sportdeutschland_tv)</visible>
+					</item>
+					<item id="80">
+						<description>Sport-Total TV</description>
+						<label>Sport-Total TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.sporttotal)">RunScript(plugin.video.sporttotal)</onclick>
+						<visible>!System.hasAddon(plugin.video.sporttotal)</visible>
+					</item>
+					<item id="81">
+						<description>Youtube Music</description>
+						<label>Youtube Music</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.spotitube)">RunScript(plugin.video.spotitube)</onclick>
+						<visible>!System.hasAddon(plugin.video.spotitube)</visible>
+					</item>
+					<item id="82">
+						<description>Steam Community</description>
+						<label>Steam Community</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.steamcommunity)">RunScript(plugin.video.steamcommunity)</onclick>
+						<visible>!System.hasAddon(plugin.video.steamcommunity)</visible>
+					</item>
+					<item id="83">
+						<description>stoersender.tv</description>
+						<label>stoersender.tv</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.stoersendertv)">RunScript(plugin.video.stoersendertv)</onclick>
+						<visible>!System.hasAddon(plugin.video.stoersendertv)</visible>
+					</item>
+					<item id="84">
+						<description>Tele5 Mediathek</description>
+						<label>Tele5 Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tele5_de)">RunScript(plugin.video.tele5_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.tele5_de)</visible>
+					</item>
+					<item id="85">
+						<description>Telekom Sport</description>
+						<label>Telekom Sport</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.telekom-sport)">RunScript(plugin.video.telekom-sport)</onclick>
+						<visible>!System.hasAddon(plugin.video.telekom-sport)</visible>
+					</item>
+					<item id="86">
+						<description>ZDF tivi</description>
+						<label>ZDF tivi</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunScript(plugin.video.tivi_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.tivi_de)</visible>
+					</item>
+					<item id="87">
+						<description>TV Spielfilm - Das Beste aus den Mediatheken</description>
+						<label>TV Spielfilm - Das Beste aus den Mediatheken</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tvspielfilm_de)">RunScript(plugin.video.tvspielfilm_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.tvspielfilm_de)</visible>
+					</item>
+					<item id="88">
+						<description>TV Today - Best of Mediatheken</description>
+						<label>TV Today - Best of Mediatheken</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tvtoday_de)">RunScript(plugin.video.tvtoday_de)</onclick>
+						<visible>!System.hasAddon(plugin.video.tvtoday_de)</visible>
+					</item>
+					<item id="89">
+						<description>VfB-Stuttgart TV</description>
+						<label>VfB-Stuttgart TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.vfb_stuttgart)">RunScript(plugin.video.vfb_stuttgart)</onclick>
+						<visible>!System.hasAddon(plugin.video.vfb_stuttgart)</visible>
+					</item>
+					<item id="90">
+						<description>Vodster (dev)</description>
+						<label>Vodster (dev)</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.vodster)">RunScript(plugin.video.vodster)</onclick>
+						<visible>!System.hasAddon(plugin.video.vodster)</visible>
+					</item>
+					<item id="91">
+						<description>"Waipu.tv</description>
+						<label>"Waipu.tv</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.waipu.tv)">RunScript(plugin.video.waipu.tv)</onclick>
+						<visible>!System.hasAddon(plugin.video.waipu.tv)</visible>
+					</item>
+					<item id="92">
+						<description>Wakanim</description>
+						<label>Wakanim</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.wakanim)">RunScript(plugin.video.wakanim)</onclick>
+						<visible>!System.hasAddon(plugin.video.wakanim)</visible>
+					</item>
+					<item id="93">
+						<description>Watchbox</description>
+						<label>Watchbox</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.watchbox)">RunScript(plugin.video.watchbox)</onclick>
+						<visible>!System.hasAddon(plugin.video.watchbox)</visible>
+					</item>
+					<item id="94">
+						<description>Oktoberfest</description>
+						<label>Oktoberfest</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.wiesn)">RunScript(plugin.video.wiesn)</onclick>
+						<visible>!System.hasAddon(plugin.video.wiesn)</visible>
+					</item>
+					<item id="95">
+						<description>WTA TV</description>
+						<label>WTA TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.wtatv)">RunScript(plugin.video.wtatv)</onclick>
+						<visible>!System.hasAddon(plugin.video.wtatv)</visible>
+					</item>
+					<item id="96">
+						<description>Xbox Live</description>
+						<label>Xbox Live</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.xbl)">RunScript(plugin.video.xbl)</onclick>
+						<visible>!System.hasAddon(plugin.video.xbl)</visible>
+					</item>
+					<item id="97">
+						<description>Zappn TV</description>
+						<label>Zappn TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zappntv)">RunScript(plugin.video.zappntv)</onclick>
+						<visible>!System.hasAddon(plugin.video.zappntv)</visible>
+					</item>
+					<item id="98">
+						<description>Zattoo HiQ-2</description>
+						<label>Zattoo HiQ-2</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zattooHiQ-2)">RunScript(plugin.video.zattooHiQ-2)</onclick>
+						<visible>!System.hasAddon(plugin.video.zattooHiQ-2)</visible>
+					</item>
+					<item id="99">
+						<description>Zattoo HiQ</description>
+						<label>Zattoo HiQ</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zattooHiQ)">RunScript(plugin.video.zattooHiQ)</onclick>
+						<visible>!System.hasAddon(plugin.video.zattooHiQ)</visible>
+					</item>
+					<item id="100">
+						<description>Zattoo Live TV</description>
+						<label>Zattoo Live TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zattoo_com)">RunScript(plugin.video.zattoo_com)</onclick>
+						<visible>!System.hasAddon(plugin.video.zattoo_com)</visible>
+					</item>
+					<item id="101">
+						<description>ARD und ZDF</description>
+						<label>ARD und ZDF</label>
+						<label2>ARD- und ZDF-Mediathek, einschließlich Live-TV mit Aufnahmefunktion, Merkliste, Live-Radio, Podcasts</label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.ardundzdf)">RunScript(plugin.video.ardundzdf)</onclick>
+						<visible>!System.hasAddon(plugin.video.ardundzdf)</visible>
+					</item>
+					<item id="102">
+						<description>TuneIn2017</description>
+						<label>TuneIn2017</label>
+						<label2>tunein.com-addon for Kodi</label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.audio.tunein2017)">RunScript(plugin.audio.tunein2017)</onclick>
+						<visible>!System.hasAddon(plugin.audio.tunein2017)</visible>
+					</item>
+					<item id="103">
+						<description>East Anglian Film Archive website </description>
+						<label>East Anglian Film Archive website </label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.eafa)">RunScript(plugin.video.eafa)</onclick>
+						<visible>!System.hasAddon(plugin.video.eafa)</visible>
+					</item>
+					<item id="104">
+						<description>Eye Filmmuseum </description>
+						<label>Eye Filmmuseum </label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.eye)">RunScript(plugin.video.eye)</onclick>
+						<visible>!System.hasAddon(plugin.video.eye)</visible>
+					</item>
+					<item id="105">
+						<description>Ngā Taonga Sound & Vision </description>
+						<label>Ngā Taonga Sound & Vision </label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.ntsv)">RunScript(plugin.video.ntsv)</onclick>
+						<visible>!System.hasAddon(plugin.video.ntsv)</visible>
+					</item>
+					<item id="106">
+						<description>National Film Preservation Foundation</description>
+						<label>National Film Preservation Foundation</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.nfpf)">RunScript(plugin.video.nfpf)</onclick>
+						<visible>!System.hasAddon(plugin.video.nfpf)</visible>
+					</item>
+					<item id="107">
+						<description>BFI Player </description>
+						<label>BFI Player </label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.bfi)">RunScript(plugin.video.bfi)</onclick>
+						<visible>!System.hasAddon(plugin.video.bfi)</visible>
+					</item>
+					<item id="108">
+						<description>National Geographic</description>
+						<label>National Geographic</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.ng)">RunScript(plugin.video.ng)</onclick>
+						<visible>!System.hasAddon(plugin.video.ng)</visible>
+					</item>
+					<item id="109">
+						<description>Prelinger Archives</description>
+						<label>Prelinger Archives</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.pa)">RunScript(plugin.video.pa)</onclick>
+						<visible>!System.hasAddon(plugin.video.pa)</visible>
+					</item>
+					<item id="110">
+						<description>Deutsche Welle</description>
+						<label>Deutsche Welle</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.dw)">RunScript(plugin.video.dw)</onclick>
+						<visible>!System.hasAddon(plugin.video.dw)</visible>
+					</item>
+					<item id="111">
+						<description>United States Library of Congress</description>
+						<label>United States Library of Congress</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.loc)">RunScript(plugin.video.loc)</onclick>
+						<visible>!System.hasAddon(plugin.video.loc)</visible>
+					</item>
+					<item id="112">
+						<description>National Library of Scotland Moving Image Archive</description>
+						<label>National Library of Scotland Moving Image Archive</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.mia)">RunScript(plugin.video.mia)</onclick>
+						<visible>!System.hasAddon(plugin.video.mia)</visible>
+					</item>
+					<item id="113">
+						<description>British Pathé and the Reuters historical collection</description>
+						<label>British Pathé and the Reuters historical collection</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.bp)">RunScript(plugin.video.bp)</onclick>
+						<visible>!System.hasAddon(plugin.video.bp)</visible>
+					</item>
+					<item id="114">
+						<description>Japanese Animated Film Classics</description>
+						<label>Japanese Animated Film Classics</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.jafc)">RunScript(plugin.video.jafc)</onclick>
+						<visible>!System.hasAddon(plugin.video.jafc)</visible>
+					</item>
+					<item id="115">
+						<description>Imperial War Museum film archive</description>
+						<label>Imperial War Museum film archive</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.iwm)">RunScript(plugin.video.iwm)</onclick>
+						<visible>!System.hasAddon(plugin.video.iwm)</visible>
+					</item>
+					<item id="116">
+						<description>British Council Film</description>
+						<label>British Council Film</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.bcf)">RunScript(plugin.video.bcf)</onclick>
+						<visible>!System.hasAddon(plugin.video.bcf)</visible>
+					</item>
+
+
+
+
+
+					
+	</include>
+</includes>
