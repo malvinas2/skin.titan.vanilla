@@ -39,9 +39,9 @@
                 <width>356</width>
                 <height>200</height>
                 <fadetime>200</fadetime>
-                <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
                 <texture background="true">$VAR[VideoPlayerClearart]</texture>
-                <visible>!Control.IsVisible(552233) + !Control.IsVisible(662244) + Skin.HasSetting(OSDShowClearArt)</visible>
+                <visible>!Control.IsVisible(552233) + !Control.IsVisible(662244) + !Window.IsActive(playerprocessinfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdsubtitlesettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(osdcmssettings) + !Window.IsActive(videobookmarks) + Skin.HasSetting(OSDShowClearArt)</visible>
 				
 				<!-- Control.IsVisible(552233) = include"OSDInfoPanel" -->
 				<!-- Control.IsVisible(662244) = Small_OSD_Seek_Panel -->
@@ -61,8 +61,8 @@
                 
 				
                 <!-- weather on OSD -->
-                <include condition="!Skin.HasTheme(classic) + !Skin.HasSetting(UseSlimOSDPanel) + Skin.HasSetting(ShowWeatherVideoInfoOSD)">WeatherInfoOSD</include>
-                <include condition="!Skin.HasTheme(classic) + Skin.HasSetting(UseSlimOSDPanel) + Skin.HasSetting(ShowWeatherVideoInfoOSD)">WeatherInfoOSDSlim</include>
+                <include condition="!Skin.HasTheme(classic) + !Skin.HasSetting(UseSlimOSDPanel) + Skin.HasSetting(ShowWeatherVideoInfoOSD)  + !Window.IsActive(playerprocessinfo)">WeatherInfoOSD</include>
+                <include condition="!Skin.HasTheme(classic) + Skin.HasSetting(UseSlimOSDPanel) + Skin.HasSetting(ShowWeatherVideoInfoOSD) + !Window.IsActive(playerprocessinfo)">WeatherInfoOSDSlim</include>
                 
             </control>
             
