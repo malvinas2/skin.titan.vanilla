@@ -221,18 +221,18 @@
     </variable>
     
     <variable name="ActorThumbImage">
-        <value condition="!String.IsEmpty(ListItem.Art(Thumb)) + !String.IsEmpty(ListItem.Label)">$INFO[ListItem.Art(Thumb)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(thumb)) + !String.IsEmpty(ListItem.Label)">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!String.IsEmpty(ListItem.Label)">http://localhost:52307/getthumb&amp;title=$INFO[ListItem.Label] IMDB Actor</value>
     </variable>
     
     <variable name="ActorThumbBig">
-        <value condition="!String.IsEmpty(Container(50).ListItem.Art(Thumb)) + !String.IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Art(Thumb)]</value>
+        <value condition="!String.IsEmpty(Container(50).ListItem.Art(thumb)) + !String.IsEmpty(Container(50).ListItem.Label)">$INFO[Container(50).ListItem.Art(thumb)]</value>
         <value condition="!String.IsEmpty(Container(50).ListItem.Art(characterart))">$INFO[Container(50).ListItem.Art(characterart)]</value>
         <value condition="!String.IsEmpty(Container(50).ListItem.Label)">http://localhost:52307/getthumb&amp;title=$INFO[Container(50).ListItem.Label] IMDB Actor</value>
     </variable>
 	
 	<variable name="DetailsFanArtImage">
-		<value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.Property(DBTYPE),episode)] + !String.IsEmpty(ListItem.Art(Thumb))">$INFO[ListItem.Art(Thumb)]</value>
+		<value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.Property(DBTYPE),episode)] + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="Skin.HasSetting(PreferClearartOverLandscape) + !String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
 		<value condition="Skin.HasSetting(PreferClearartOverLandscape) + !String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
         <value condition="Skin.HasSetting(PreferClearartOverLandscape) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Clearart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Clearart)]</value>
@@ -244,19 +244,19 @@
         <value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container.ListItem.Art(tvshow.fanart))">$INFO[Container.ListItem.Art(tvshow.fanart)]</value>
         <value condition="String.IsEqual(ListItem.Label,..)">dialogs/filebrowser/DefaultFolderBack2.png</value>
-		<value condition="Window.IsActive(tvrecordings) + !String.IsEmpty(ListItem.Art(Thumb))">$INFO[ListItem.Art(Thumb)]</value>
+		<value condition="Window.IsActive(tvrecordings) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!Skin.HasSetting(DisableLandscapeThumbs) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Landscape)) + ![Control.IsVisible(505) | Control.IsVisible(512)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Landscape)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Fanart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Fanart)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Thumb)) + !String.IsEqual(Window(Home).Property(SkinHelper.ListItem.Art.Thumb),Window(Home).Property(SkinHelper.ListItem.Art.ChannelLogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</value>
         <value condition="ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.0.Landscape))">$INFO[Window(Home).Property(SkinHelper.ListItem.0.Landscape)]</value>
         <value condition="ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.0.Fanart))">$INFO[Window(Home).Property(SkinHelper.ListItem.0.Fanart)]</value>
 		<value condition="String.Contains(Container.FolderPath,pvr://)">resource://resource.images.skinbackgrounds.titanium/hover_my tv.jpg</value>
-        <value condition="!String.IsEmpty(ListItem.Art(Thumb))">$INFO[ListItem.Art(Thumb)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
         <value condition="Container.Content(artists)">resource://resource.images.skinicons.wide/artist.png</value>
         <value condition="[Container.Content(genres) | String.IsEqual(ListItem.DBTYPE,genre)]">resource://resource.images.skinicons.wide/genre.png</value>
         <value condition="Container.Content(studios)">$INFO[ListItem.Label,special://skin/extras/flags/studios/,.png]</value>
-		<value condition="Container.Content(actors) + String.IsEmpty(ListItem.Art(Thumb))">resource://resource.images.skinicons.wide/ActorPoster.png</value>
-		<value condition="Container.Content(directors) + String.IsEmpty(ListItem.Art(Thumb))">resource://resource.images.skinicons.wide/ActorPoster.png</value>
+		<value condition="Container.Content(actors) + String.IsEmpty(ListItem.Art(thumb))">resource://resource.images.skinicons.wide/ActorPoster.png</value>
+		<value condition="Container.Content(directors) + String.IsEmpty(ListItem.Art(thumb))">resource://resource.images.skinicons.wide/ActorPoster.png</value>
 		<value condition="Container.Content(years)">resource://resource.images.skinicons.wide/Year.png</value>
 		<value condition="Container.Content(countries)">resource://resource.images.skinicons.wide/Country.png</value>
 		<value condition="Container.Content(tags)">resource://resource.images.skinicons.wide/Tags.png</value>
@@ -333,7 +333,7 @@
 	<variable name="BannerImageFallback">
         <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(FanArt.image)">$INFO[FanArt.image]</value>
-		<value>$INFO[ListItem.Art(Thumb)]</value>
+		<value>$INFO[ListItem.Art(thumb)]</value>
     </variable>
 	
 	<variable name="NowPlayingTitle">
@@ -356,7 +356,7 @@
         <value condition="Control.IsVisible(10) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Fanart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Fanart)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Poster)) + !Window.IsActive(tvguide) + !Control.IsVisible(10)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Poster)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Thumb))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(Thumb))">$INFO[ListItem.Art(Thumb)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.ChannelLogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.ChannelLogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
         <value>resource://resource.images.skinbackgrounds.titanium/pvr.jpg</value>
@@ -654,7 +654,7 @@
 	 </variable>
      
      <variable name="MusicCoverImage">
-        <value condition="!String.IsEmpty(ListItem.Art(Thumb)) + !String.StartsWith(ListItem.Art(Thumb),Default)">$INFO[ListItem.Art(Thumb)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(thumb)) + !String.StartsWith(ListItem.Art(thumb),Default)">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Thumb))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</value>
         <value>$INFO[ListItem.Icon]</value>
 	 </variable>
@@ -1313,8 +1313,8 @@
 		<value condition="Control.HasFocus(807)">$LOCALIZE[19069]</value>	<!-- ooo Programm-Guide -->
 		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>		<!-- ooo Einstellungen -->
 		<value condition="Control.HasFocus(705)">$LOCALIZE[36501]</value>	<!-- ooo Stereoscopic 3D mode -->
-		<value condition="Control.HasFocus(10)+ PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>	<!-- ooo Aufnahme beenden -->
-		<value condition="Control.HasFocus(10)+ !PVR.IsRecordingPlayingChannel">$LOCALIZE[264]</value>	<!-- ooo Aufnehmen -->
+		<value condition="Control.HasFocus(109)+ PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>	<!-- ooo Aufnahme beenden -->
+		<value condition="Control.HasFocus(109)+ !PVR.IsRecordingPlayingChannel">$LOCALIZE[264]</value>	<!-- ooo Aufnehmen -->
 		<!-- <value condition="ControlGroup(6000).HasFocus + Player.SeekEnabled">$LOCALIZE[31054]</value> -->
 		<value condition="Control.HasFocus(206) + !VideoPlayer.Content(livetv) + Player.ChapterCount">$LOCALIZE[70024]</value>
 		<value condition="Control.HasFocus(206) + [[!VideoPlayer.Content(livetv) + !Player.ChapterCount] | [VideoPlayer.Content(livetv) + Player.SeekEnabled]]">$LOCALIZE[70026]</value>
@@ -1340,8 +1340,8 @@
 		<value condition="Control.HasFocus(101)">$LOCALIZE[13396]</value>	<!-- ooo Audio-Einstellungen -->
 		<value condition="Control.HasFocus(500)">$LOCALIZE[70014]</value>	<!-- ooo Visualisierung-Einstellungen -->
 		<value condition="Control.HasFocus(811)">$LOCALIZE[70015]</value>	<!-- ooo Playlist -->
-		<value condition="Control.HasFocus(10)+ PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>	<!-- ooo Aufnahme beenden -->
-		<value condition="Control.HasFocus(10)+ !PVR.IsRecordingPlayingChannel">$LOCALIZE[264]</value>	<!-- ooo Aufnehmen -->
+		<value condition="Control.HasFocus(109)+ PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>	<!-- ooo Aufnahme beenden -->
+		<value condition="Control.HasFocus(109)+ !PVR.IsRecordingPlayingChannel">$LOCALIZE[264]</value>	<!-- ooo Aufnehmen -->
 		<value condition="Control.HasFocus(203) + Player.Paused">$LOCALIZE[70020]</value>	<!-- ooo Play / Pause -->
 		<value condition="Control.HasFocus(203) + !Player.Paused">$LOCALIZE[70021]</value>	<!-- ooo Play / Pause -->
 		<value condition="Control.HasFocus(204)">$LOCALIZE[31954]</value>	<!-- ooo Stop -->	
