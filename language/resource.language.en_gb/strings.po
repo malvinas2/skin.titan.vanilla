@@ -3126,3 +3126,15 @@ msgstr ""
 msgctxt "#10006"
 msgid "Videos"
 msgstr ""
+
+msgctxt "#70029"
+msgid "Group"
+msgstr ""
+
+msgctxt "#70030"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "#70031"
+msgid "Order"
+msgstr ""
