@@ -1273,7 +1273,7 @@
             <aspectratio align="center" aligny="center" scalediffuse="true">scale</aspectratio>
             <texture background="true" diffuse="diffuse/landscape.png" fallback="DefaultAddonArtistInfo.png" border="0">$VAR[MusicCoverImage]</texture>
             <visible>Window.IsActive(Music)</visible>
-			<!-- <centerleft>300</centerleft> -->
+			<centerleft>300</centerleft>
         </control>
         <!--Video Window -->
         <control type="group">
