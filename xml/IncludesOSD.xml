@@ -1764,7 +1764,7 @@
 				<visible>Player.HasVideo</visible>
                 <visible>!VideoPlayer.Content(livetv)</visible>
 			</control>
-            <control type="togglebutton" id="10">
+            <control type="togglebutton" id="109">
                 <!-- record -->
 				<include>animation_fade_visible_hidden</include>
 				<width>60</width>
@@ -2213,7 +2213,7 @@
 			  <onclick>PlayerControl(Random)</onclick>
 			  <visible>Player.HasAudio + ![MusicPlayer.Content(LiveTV) | MusicPartyMode.Enabled]</visible>
 			</control>
-			<control type="togglebutton" id="10">
+			<control type="togglebutton" id="109">
 				<description>record</description>   <!-- record -->
 				<width>$PARAM[size]</width>
 				<height>$PARAM[size]</height>
@@ -2898,7 +2898,7 @@
             <bottom>292</bottom>
             <width>128</width>
             <height>128</height>
-            <visible>!String.IsEmpty(Window(Weather).Property(Current.FanartCode)) + Skin.String(WeatherIconPack.path)</visible>
+            <visible>!String.IsEmpty(Window(Weather).Property(Current.FanartCode)) + Skin.String(WeatherIconPack.path) + !Window.IsActive(playerprocessinfo)</visible>
             <include>HideOsdConditions</include>
 			
             <!--Current Weather-->
@@ -2954,7 +2954,7 @@
             <bottom>200</bottom>
             <width>550</width>
             <height>128</height>
-            <visible>!String.IsEmpty(Window(Weather).Property(Current.FanartCode)) + Skin.String(WeatherIconPack.path)</visible>
+            <visible>!String.IsEmpty(Window(Weather).Property(Current.FanartCode)) + Skin.String(WeatherIconPack.path) + !Window.IsActive(playerprocessinfo)</visible>
             <include>HideOsdConditions</include>
 
             <!--Current Weather-->
