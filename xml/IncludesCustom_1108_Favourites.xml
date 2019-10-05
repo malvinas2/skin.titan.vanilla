@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 173 -->
+<!-- 178 -->
 
 <includes>
     <include name="custom_content">
@@ -21,6 +21,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.L0RE.aftv)">RunScript(plugin.video.L0RE.aftv)</onclick>
 						<visible>System.hasAddon(plugin.video.L0RE.aftv)</visible>
+					</item>
+					<item id="174">
+						<description>1LIVE.de</description>
+						<label>1LIVE.de</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.audio.einslive_de)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.audio.einslive_de)">RunScript(plugin.audio.einslive_de)</onclick>
+						<visible>System.hasAddon(plugin.audio.einslive_de)</visible>
 					</item>
 					<item id="32">
 						<description>3. Liga</description>
@@ -66,6 +75,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.7tvneu)">RunScript(plugin.video.7tvneu)</onclick>
 						<visible>System.hasAddon(plugin.video.7tvneu)</visible>
+					</item>
+					<item id="175">
+						<description>7TV-Live</description>
+						<label>7TV-Live</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.7tv_live)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.7tv_live)">RunScript(plugin.video.7tv_live)</onclick>
+						<visible>System.hasAddon(plugin.video.7tv_live)</visible>
 					</item>
 					<item id="25">
 						<description>Akibapass</description>
@@ -472,6 +490,15 @@
 						<onclick condition="System.hasAddon(plugin.video.eafa)">RunScript(plugin.video.eafa)</onclick>
 						<visible>System.hasAddon(plugin.video.eafa)</visible>
 					</item>
+					<item id="176">
+						<description>ESA Videos</description>
+						<label>ESA Videos</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.esa)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.esa)">RunScript(plugin.video.esa)</onclick>
+						<visible>System.hasAddon(plugin.video.esa)</visible>
+					</item>
 					<item id="42">
 						<description>euronews.com</description>
 						<label>euronews.com</label>
@@ -615,6 +642,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.iwm)">RunScript(plugin.video.iwm)</onclick>
 						<visible>System.hasAddon(plugin.video.iwm)</visible>
+					</item>
+					<item id="177">
+						<description>iPlayer WWW</description>
+						<label>iPlayer WWW</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.iplayerwww)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.iplayerwww)">RunScript(plugin.video.iplayerwww)</onclick>
+						<visible>System.hasAddon(plugin.video.iplayerwww)</visible>
 					</item>
 					<item id="114">
 						<description>Japanese Animated Film Classics</description>
@@ -1029,6 +1065,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.russiantv)">RunScript(plugin.video.russiantv)</onclick>
 						<visible>System.hasAddon(plugin.video.russiantv)</visible>
+					</item>
+					<item id="178">
+						<description>Sandmann</description>
+						<label>Sandmann</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.sandmann)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.sandmann)">RunScript(plugin.video.sandmann)</onclick>
+						<visible>System.hasAddon(plugin.video.sandmann)</visible>
 					</item>
 					<item id="71">
 						<description>ServusTV.com</description>
