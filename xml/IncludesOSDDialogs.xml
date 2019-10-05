@@ -412,7 +412,7 @@
                 <top>0</top>
                 <height>60</height>
             </control>
-            <control type="togglebutton" id="10">
+            <control type="togglebutton" id="1077">
 				<top>10</top>
                 <left>5</left>
 				<width>1100</width>
@@ -424,7 +424,7 @@
 				<ondown>11</ondown>
                 <onup>11</onup>
 				<textoffsetx>90</textoffsetx>
-				<label>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
+				<label>1077$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
                 <altlabel>$LOCALIZE[19024] - $INFO[MusicPlayer.ChannelGroup]</altlabel>
                 <textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
                 <shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
@@ -504,7 +504,7 @@
                 <height>840</height>
                 <onup>11</onup>
                 <ondown>11</ondown>
-                <onleft>10</onleft>
+                <onleft>1077</onleft>
                 <onright>60</onright>
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>60</pagecontrol>
