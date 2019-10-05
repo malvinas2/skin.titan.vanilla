@@ -20,9 +20,8 @@
                 <posx>284</posx>
                 <posy>169</posy>
                 <width>1352</width>
-                <height>730</height>
+                <height>830</height>
                 <texture border="15">diffuse/bgpanel.png</texture>
-				
 				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
             </control>
 			<control type="image">
@@ -30,10 +29,9 @@
                 <posx>284</posx>
                 <posy>169</posy>
                 <width>1352</width>
-                <height>730</height>
+                <height>830</height>
 				<bordersize>10</bordersize>
                 <texture border="15">diffuse/bgpanel.png</texture>
-				
 				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
             </control>
 			
@@ -132,7 +130,6 @@
                 <align>left</align>
                 <spinposx>5</spinposx>
                 <textoffsetx>20</textoffsetx>
-                
             </control>
             <control type="label" id="14">
                 <description>Default Label</description>
@@ -169,14 +166,24 @@
 				<animation effect="fade" start="100" end="0" time="400" condition="![Control.HasFocus(30) | Skin.HasSetting(EnableTouchSupport) | Container.Scrolling  | Skin.HasSetting(alwaysShowScrollbars)]">Conditional</animation>
 			</control>
 			
+			<control type="textbox" id="6">
+				<description>description area</description>
+				<posx>318</posx>
+				<posy>800</posy>
+				<height>70</height>
+				<width>1250</width>
+				<font>font12</font>
+				<align>justify</align>
+				<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
+			</control>
+			
 			<control type="grouplist" id="8002">
                 <posx>318</posx>
-                <posy>800</posy>
+                <posy>900</posy>
 				<onup>5</onup>
 				<itemgap>60</itemgap>
 				<onup>8003</onup>
 				<orientation>horizontal</orientation>
-
                 <control type="button" id="28">
                     <description>OK</description>
                     <label>186</label>
