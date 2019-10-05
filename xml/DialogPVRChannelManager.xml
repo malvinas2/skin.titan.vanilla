@@ -339,7 +339,7 @@
                             <onup>8</onup>
                             <ondown>12</ondown>
                         </control>
-                        <control type="image" id="10">
+                        <control type="image" id="108">
                             <description>Current Channel Icon</description>
                             <posx>540</posx>
                             <posy>168</posy>
