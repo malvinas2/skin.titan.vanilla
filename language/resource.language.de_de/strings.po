@@ -2926,3 +2926,19 @@ msgstr "Nächstes Programm"
 msgctxt "#10005"
 msgid "Music"
 msgstr "Musik"
+
+msgctxt "#70029"
+msgid "Group"
+msgstr "Kanalgruppe"
+
+msgctxt "#70030"
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+msgctxt "#70031"
+msgid "Order"
+msgstr "Reihenfolge"
+
+msgctxt "#31806"
+msgid "Jump to a specific time (hh:mm:ss)"
+msgstr "Springe zu bestimmte Stelle (hh:mm:ss)"
