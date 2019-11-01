@@ -8,6 +8,7 @@
         <include>GlobalBackground</include>
          <!-- Now playing -->
 		<include condition="!Skin.HasTheme(classic)">NowPlayingModern</include>
+				
         <!--Header-->
         <include>Header</include>
 		
@@ -29,6 +30,19 @@
 				<colordiffuse>$VAR[ViewDetailsPanelColor]</colordiffuse>
 				<bordersize>15</bordersize>
 			</control>
+			
+			
+			<control type="image">
+				<posx>480</posx>
+				<top>-5</top>
+				<width>1400</width>
+				<height>820</height>
+				<texture border="15">diffuse/bgpanel.png</texture>
+				<colordiffuse>$VAR[ViewDetailsPanelColor]</colordiffuse>
+                <visible>Integer.IsGreater(Container.NumItems,0)</visible>
+				<bordersize>15</bordersize>
+			</control>
+			
 			<control type="group">
 				<top>65</top>
 				<control type="label">
@@ -72,7 +86,7 @@
 					<top>40</top>
 					<width>40</width>
 					<height>40</height>
-					<texture colordiffuse="$INFO[Skin.String(TagOverlaysTextColor)]">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-search.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-search.png</texture>
 					<visible>Control.HasFocus(990)</visible>
 				</control>
 				<control type="grouplist">
@@ -167,8 +181,9 @@
 					<movement>6</movement>
 					<onup>2</onup>
 					<ondown>990</ondown>
-					<onleft>60</onleft>
+					<onleft>70</onleft>
 					<onright>50</onright>
+					<pagecontrol>70</pagecontrol>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<itemlayout height="60" width="462">
 						<control type="image">
@@ -202,17 +217,17 @@
 					</itemlayout>
 					<focusedlayout height="60" width="462">
 						<control type="image">
-							<left>20</left>
+							<left>60</left>
 							<top>0</top>
-							<width>430</width>
+							<width>390</width>
 							<height>60</height>
 							<texture colordiffuse="$INFO[Skin.String(ButtonFocusColor)]" border="5">diffuse/panel.png</texture>
 							<!-- <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9000)">Conditional</animation> -->
 						</control>
 						<control type="image">
-							<left>20</left>
+							<left>60</left>
 							<top>0</top>
-							<width>430</width>
+							<width>390</width>
 							<height>60</height>
 							<texture colordiffuse="51FFFFFF">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-black.png</texture>
 							<animation effect="fade" start="100" end="0" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
@@ -248,17 +263,21 @@
 					</focusedlayout>
 				</control>
 			</control>
+			
 			<control type="panel" id="50">
 				<left>512</left>
 				<top>50</top>
-				<width>1500</width>
+				<width>1490</width>
 				<height>700</height>
 				<onleft>9000</onleft>
+				<onright condition="Skin.HasSetting(EnableQuickJump)">6000</onright>
+				<onright condition="!Skin.HasSetting(EnableQuickJump)">60</onright>
 				<viewtype label="536">icon</viewtype>
-				<preloaditems>10</preloaditems>
+				<preloaditems>20</preloaditems>
+				<pagecontrol>60</pagecontrol>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<itemlayout height="360" width="285" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<itemlayout height="360" width="270" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -289,7 +308,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="360" width="285" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
+				<focusedlayout height="360" width="270" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
 						<control type="image">
 							<left>0</left>
@@ -323,7 +342,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="360" width="470" condition="Container.Content(episodes) | Container.Content(musicvideos)">
+				<itemlayout height="360" width="460" condition="Container.Content(episodes) | Container.Content(musicvideos)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -381,7 +400,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="360" width="470" condition="Container.Content(episodes) | Container.Content(musicvideos)">
+				<focusedlayout height="360" width="460" condition="Container.Content(episodes) | Container.Content(musicvideos)">
 					<control type="group">
 						<control type="image">
 							<left>0</left>
@@ -442,7 +461,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="360" width="350" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(actors) | Container.Content(directors) | Container.Content(livetv)">
+				<itemlayout height="360" width="340" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(actors) | Container.Content(directors) | Container.Content(livetv)">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -518,7 +537,7 @@
 						<visible>!Container.Content(artists)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="360" width="350" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(actors) | Container.Content(directors) | Container.Content(livetv)">
+				<focusedlayout height="360" width="340" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(actors) | Container.Content(directors) | Container.Content(livetv)">
 					<control type="group">
 						<control type="image">
 							<left>0</left>
@@ -597,13 +616,18 @@
 						</control>
 					</control>
 				</focusedlayout>
+			
 			</control>
+
 			<control type="list" id="51">
-				<left>462</left>
+				<left>502</left>
 				<top>50</top>
-				<width>1038</width>
+				<width>800</width>
 				<height>700</height>
 				<onleft>9000</onleft>
+				<onright condition="Skin.HasSetting(EnableQuickJump)">6000</onright>
+				<onright condition="!Skin.HasSetting(EnableQuickJump)">60</onright>
+				<pagecontrol>60</pagecontrol>
 				<viewtype label="535">biglist</viewtype>
 				<preloaditems>2</preloaditems>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -1012,38 +1036,7 @@
 					<visible>Container.Content(songs)</visible>
 				</control>
 			</control>
-			<control type="button">
-				<left>1171</left>
-				<top>0</top>
-				<width>48</width>
-				<height>24</height>
-				<texturefocus colordiffuse="$INFO[Skin.String(GeneralHighlightTextColor)]" flipy="true">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(GeneralHighlightTextColor)]" flipy="true">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-arrowdown.png</texturenofocus>
-				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
-				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
-				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
-				<onclick>SetFocus(500)</onclick>
-				<onclick>PageUp</onclick>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<animation effect="slide" start ="0,0" end="-210,0" condition="Control.IsVisible(51)">Conditional</animation>
-				<visible>Container.HasPrevious</visible>
-			</control>
-			<control type="button">
-				<left>1171</left>
-				<top>780</top>
-				<width>48</width>
-				<height>24</height>
-				<texturefocus colordiffuse="$INFO[Skin.String(GeneralHighlightTextColor)]">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(GeneralHighlightTextColor)]">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-arrowdown.png</texturenofocus>
-				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
-				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
-				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
-				<onclick>SetFocus(500)</onclick>
-				<onclick>PageDown</onclick>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<animation effect="slide" start ="0,0" end="-210,0" condition="Control.IsVisible(51)">Conditional</animation>
-				<visible>Container.HasNext</visible>
-			</control>
+
 
 			<control type="label" id="999">
 				<left>436</left>
@@ -1076,34 +1069,39 @@
 			</control>
 		</control>
 		
-		<control type="grouplist">
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<orientation>horizontal</orientation>
-			<align>right</align>
-			<top>920</top>
-			<right>24</right>
-			<width>1200</width>
-			<itemgap>10</itemgap>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<control type="label">
-				<width>auto</width>
-				<height>48</height>
-				<aligny>center</aligny>
-				<align>right</align>
-				<shadowcolor>22000000</shadowcolor>
-				<label>$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</label>
-			</control>
-			<control type="image">
-				<width>54</width>
-				<height>44</height>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(GeneralHighlightTextColor)]">special://home/addons/script.globalsearch/resources/skins/default/media/globalsearch-itemcount.png</texture>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<visible>!String.IsEmpty(Container.NumItems)</visible>
-			</control>
+		
+		<!--vertical Scollbar right-->
+		<control type="scrollbar" id="60">
+			<visible>[Control.IsVisible(50) + Integer.IsGreater(Container(50).NumItems,0)] | [Control.IsVisible(51) + Integer.IsGreater(Container(51).NumItems,0)]</visible>
+			<right>15</right>
+			<bottom>13%</bottom>
+			<height>765</height>
+			<onup>60</onup>
+			<ondown>6000</ondown>
+			<onleft>50</onleft>
+			<animation effect="fade" start="0" end="100" time="400" condition="[Control.HasFocus(60) | Skin.HasSetting(EnableTouchSupport) | Container.Scrolling | Skin.HasSetting(alwaysShowScrollbars)] + !Control.IsVisible(6002)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="400" condition="![Control.HasFocus(60) | Skin.HasSetting(EnableTouchSupport) | Container.Scrolling | Skin.HasSetting(alwaysShowScrollbars)] | Control.IsVisible(6002)">Conditional</animation>
 		</control>
 		
+	<!--vertical Scollbar left-->
+		<control type="scrollbar" id="70">
+			<visible>Control.IsVisible(9000) + Integer.IsGreater(Container(9000).NumItems,7)</visible>
+			<left>10</left>
+			<width>20</width>
+			<height>460</height>
+			<top>480</top>
+			<onright>9000</onright>
+			<animation effect="fade" start="0" end="100" time="400" condition="[Control.HasFocus(70) | Skin.HasSetting(EnableTouchSupport) | Skin.HasSetting(alwaysShowScrollbars)] + !Control.IsVisible(6002)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="400" condition="![Control.HasFocus(70) | Skin.HasSetting(EnableTouchSupport) | Skin.HasSetting(alwaysShowScrollbars)] | Control.IsVisible(6002)">Conditional</animation>
+		</control>
+		
+		<!--NowPlaying-->
+        <include condition="Skin.HasTheme(classic)">NowPlayingMusicClassic</include>
+        <include condition="Skin.HasTheme(classic)">NowPlayingVideoClassic</include>
+        <include condition="Skin.HasSetting(DebugGrid) | Skin.HasSetting(DebugInfo)">DebugInfo</include>
+	
+		<!-- <include>DialogOverlayExtra</include> -->
+	
 		<!--Footer-->
 		<include condition="!Skin.HasSetting(nofooterbar)">Footer</include>
 		
@@ -1112,29 +1110,6 @@
             <!-- <visible>![Control.IsVisible(519) | Control.IsVisible(520) | Control.IsVisible(523)]</visible> -->
             <include condition="Skin.String(ClearLogoLocation) + ![Skin.HasSetting(nofooterbar) + Skin.String(ClearLogoLocation,footer)]">ClearLogo</include>
         </control>
-		
-		
-	<!--vertical Scollbar-->
-		<!-- <control type="scrollbar" id="60"> -->
-			<!-- <visible>Control.IsVisible(9000) + Integer.IsGreater(Container(9000).NumItems,7)</visible> -->
-			<!-- <left>10</left> -->
-			<!-- <width>20</width> -->
-			<!-- <height>460</height> -->
-			<!-- <top>480</top> -->
-							<!-- <ondown>SetFocus(9000)</ondown> -->
-				<!-- <ondown>PageDown</ondown> -->
-			<!-- <ondown>Control.Move(9000,2)</ondown> -->
-			<!-- <ondown>SetFocus(9000,3)</ondown> -->
-			<!-- <ondown>Control.SetFocus(9000,3)</ondown> -->
-			<!-- <ondown>ControlGroup.SetFocus(9000,3)</ondown> -->
-			<!-- <ondown condition="ControlGroup(9000).HasFocus(1)">SetFocus(9000,2)</ondown> -->
-		<!-- <ondown condition="ControlGroup(9000).HasFocus(2)">SetFocus(9000,3)</ondown> -->
-		<!-- <ondown condition="ControlGroup(9000).HasFocus(3)">SetFocus(9000,4)</ondown> -->
-			<!-- <ondown>Control.Move(9000,-1)</ondown> -->
-			<!-- <onright>9000</onright> -->
-			<!-- <animation effect="fade" start="0" end="100" time="400" condition="[Control.HasFocus(60) | Skin.HasSetting(EnableTouchSupport) | Skin.HasSetting(alwaysShowScrollbars)] + !Control.IsVisible(6002)">Conditional</animation> -->
-			<!-- <animation effect="fade" start="100" end="0" time="400" condition="![Control.HasFocus(60) | Skin.HasSetting(EnableTouchSupport) | Skin.HasSetting(alwaysShowScrollbars)] | Control.IsVisible(6002)">Conditional</animation> -->
-		<!-- </control> -->
-		
+	
 	</controls>
 </window>
