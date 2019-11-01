@@ -194,7 +194,7 @@
                         <label>$LOCALIZE[70009] LibreELEC</label>
                         <label2>$LOCALIZE[70009] LibreELEC</label2>
 						<onclick condition="System.hasAddon(service.libreelec.settings)">RunAddon(service.libreelec.settings)</onclick>
-						<!-- <visible>System.hasAddon(service.libreelec.settings)</visible> -->
+						<visible>System.hasAddon(service.libreelec.settings)</visible>
                         <icon>resource://resource.images.skinbackgrounds.titanium/settings.jpg</icon>
                         <thumb>libreelec.png</thumb>
                     </item>
