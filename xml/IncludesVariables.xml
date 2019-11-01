@@ -345,6 +345,9 @@
 	
 	<variable name="NowPlayingLabel">
         <value condition="Player.IsInternetStream">[B]$LOCALIZE[31040][/B]</value>
+		<value condition="!String.IsEmpty(MusicPlayer.Duration)">[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[MusicPlayer.Duration])</value>
+		<value condition="!String.IsEmpty(VideoPlayer.Duration)">[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[VideoPlayer.Duration])</value>
+		<value condition="!String.IsEmpty(PVR.EpgEventDuration)">[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[PVR.EpgEventDuration])</value>
         <value>[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[Player.Duration])</value>
     </variable>
 

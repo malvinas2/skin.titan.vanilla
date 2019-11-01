@@ -2504,6 +2504,17 @@
 				<visible>Player.HasAudio</visible>	
 				<onclick>ActivateWindow(1105)</onclick>
 			</control>
+			<control type="button" id="810">
+				<description> touch - volume down </description>
+				<width>$PARAM[size]</width>
+				<height>$PARAM[size]</height>
+				<label>voldown</label>
+				<font/>
+				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]volumedown.png</texturefocus>
+				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]volumedown.png</texturenofocus>
+				<visible>Skin.HasSetting(EnableTouchSupport)</visible>
+				<onclick>VolumeDown</onclick>
+			</control>
             <control type="button" id="809">
 				<description> touch - volume up </description>
 				<width>$PARAM[size]</width>
@@ -2515,19 +2526,8 @@
 				<visible>Skin.HasSetting(EnableTouchSupport)</visible>
 				<onclick>VolumeUp</onclick>
 			</control>
-            <control type="button" id="810">
-				<description> touch - volume down </description>
-				<width>$PARAM[size]</width>
-				<height>$PARAM[size]</height>
-				<label>voldown</label>
-				<font/>
-				<texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">$PARAM[iconspath]volumedown.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">$PARAM[iconspath]volumedown.png</texturenofocus>
-				<visible>Skin.HasSetting(EnableTouchSupport)</visible>
-				<onclick>VolumeDown</onclick>
-			</control>
 		</control>
-	
+
 	</include>
 	
 	<include name="SeekBar_Slim">

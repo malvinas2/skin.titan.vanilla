@@ -442,9 +442,12 @@
                     <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/prevtrack.png</texturefocus>
                     <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/prevtrack.png</texturenofocus>
                     <usealttexture>VideoPlayer.Content(livetv)</usealttexture>
-                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/channelup.png</alttexturefocus>
-                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/channelup.png</alttexturenofocus>
-                    <onclick>PlayerControl(Previous)</onclick>
+                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/channeldown.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/channeldown.png</alttexturenofocus>
+                    <!-- <onclick>PlayerControl(Previous)</onclick> -->
+					<onclick condition="!Player.HasAudio + VideoPlayer.Content(livetv) + !Player.SeekEnabled">ChannelDown</onclick>
+					<onclick condition="Player.HasAudio">PlayerControl(Previous)</onclick>
+					<onclick condition="!Player.HasAudio + [!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + Player.SeekEnabled]]">ChapterOrBigStepBack</onclick>
                 </control>
                 <control type="togglebutton">
                     <label></label>
@@ -453,11 +456,11 @@
                     <width>70</width>
                     <height>70</height>
                     <font></font>
-                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/Pause.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/Pause.png</texturenofocus>
+                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/pause.png</texturefocus>
+                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/pause.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/Play.png</alttexturefocus>
-                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/Play.png</alttexturenofocus>
+                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/play.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/play.png</alttexturenofocus>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button">
@@ -467,8 +470,8 @@
                     <width>70</width>
                     <height>70</height>
                     <font></font>
-                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/Stop.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/Stop.png</texturenofocus>
+                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/stop.png</texturefocus>
+                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/stop.png</texturenofocus>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="togglebutton">
@@ -478,12 +481,15 @@
                     <height>70</height>
                     <label>209</label>
                     <font></font>
-                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/NextTrack.png</texturefocus>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/NextTrack.png</texturenofocus>
+                    <texturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/nexttrack.png</texturefocus>
+                    <texturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/nexttrack.png</texturenofocus>
                     <usealttexture>VideoPlayer.Content(livetv)</usealttexture>
-                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/ChannelDown.png</alttexturefocus>
-                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/ChannelDown.png</alttexturenofocus>
-                    <onclick>PlayerControl(Next)</onclick>
+                    <alttexturefocus colordiffuse="$INFO[Skin.String(OSDButtonsFocusColor)]">osd/rounded/channelup.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="$INFO[Skin.String(OSDButtonsColor)]">osd/rounded/channelup.png</alttexturenofocus>
+                    <!-- <onclick>PlayerControl(Next)</onclick> -->
+					<onclick condition="!Player.HasAudio + VideoPlayer.Content(livetv) + !Player.SeekEnabled">ChannelUp</onclick>
+					<onclick condition="Player.HasAudio">PlayerControl(Next)</onclick>
+					<onclick condition="!Player.HasAudio + [!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + Player.SeekEnabled]]">ChapterOrBigStepForward</onclick>
                 </control>
             </control>
  		</control>
