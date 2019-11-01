@@ -64,6 +64,8 @@
                 <orientation>vertical</orientation>
                 <onup>9000</onup>
                 <ondown>9000</ondown>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="260" width="300">
                     <control type="group">
@@ -178,9 +180,41 @@
                         <icon>resource://resource.images.skinbackgrounds.titanium/system.jpg</icon>
                         <thumb>resource://resource.images.skinicons.wide/file.png</thumb>
                     </item>
+					<item id="15">
+                        <description>Coreelec</description>
+                        <label>$LOCALIZE[70009] CoreELEC</label>
+                        <label2>$LOCALIZE[70009] CoreELEC</label2>
+						<onclick condition="System.hasAddon(service.coreelec.settings)">RunAddon(service.coreelec.settings)</onclick>
+						<visible>System.hasAddon(service.coreelec.settings)</visible>
+                        <icon>resource://resource.images.skinbackgrounds.titanium/settings.jpg</icon>
+                        <thumb>coreelec.png</thumb>
+                    </item>
+					<item id="16">
+                        <description>Libreelec</description>
+                        <label>$LOCALIZE[70009] LibreELEC</label>
+                        <label2>$LOCALIZE[70009] LibreELEC</label2>
+						<onclick condition="System.hasAddon(service.libreelec.settings)">RunAddon(service.libreelec.settings)</onclick>
+						<!-- <visible>System.hasAddon(service.libreelec.settings)</visible> -->
+                        <icon>resource://resource.images.skinbackgrounds.titanium/settings.jpg</icon>
+                        <thumb>libreelec.png</thumb>
+                    </item>
                 </content>
             </control>
             
+					<!--vertical Scollbar right-->
+		<control type="scrollbar" id="60">
+			<visible>Control.IsVisible(9000) + Integer.IsGreater(Container(9000).NumItems,0)</visible>
+			<right>15</right>
+			<bottom>3%</bottom>
+			<height>765</height>
+			<onup>60</onup>
+			<ondown>6000</ondown>
+			<onleft>9000</onleft>
+			<animation effect="fade" start="0" end="100" time="400" condition="[Control.HasFocus(60) | Skin.HasSetting(EnableTouchSupport) | Container.Scrolling | Skin.HasSetting(alwaysShowScrollbars)] + !Control.IsVisible(6002)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="400" condition="![Control.HasFocus(60) | Skin.HasSetting(EnableTouchSupport) | Container.Scrolling | Skin.HasSetting(alwaysShowScrollbars)] | Control.IsVisible(6002)">Conditional</animation>
+		</control>
+			
+			
         </control>
 		
 		<!--Footer-->
