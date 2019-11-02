@@ -881,10 +881,37 @@
 <include name="height0_posy0">
     <height>0</height>
 	<posy>0</posy>
-</include>	 
-	
-	
+</include>
 
+<include name="music_info_label">
+    <control type="grouplist">
+        <width>$PARAM[width]</width>
+        <left>$PARAM[left]</left>
+        <top>-20</top>
+        <orientation>horizontal</orientation>
+        <align>left</align>
+        <control type="label">
+            <width>auto</width>
+            <font>Reg26</font>
+            <align>left</align>
+            <label>$PARAM[label1]</label>
+            <textcolor>$INFO[Skin.String(GeneralHighlightTextColor)]</textcolor>
+            <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+            <scroll>false</scroll>
+            <visible>!String.IsEmpty(Control.GetLabel(300$PARAM[id]))</visible>
+        </control>
+        <control type="label" id="300$PARAM[id]">
+            <width>auto</width>
+            <font>Reg26</font>
+            <align>left</align>
+            <label>$PARAM[label2]</label>
+            <textcolor>$INFO[Skin.String(ViewDetailsTextColor)]</textcolor>
+            <shadowcolor>$INFO[Skin.String(ViewDetailsTextShadowColor)]</shadowcolor>
+            <scroll>true</scroll>
+            <scrollsuffix> / </scrollsuffix>
+        </control>
+    </control>
+</include>
 
 <expression name="IsMovieDBTypeNoFallback">String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.Property(DBTYPE),movie)</expression>
 <expression name="IsTvShowDBType">String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.Property(DBTYPE),tvshow) | String.IsEqual(Window(Home).Property(ListItem.DBTYPE,tvshow)) | String.IsEqual(Window(Home).Property(ListItem.Property(DBTYPE)),tvshow)</expression>

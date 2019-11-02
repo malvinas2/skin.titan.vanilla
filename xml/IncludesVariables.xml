@@ -1378,4 +1378,54 @@
 		<value condition="!Control.HasFocus(10) | !Control.HasFocus(11) | !Control.HasFocus(3012)">$INFO[Skin.String(ButtonTextColor)]</value>
 	</variable>
 
+    <variable name="music_info_header">
+        <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+        <value condition="!String.IsEmpty(ListItem.Album)">$INFO[ListItem.Album]</value>
+        <value condition="!String.IsEmpty(ListItem.Artist)">$INFO[ListItem.Artist]</value>
+    </variable>
+
+    <variable name="music_born_prefix_label">
+        <value condition="!String.IsEmpty(ListItem.Year)">$LOCALIZE[172]: </value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Born) )">$LOCALIZE[21893]: </value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Formed))">$LOCALIZE[21894]: </value>
+    </variable>
+
+    <variable name="music_born_label">
+        <value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Year]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Born) )">$INFO[ListItem.Property(Artist_Born)]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Formed))">$INFO[ListItem.Property(Artist_Formed)]</value>
+    </variable>
+
+    <variable name="music_died_prefix_label">
+        <value condition="!String.IsEmpty(ListItem.Property(Album_Label))">$LOCALIZE[21899]: </value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Disbanded))">$LOCALIZE[21896]: </value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Died) )">$LOCALIZE[21897]: </value>
+    </variable>
+
+    <variable name="music_died_label">
+        <value condition="!String.IsEmpty(ListItem.Property(Album_Label))">$INFO[ListItem.Property(Album_Label)]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Disbanded))">$INFO[ListItem.Property(Artist_Disbanded)]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Died) )">$INFO[ListItem.Property(Artist_Died)]</value>
+    </variable>
+
+    <variable name="music_genre_label">
+        <value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre ]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Genre))">$INFO[ListItem.Property(Artist_Genre)]</value>
+    </variable>
+
+    <variable name="music_style_label">
+        <value condition="!String.IsEmpty(ListItem.Property(Album_Style))">$INFO[ListItem.Property(Album_Style)]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Style))">$INFO[ListItem.Property(Artist_Style)]</value>
+    </variable>
+
+    <variable name="music_mood_label">
+        <value condition="!String.IsEmpty(ListItem.Property(Album_Mood))">$INFO[ListItem.Property(Album_Mood)]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Artist_Mood))">$INFO[ListItem.Property(Artist_Mood)]</value>
+    </variable>
+
+    <variable name="music_plot_label">
+        <value condition="Container.Content(Artists)">$LOCALIZE[21887]</value>
+        <value condition="!Container.Content(Artists)">$LOCALIZE[183]</value>
+    </variable>
+
 </includes>
