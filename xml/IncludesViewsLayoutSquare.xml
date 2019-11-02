@@ -92,7 +92,7 @@
             !String.IsEmpty(ListItem.Property(defaultID)) | 
             [Control.IsVisible(509) + !Skin.String(View509.Tags) + !String.Contains(ListItem.Art(thumb),icon.png)] | 
             [Control.IsVisible(510) + !Skin.String(View510.Tags) + !String.Contains(ListItem.Art(thumb),icon.png)] |
-            Window.IsActive(settings)
+            Window.IsActive(settings) | Window.IsActive(musicinformation)
         </visible>
     </include>
     <include name="SquarePosterTagOverlay">
@@ -129,6 +129,92 @@
                 <aligny>center</aligny>
                 <label>$VAR[ThumbListDetailsSquare]</label>
                 <font>Reg18</font>
+                <autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
+                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <visible>String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
+            </control>
+        </control>
+    </include>
+
+    <include name="MusicInfoLabel">
+        <control type="image">
+            <include>SquareThumbBG</include>
+            <include condition="Skin.String(thumbsborder_unfocused, 0)">thumbborder_0</include>
+            <include condition="Skin.String(thumbsborder_unfocused, 2)">thumbborder_2</include>
+            <include condition="Skin.String(thumbsborder_unfocused, 4)">thumbborder_4</include>
+            <include condition="Skin.String(thumbsborder_unfocused, 6)">thumbborder_6</include>
+        </control>
+        <control type="group">
+            <control type="textbox">
+                <left>15</left>
+                <right>15</right>
+                <bottom>10</bottom>
+                <height>55</height>
+                <include condition="Skin.HasSetting(ThumbsLabelAlignmentCenter)">aligncenter</include>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$PARAM[label]</label>
+                <font>Reg20</font>
+                <autoscroll>false</autoscroll>
+                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <visible>!String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
+            </control>
+            <control type="textbox">
+                <left>15</left>
+                <right>15</right>
+                <bottom>10</bottom>
+                <height>55</height>
+                <include condition="Skin.HasSetting(ThumbsLabelAlignmentCenter)">aligncenter</include>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$PARAM[label]</label>
+                <font>Reg20</font>
+                <autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
+                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <visible>String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
+            </control>
+        </control>
+    </include>
+
+    <include name="MusicInfoLabelFocused">
+        <control type="image">
+            <include>SquareThumbFO</include>
+            <include condition="Skin.String(thumbsborder_focused, 2)">thumbborder_2</include>
+            <include condition="Skin.String(thumbsborder_focused, 4)">thumbborder_4</include>
+            <include condition="Skin.String(thumbsborder_focused, 6)">thumbborder_6</include>
+        </control>
+        <control type="group">
+            <control type="image">
+                <bottom>0</bottom>
+                <height>74</height>
+                <bordersize>8</bordersize>
+                <texture>diffuse/poster_tag.png</texture>
+                <colordiffuse>$INFO[Skin.String(TagOverlaysPanelColor)]</colordiffuse>
+            </control>
+            <control type="textbox">
+                <left>15</left>
+                <right>15</right>
+                <bottom>10</bottom>
+                <height>55</height>
+                <include condition="Skin.HasSetting(ThumbsLabelAlignmentCenter)">aligncenter</include>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$PARAM[label]</label>
+                <font>Reg20</font>
+                <autoscroll>false</autoscroll>
+                <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
+                <visible>!String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
+            </control>
+            <control type="textbox">
+                <left>15</left>
+                <right>15</right>
+                <bottom>10</bottom>
+                <height>55</height>
+                <include condition="Skin.HasSetting(ThumbsLabelAlignmentCenter)">aligncenter</include>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$PARAM[label]</label>
+                <font>Reg20</font>
                 <autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
                 <textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
                 <visible>String.IsEqual(System.CurrentControl,ListItem.Label)</visible>
