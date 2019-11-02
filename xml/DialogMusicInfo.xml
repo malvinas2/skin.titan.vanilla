@@ -9,7 +9,7 @@
 
         <!--Dialog Overlay-->
         <control type="group">
-            <visible>!Window.IsActive(fullscreenvideo) + !Window.IsActive(filebrowser)</visible>
+            <visible>!Window.IsActive(fullscreenvideo)</visible>
             <include>DialogOverlayExtra</include>
             <animation effect="fade" time="250" start="0" end="100" reversible="false">WindowOpen</animation>
         </control>
@@ -383,7 +383,7 @@
                             <visible>Skin.HasSetting(musicinfo_button_artwork)</visible>
                         </control>
 
-                        <!--	Preparation to restore old artwork dialog
+                        <!--	Preparation to restore old artwork dialog but with artwork beef
                             <control type="button" id="101">
                                 &lt;!&ndash;Artwork&ndash;&gt;
                                 <label>13405</label>
@@ -428,6 +428,7 @@
                             <onclick>Skin.ToggleSetting(MusicInfo_ShowCDart)</onclick>
                             <selected>Skin.HasSetting(MusicInfo_ShowCDart)</selected>
                             <visible>Skin.HasSetting(musicinfo_button_discart)</visible>
+                            <visible>!Container.Content(Artists)</visible>
                         </control>
                         <control type="radiobutton" id="3052">
                             <!--Hide panel behind details-->
