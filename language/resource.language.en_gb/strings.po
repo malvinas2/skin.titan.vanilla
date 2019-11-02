@@ -2522,7 +2522,9 @@ msgctxt "#31710"
 msgid "Enable skin helper artwork lookups for addons"
 msgstr ""
 
-# empty string with id 31711
+msgctxt "#31711"
+msgid "Select which buttons to show in musicinfo"
+msgstr ""
 
 msgctxt "#31712"
 msgid "Auto-align widgets to the right"

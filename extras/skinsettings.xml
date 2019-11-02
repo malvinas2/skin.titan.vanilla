@@ -440,6 +440,18 @@
         <option id="videoinfo_button_panel" label="$LOCALIZE[31155]" condition="" default="true"/>
         <option id="videoinfo_button_myrating" label="My Rating" condition="" default="true"/>
     </setting>
+
+    <!-- options to show in musicinfo - multiselect -->
+    <setting id="musicinfo_buttons" value="||MULTISELECT||" label="" condition="" icon="" description="">
+        <option id="musicinfo_button_play" label="$LOCALIZE[208]" condition="" default="true"/>
+        <option id="musicinfo_button_youtubevideos" label="$LOCALIZE[31797]" condition="" default="true"/>
+        <option id="musicinfo_button_Information" label="$LOCALIZE[22081]" condition="" default="true"/>
+        <option id="musicinfo_button_artwork" label="$LOCALIZE[13511]" condition="" default="true"/>
+        <option id="musicinfo_button_refresh" label="$LOCALIZE[184]" condition="" default="true"/>
+        <option id="musicinfo_button_discart" label="$LOCALIZE[31200]" condition="" default="true"/>
+        <option id="musicinfo_button_panel" label="$LOCALIZE[31155]" condition="" default="true"/>
+        <option id="musicinfo_button_myrating" label="My Rating" condition="" default="true"/>
+    </setting>
     
     <!-- osd button style -->
     <setting id="osd_buttonstyle" value="rounded" label="$LOCALIZE[31493]" condition="" icon="" description="" default="true"/>

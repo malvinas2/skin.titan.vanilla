@@ -846,6 +846,14 @@
                 <param name="action" value="RunScript(script.skin.helper.service,action=setskinsetting,setting=videoinfo_buttons,header=$LOCALIZE[31695])" />
                 <param name="visible" value="!Skin.HasSetting(UseExtendedInfoDialog)" />
             </include>
+
+            <!-- Select which buttons to show in musicinfo -->
+            <include content="SkinSettings_ActionButton">
+                <param name="id" value="31711" />
+                <param name="label" value="31711" />
+                <param name="action" value="RunScript(script.skin.helper.service,action=setskinsetting,setting=musicinfo_buttons,header=$LOCALIZE[31711])" />
+                <param name="visible" value="!Skin.HasSetting(UseExtendedInfoDialog)" />
+            </include>
             
             <!-- watched indicators -->
             <control type="label" id="17130">
