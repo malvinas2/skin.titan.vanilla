@@ -2500,6 +2500,10 @@ msgctxt "#31710"
 msgid "Enable skin helper artwork lookups for addons"
 msgstr "Enable skin helper artwork lookups for addons"
 
+msgctxt "#31711"
+msgid "Select which buttons to show in musicinfo"
+msgstr "Select which buttons to show in musicinfo"
+
 msgctxt "#31712"
 msgid "Auto-align widgets to the right"
 msgstr "Auto-align widgets to the right"
