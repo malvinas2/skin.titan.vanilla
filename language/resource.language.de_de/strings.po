@@ -2484,6 +2484,10 @@ msgctxt "#31710"
 msgid "Enable skin helper artwork lookups for addons"
 msgstr "Aktiviere Skin Helper Illustrationen Zugriff für Addons"
 
+msgctxt "#31711"
+msgid "Select which buttons to show in musicinfo"
+msgstr "Wähle aus welche Schaltflächen in Musikinfo angezeigt werden"
+
 msgctxt "#31713"
 msgid "Swap poster"
 msgstr "Poster tauschen"
