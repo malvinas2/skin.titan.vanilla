@@ -185,8 +185,8 @@ msgid "All TV Shows"
 msgstr "Todos as Séries de TV"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
-msgstr "Artwork Downloader"
+msgid "Artwork Beef"
+msgstr "Artwork Beef"
 
 msgctxt "#31053"
 msgid "Poster"

@@ -189,8 +189,8 @@ msgid "All TV Shows"
 msgstr "Összes sorozat"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
-msgstr "Artwork Downloader"
+msgid "Artwork Beef"
+msgstr "Artwork Beef"
 
 msgctxt "#31053"
 msgid "Poster"
@@ -348,9 +348,7 @@ msgctxt "#31098"
 msgid "BannerPlex"
 msgstr "BannerPlex"
 
-msgctxt "#31099"
-msgid "Enable automatic download during library scan (artwork downloader addon)"
-msgstr "Automatikus letöltés engedélyezése könyvtár átvizsgálása közben (artwork downloader kiegészítő))"
+# empty string with id 31099
 
 msgctxt "#31100"
 msgid "==unused position=="

@@ -203,7 +203,7 @@ msgid "All TV Shows"
 msgstr ""
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr ""
 
 msgctxt "#31053"
@@ -390,9 +390,7 @@ msgctxt "#31098"
 msgid "BannerPlex"
 msgstr ""
 
-msgctxt "#31099"
-msgid "Enable automatic download during library scan (artwork downloader addon)"
-msgstr ""
+# empty string with id 31099
 
 msgctxt "#31100"
 msgid "==unused position=="

@@ -33,7 +33,7 @@ msgid "Latest Movies"
 msgstr "最新電影"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "美術圖下載器"
 
 msgctxt "#31053"
