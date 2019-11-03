@@ -2236,18 +2236,19 @@
     </include>
     
     <variable name="HomeMenuWidgetInfoLabel">
-        <value condition="String.Contains(Container(300).ListItem.Property(widgetPath), plugin.video.youtube) + !String.IsEmpty(ListItem.Label2)">[B]$INFO[ListItem.label][CR]$INFO[ListItem.label2][/B]</value>
-        <value condition="String.IsEqual(ListItem.Property(DBTYPE), systeminfo)">[B]$INFO[ListItem.label][/B] $INFO[ListItem.label2]</value>
-        <value condition="!String.IsEmpty(ListItem.Title) + String.Contains(ListItem.FolderPath, pvr://)">[B]$INFO[ListItem.Title][/B]</value>
-        <value condition="!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode) + !String.IsEqual(ListItem.TvShowTitle,ListItem.Title)">[B][UPPERCASE]S$INFO[ListItem.Season]E$INFO[ListItem.Episode]:[/UPPERCASE] $INFO[ListItem.Title][/B]</value>
-        <value condition="!String.IsEmpty(ListItem.Title)">[B]$INFO[ListItem.Title][/B]</value>
-        <value condition="!String.IsEmpty(ListItem.Label)">[B]$INFO[ListItem.Label][/B]</value>
         <!-- spotlight widget-->
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + String.IsEqual(Container(1508).ListItem.Property(DBTYPE), systeminfo)">[B]$INFO[Container(1508).ListItem.label][/B] $INFO[Container(1508).ListItem.label2]</value>
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Title) + String.Contains(Container(1508).ListItem.FolderPath, pvr://)">[B]$INFO[Container(1508).ListItem.Title][/B]</value>
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Season) + !String.IsEmpty(Container(1508).ListItem.Episode) + !String.IsEqual(Container(1508).ListItem.TvShowTitle,Container(1508).ListItem.Title)">[B][UPPERCASE]S$INFO[Container(1508).ListItem.Season]E$INFO[Container(1508).ListItem.Episode]:[/UPPERCASE] $INFO[Container(1508).ListItem.Title][/B]</value>
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Title)">[B]$INFO[Container(1508).ListItem.Title][/B]</value>
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Label)">[B]$INFO[Container(1508).ListItem.Label][/B]</value>
+        <!-- default -->
+        <value condition="String.Contains(Container(300).ListItem.Property(widgetPath), plugin.video.youtube) + !String.IsEmpty(ListItem.Label2)">[B]$INFO[ListItem.label][CR]$INFO[ListItem.label2][/B]</value>
+        <value condition="String.IsEqual(ListItem.Property(DBTYPE), systeminfo)">[B]$INFO[ListItem.label][/B] $INFO[ListItem.label2]</value>
+        <value condition="!String.IsEmpty(ListItem.Title) + String.Contains(ListItem.FolderPath, pvr://)">[B]$INFO[ListItem.Title][/B]</value>
+        <value condition="!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode) + !String.IsEqual(ListItem.TvShowTitle,ListItem.Title)">[B][UPPERCASE]S$INFO[ListItem.Season]E$INFO[ListItem.Episode]:[/UPPERCASE] $INFO[ListItem.Title][/B]</value>
+        <value condition="!String.IsEmpty(ListItem.Title)">[B]$INFO[ListItem.Title][/B]</value>
+        <value condition="!String.IsEmpty(ListItem.Label)">[B]$INFO[ListItem.Label][/B]</value>
         <!--widgets -->
         <value condition="String.Contains(Container(300).ListItem.Property(widgetPath), plugin.video.youtube)">[B]$INFO[Window(Home).Property(ListItem.label)][CR]$INFO[Window(Home).Property(ListItem.label2)][/B]</value>
         <value condition="String.IsEqual(Window(Home).Property(ListItem.DBTYPE), systeminfo)">[B]$INFO[Window(Home).Property(ListItem.label)][/B] $INFO[Window(Home).Property(ListItem.label2)]</value>
@@ -2287,15 +2288,6 @@
         <value condition="!String.IsEmpty(ListItem.Property(ChannelLogo))">$INFO[ListItem.Property(ChannelLogo)]</value>
     </variable>
     <variable name="SpotLightWidgetInfoThumb">
-        <!-- details widget -->
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
-        <value condition="!String.IsEmpty(ListItem.Property(ChannelLogo))">$INFO[ListItem.Property(ChannelLogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
         <!-- spotlight widget -->
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Art(tvshow.clearlogo))">$INFO[Container(1508).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Art(clearlogo))">$INFO[Container(1508).ListItem.Art(clearlogo)]</value>
@@ -2305,6 +2297,15 @@
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Art(tvshow.poster))">$INFO[Container(1508).ListItem.Art(tvshow.poster)]</value>
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Property(ChannelLogo))">$INFO[Container(1508).ListItem.Property(ChannelLogo)]</value>
         <value condition="!ControlGroup(77777).HasFocus + Control.IsVisible(1508) + !String.IsEmpty(Container(1508).ListItem.Icon)">$INFO[Container(1508).ListItem.Icon]</value>
+        <!-- details widget -->
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(ChannelLogo))">$INFO[ListItem.Property(ChannelLogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
         <!-- normal widgets -->
         <value condition="!String.IsEmpty(Window(Home).Property(ListItem.Art.clearlogo))">$INFO[Window(Home).Property(ListItem.Art.clearlogo)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(ListItem.Art.landscape))">$INFO[Window(Home).Property(ListItem.Art.landscape)]</value>
