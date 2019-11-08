@@ -38,11 +38,11 @@
                 <posy>20</posy>
                 <width>356</width>
                 <height>200</height>
-                <fadetime>200</fadetime>
+                <!-- <fadetime>200</fadetime> -->
                 <aspectratio align="left" aligny="top">keep</aspectratio>
                 <texture background="true">$VAR[VideoPlayerClearart]</texture>
-                <visible>!Control.IsVisible(552233) + !Control.IsVisible(662244) + !Window.IsActive(playerprocessinfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdsubtitlesettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(osdcmssettings) + !Window.IsActive(videobookmarks) + Skin.HasSetting(OSDShowClearArt)</visible>
-				
+                <visible>[Skin.HasSetting(OSDShowInfoOnPause) | VideoPlayer.Content(livetv) | Window.IsActive(videoosd) | Player.ShowInfo] + !Control.IsVisible(552233) + !Control.IsVisible(662244) + !Window.IsActive(playerprocessinfo) + !Window.IsActive(osdaudiosettings) + !Window.IsActive(osdsubtitlesettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(osdcmssettings) + !Window.IsActive(videobookmarks) + Skin.HasSetting(OSDShowClearArt)</visible>
+				<visible>!Window.IsActive(sliderdialog) + !Window.IsActive(pvrosdchannels) + !Window.IsActive(DialogSettings.xml)</visible>
 				<!-- Control.IsVisible(552233) = include"OSDInfoPanel" -->
 				<!-- Control.IsVisible(662244) = Small_OSD_Seek_Panel -->
 				
