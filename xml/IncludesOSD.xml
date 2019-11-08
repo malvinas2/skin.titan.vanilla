@@ -452,7 +452,8 @@
 					<textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
 					<textureslidernibfocus colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">colors/color_white.png</textureslidernibfocus>
 					<!-- <info>Player.Progress</info> -->
-					<info>PVR.EpgEventProgress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>PVR.EpgEventProgress</info> -->
 					<visible>Player.SeekEnabled + !Player.ChannelPreviewActive</visible>
 					<!-- <visible>true</visible> -->
 				</control>
@@ -518,7 +519,8 @@
 					
 					<!-- <visible>Player.Seeking</visible> -->
 					<!-- <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar> -->
-					<info>Player.Progress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>Player.Progress</info> -->
 					<visible>Player.SeekEnabled + !Window.IsActive(videoosd) + !Window.IsActive(musicosd)</visible>
 				</control>
 			</control>
@@ -894,7 +896,8 @@
 					<texturesliderbar>colors/color_transparent.png</texturesliderbar>
 					<textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
 					<textureslidernibfocus>colors/color_white.png</textureslidernibfocus>
-					<info>Player.Progress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>Player.Progress</info> -->
 					<!-- <visible>Player.Seeking</visible> -->
 					<!-- <visible>Player.SeekEnabled + !Window.IsActive(videoosd) + !Window.IsActive(musicosd)</visible> -->
 					<visible>Player.SeekEnabled</visible>
@@ -1107,7 +1110,8 @@
                     <texturesliderbar>colors/color_transparent.png</texturesliderbar>
                     <textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
                     <textureslidernibfocus>colors/color_white.png</textureslidernibfocus>
-					<info>Player.Progress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>Player.Progress</info> -->
 					<visible>Player.SeekEnabled</visible>
                     <!-- <visible>Player.Seeking</visible> -->
                 </control>
@@ -2884,7 +2888,8 @@
 				<texturesliderbar>colors/color_transparent.png</texturesliderbar>
                 <textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
                 <textureslidernibfocus>colors/color_white.png</textureslidernibfocus>
-				<info>Player.Progress</info>
+				<info>$VAR[seeksliderposition]</info>
+				<!-- <info>Player.Progress</info> -->
 				<!-- <visible>Player.Seeking</visible> -->
 				<visible>Player.SeekEnabled</visible>
 			</control>
