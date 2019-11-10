@@ -2422,13 +2422,6 @@
                 <onclick>RunScript(script.skin.helper.service,action=setresourceaddon,skinstring=LanguageFlags,addontype=resource.images.languageflags)</onclick>
             </control>
             
-            <control type="radiobutton" id="5139">
-                <include>SkinSettings_Button</include>
-                <label>31099</label>
-                <onclick condition="System.HasAddon(script.artwork.downloader)">Skin.ToggleSetting(EnableArtworkDownloader)</onclick>
-                <onclick condition="!System.HasAddon(script.artwork.downloader)">RunPlugin(plugin://script.artwork.downloader)</onclick>
-                <selected>Skin.HasSetting(EnableArtworkDownloader)</selected>
-            </control>
             <control type="radiobutton" id="5160">
                 <description>Low performance systems</description>
                 <include>SkinSettings_Button</include>
@@ -2438,6 +2431,7 @@
                 <onclick>Skin.SetString(SkinHelper.ShowInfoAtPlaybackStart,0)</onclick>
                 <selected>Skin.HasSetting(LowPerformanceMode)</selected>
             </control>
+			
             <control type="radiobutton" id="8025">
                 <include>SkinSettings_Button</include>
                 <label>31808</label>
