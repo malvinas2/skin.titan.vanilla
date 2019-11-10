@@ -1430,5 +1430,11 @@
         <value condition="Container.Content(Artists)">$LOCALIZE[21887]</value>
         <value condition="!Container.Content(Artists)">$LOCALIZE[183]</value>
     </variable>
+	
+	<variable name="seeksliderposition">
+		<value condition="!String.IsEmpty(Player.SeekTime)">Player.SeekTime</value>
+		<value condition="!String.IsEmpty(PVR.EpgEventProgress)">PVR.EpgEventProgress</value>
+		<value>Player.Progress</value>
+	</variable>
 
 </includes>
