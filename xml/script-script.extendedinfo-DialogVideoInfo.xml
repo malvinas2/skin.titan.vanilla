@@ -186,15 +186,15 @@
 					</control>
                     
                     <control type="button" id="101">
-                        <!--Get Thumb Artwork Downloader-->
+                        <!--Get Thumb Artwork Beef -->
                         <label>13511</label>
                         <width>285</width>
                         <height>60</height>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
                         <enable>!Skin.HasSetting(KioskMode.Enabled)</enable>
-                        <onclick condition="System.HasAddon(script.artwork.downloader)">ActivateWindow(3004)</onclick>
-                        <onclick condition="!System.HasAddon(script.artwork.downloader)">RunPlugin(plugin://script.artwork.downloader)</onclick>
+						<onclick condition="System.HasAddon(script.artwork.beef)">ActivateWindow(3004)</onclick>
+                        <onclick condition="!System.HasAddon(script.artwork.beef)">RunPlugin(plugin://script.artwork.beef)</onclick>
                     </control>
                     
                     <control type="radiobutton" id="3052">

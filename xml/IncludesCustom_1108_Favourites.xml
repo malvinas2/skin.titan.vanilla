@@ -8,19 +8,19 @@
 						<description>1. FC Kaiserslautern Mediathek</description>
 						<label>1. FC Kaiserslautern Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.fck-tv)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.fck-tv)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.fck-tv)">RunAddon(plugin.video.L0RE.fck-tv)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.fck-tv)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.fck-tv)">RunAddon(plugin.video.l0re.fck-tv)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.fck-tv)</visible>
 					</item>
 					<item id="6">
 						<description>1. FC Union Berlin Mediathek</description>
 						<label>1. FC Union Berlin Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.aftv)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.aftv)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.aftv)">RunAddon(plugin.video.L0RE.aftv)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.aftv)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.aftv)">RunAddon(plugin.video.l0re.aftv)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.aftv)</visible>
 					</item>
 					<item id="174">
 						<description>1LIVE.de</description>
@@ -44,10 +44,10 @@
 						<description>3plus TV</description>
 						<label>3plus TV</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.3plus)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.3plus)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.3plus)">RunAddon(plugin.video.L0RE.3plus)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.3plus)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.3plus)">RunAddon(plugin.video.l0re.3plus)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.3plus)</visible>
 					</item>
 					<item id="118">
 						<description>3sat Mediathek</description>
@@ -161,10 +161,10 @@
 						<description>ARTE.TV</description>
 						<label>ARTE.TV</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.arte)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.arte)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.arte)">RunAddon(plugin.video.L0RE.arte)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.arte)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.arte)">RunAddon(plugin.video.l0re.arte)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.arte)</visible>
 					</item>
 					<item id="124">
 						<description>ARTE Mediathek (DE/FR)</description>
@@ -233,19 +233,19 @@
 						<description>Bollithek</description>
 						<label>Bollithek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.Bollywood)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.Bollywood)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.Bollywood)">RunAddon(plugin.video.L0RE.Bollywood)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.Bollywood)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.Bollywood)">RunAddon(plugin.video.l0re.Bollywood)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.Bollywood)</visible>
 					</item>
 					<item id="8">
 						<description>Borussia Dortmund Mediathek</description>
 						<label>Borussia Dortmund Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.bvbtotal)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.bvbtotal)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.bvbtotal)">RunAddon(plugin.video.L0RE.bvbtotal)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.bvbtotal)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.bvbtotal)">RunAddon(plugin.video.l0re.bvbtotal)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.bvbtotal)</visible>
 					</item>
 					<item id="129">
 						<description>BR Mediathek</description>
@@ -305,10 +305,10 @@
 						<description>Cinetrailer</description>
 						<label>Cinetrailer</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.cinetrailer)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.cinetrailer)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.cinetrailer)">RunAddon(plugin.video.L0RE.cinetrailer)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.cinetrailer)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.cinetrailer)">RunAddon(plugin.video.l0re.cinetrailer)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.cinetrailer)</visible>
 					</item>
 					<item id="132">
 						<description>Clipfish</description>
@@ -332,10 +332,10 @@
 						<description>Comedycentral</description>
 						<label>Comedycentral</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.comedycentral)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.comedycentral)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.comedycentral)">RunAddon(plugin.video.L0RE.comedycentral)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.comedycentral)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.comedycentral)">RunAddon(plugin.video.l0re.comedycentral)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.comedycentral)</visible>
 					</item>
 					<item id="35">
 						<description>DailyMotion</description>
@@ -395,10 +395,10 @@
 						<description>Disney Channel Deutschland</description>
 						<label>Disney Channel Deutschland</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.disneychannel)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.disneychannel)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.disneychannel)">RunAddon(plugin.video.L0RE.disneychannel)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.disneychannel)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.disneychannel)">RunAddon(plugin.video.l0re.disneychannel)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.disneychannel)</visible>
 					</item>
 					<item id="136">
 						<description>DisneyChannel.de</description>
@@ -422,10 +422,10 @@
 						<description>DMAX Mediathek</description>
 						<label>DMAX Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.dmax)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.dmax)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.dmax)">RunAddon(plugin.video.L0RE.dmax)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.dmax)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.dmax)">RunAddon(plugin.video.l0re.dmax)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.dmax)</visible>
 					</item>
 					<item id="137">
 						<description>DMAX Videothek</description>
@@ -539,19 +539,19 @@
 						<description>FC St. Pauli Mediathek</description>
 						<label>FC St. Pauli Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.fcstpauli)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.fcstpauli)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.fcstpauli)">RunAddon(plugin.video.L0RE.fcstpauli)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.fcstpauli)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.fcstpauli)">RunAddon(plugin.video.l0re.fcstpauli)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.fcstpauli)</visible>
 					</item>
 					<item id="15">
 						<description>Filmfriend (dev)</description>
 						<label>Filmfriend (dev)</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.filmfriend)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.filmfriend)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.filmfriend)">RunAddon(plugin.video.L0RE.filmfriend)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.filmfriend)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.filmfriend)">RunAddon(plugin.video.l0re.filmfriend)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.filmfriend)</visible>
 					</item>
 					<item id="45">
 						<description>Filmstarts</description>
@@ -575,10 +575,10 @@
 						<description>Fohlen TV(Borussia Mönchengladbach)</description>
 						<label>Fohlen TV(Borussia Mönchengladbach)</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.fohlentv)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.fohlentv)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.fohlentv)">RunAddon(plugin.video.L0RE.fohlentv)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.fohlentv)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.fohlentv)">RunAddon(plugin.video.l0re.fohlentv)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.fohlentv)</visible>
 					</item>
 					<item id="141">
 						<description>Funk Mediathek</description>
@@ -611,10 +611,10 @@
 						<description>Hamburger SV Mediathek</description>
 						<label>Hamburger SV Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.hsv)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.hsv)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.hsv)">RunAddon(plugin.video.L0RE.hsv)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.hsv)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.hsv)">RunAddon(plugin.video.l0re.hsv)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.hsv)</visible>
 					</item>
 					<item id="48">
 						<description>HLTV</description>
@@ -728,19 +728,19 @@
 						<description>Kinder Mediatheken</description>
 						<label>Kinder Mediatheken</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.kinder_mediatheken)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.kinder_mediatheken)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.kinder_mediatheken)">RunAddon(plugin.video.L0RE.kinder_mediatheken)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.kinder_mediatheken)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.kinder_mediatheken)">RunAddon(plugin.video.l0re.kinder_mediatheken)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.kinder_mediatheken)</visible>
 					</item>
 					<item id="19">
 						<description>Kividoo</description>
 						<label>Kividoo</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.kividoo)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.kividoo)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.kividoo)">RunAddon(plugin.video.L0RE.kividoo)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.kividoo)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.kividoo)">RunAddon(plugin.video.l0re.kividoo)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.kividoo)</visible>
 					</item>
 					<item id="53">
 						<description>Laola1 TV</description>
@@ -836,10 +836,10 @@
 						<description>MTV Mediathek</description>
 						<label>MTV Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.mtv)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.mtv)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.mtv)">RunAddon(plugin.video.L0RE.mtv)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.mtv)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.mtv)">RunAddon(plugin.video.l0re.mtv)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.mtv)</visible>
 					</item>
 					<item id="150">
 						<description>MTV.de</description>
@@ -1016,10 +1016,10 @@
 						<description>Premiership Rugby</description>
 						<label>Premiership Rugby</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.premiershiprugby)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.premiershiprugby)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.premiershiprugby)">RunAddon(plugin.video.L0RE.premiershiprugby)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.premiershiprugby)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.premiershiprugby)">RunAddon(plugin.video.l0re.premiershiprugby)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.premiershiprugby)</visible>
 					</item>
 					<item id="66">
 						<description>ProSiebenSat.1</description>
@@ -1160,10 +1160,10 @@
 						<description>SPIEGEL.TV</description>
 						<label>SPIEGEL.TV</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.spiegeltv)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.spiegeltv)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.spiegeltv)">RunAddon(plugin.video.L0RE.spiegeltv)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.spiegeltv)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.spiegeltv)">RunAddon(plugin.video.l0re.spiegeltv)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.spiegeltv)</visible>
 					</item>
 					<item id="78">
 						<description>Sport1</description>
@@ -1295,10 +1295,10 @@
 						<description>TLC Mediathek</description>
 						<label>TLC Mediathek</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.tlc)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.tlc)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.tlc)">RunAddon(plugin.video.L0RE.tlc)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.tlc)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.tlc)">RunAddon(plugin.video.l0re.tlc)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.tlc)</visible>
 					</item>
 					<item id="102">
 						<description>TuneIn2017</description>
@@ -1475,10 +1475,10 @@
 						<description>Welt der Wunder</description>
 						<label>Welt der Wunder</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.L0RE.weltderwunder)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.l0re.weltderwunder)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.L0RE.weltderwunder)">RunAddon(plugin.video.L0RE.weltderwunder)</onclick>
-						<visible>System.hasAddon(plugin.video.L0RE.weltderwunder)</visible>
+						<onclick condition="System.hasAddon(plugin.video.l0re.weltderwunder)">RunAddon(plugin.video.l0re.weltderwunder)</onclick>
+						<visible>System.hasAddon(plugin.video.l0re.weltderwunder)</visible>
 					</item>
 					<item id="95">
 						<description>WTA TV</description>

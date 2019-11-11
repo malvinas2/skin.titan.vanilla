@@ -308,7 +308,7 @@
                     <control type="image">
                         <fadetime>200</fadetime>
                         <bordersize>0</bordersize> 
-						<!-- malvinas: original value was 5, leading to a frame between cover and cd -->
+						<!-- malvinas: original value of bordersize was 5, leading to a frame between cover and cd -->
                         <texture background="true" border="5" fallback="defaultmusicsongs.png" diffuse="diffuse/music_cover_cd.png">$VAR[AudioPlayerCoverImage]</texture>
                         <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
                     </control>
@@ -448,13 +448,13 @@
 					<!-- <textureslidernib colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib> -->
 					<!-- <textureslidernibfocus>colors/color_white.png</textureslidernibfocus> -->
 					
-										<texturesliderbar>colors/color_transparent.png</texturesliderbar>
+					<texturesliderbar>colors/color_transparent.png</texturesliderbar>
 					<textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
 					<textureslidernibfocus colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">colors/color_white.png</textureslidernibfocus>
 					<!-- <info>Player.Progress</info> -->
-					<info>PVR.EpgEventProgress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>PVR.EpgEventProgress</info> -->
 					<visible>Player.SeekEnabled + !Player.ChannelPreviewActive</visible>
-					<!-- <visible>true</visible> -->
 				</control>
 			</control>
 			
@@ -515,10 +515,10 @@
 					<textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
 					<textureslidernibfocus colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">colors/color_white.png</textureslidernibfocus>
 					
-					
 					<!-- <visible>Player.Seeking</visible> -->
 					<!-- <texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar> -->
-					<info>Player.Progress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>Player.Progress</info> -->
 					<visible>Player.SeekEnabled + !Window.IsActive(videoosd) + !Window.IsActive(musicosd)</visible>
 				</control>
 			</control>
@@ -894,7 +894,8 @@
 					<texturesliderbar>colors/color_transparent.png</texturesliderbar>
 					<textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
 					<textureslidernibfocus>colors/color_white.png</textureslidernibfocus>
-					<info>Player.Progress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>Player.Progress</info> -->
 					<!-- <visible>Player.Seeking</visible> -->
 					<!-- <visible>Player.SeekEnabled + !Window.IsActive(videoosd) + !Window.IsActive(musicosd)</visible> -->
 					<visible>Player.SeekEnabled</visible>
@@ -1107,7 +1108,8 @@
                     <texturesliderbar>colors/color_transparent.png</texturesliderbar>
                     <textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
                     <textureslidernibfocus>colors/color_white.png</textureslidernibfocus>
-					<info>Player.Progress</info>
+					<info>$VAR[seeksliderposition]</info>
+					<!-- <info>Player.Progress</info> -->
 					<visible>Player.SeekEnabled</visible>
                     <!-- <visible>Player.Seeking</visible> -->
                 </control>
@@ -2755,9 +2757,8 @@
     <include name="Small_OSD_Seek_Panel">
         <control type="group">
             <!-- small panel if OSD disabled on seek -->
-			<left>705r</left>
+			<left>705</left>
 			<top>20</top>
-
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -2765,7 +2766,6 @@
 				<height>150</height>
 				<texture border="5">diffuse/panel.png</texture>
 				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
-				
 			</control>
 			<control type="image">
 				<left>10</left>
@@ -2775,7 +2775,6 @@
 				<texture border="5">diffuse/panel.png</texture>
 				<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
 			</control>
-			
 			<control type="label">
 				<posx>20</posx>
 				<posy>0</posy>
@@ -2787,7 +2786,6 @@
 				<label>$VAR[PlayerActionLabelSmall]</label>
 				<visible>!String.IsEqual(Window(Home).Property(subtitlemenu),show)</visible>
 			</control>
-			
 			<!-- total runtime -->
 			<control type="label">
 				<posx>20</posx>
@@ -2796,10 +2794,9 @@
 				<align>left</align>
 				<font>Reg20</font>
 				<textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
-				<label>$INFO[Player.Duration,[B]$LOCALIZE[180]: [/B]]</label>
-				<visible>!String.IsEmpty(Player.Duration)</visible>
+				<label>$VAR[TotalDuration,[B]$LOCALIZE[180]: [/B]]</label>
+				<visible>!String.IsEmpty(Player.Duration) | !String.IsEmpty(PVR.EpgEventDuration)</visible>
 			</control>
-
 			<control type="image">
 				<visible>Player.Paused</visible>
 				<left>390</left>
@@ -2824,7 +2821,6 @@
 				<height>60</height>
 				<texture flipx="true">osd/osd_ff.png</texture>
 			</control>
-			
 			<control type="image">
 				<visible>!Player.Rewinding + !Player.Forwarding + !Player.Paused</visible>
 				<left>380</left>
@@ -2833,7 +2829,6 @@
 				<height>80</height>
 				<texture>defaultaddoninfolibrary.png</texture>
 			</control>
-			
 			<control type="label">
 				<!--elapsed Time-->
 				<left>20</left>
@@ -2844,7 +2839,7 @@
 				<textcolor>white</textcolor>
 				<!-- <label>$INFO[Player.Time]</label> -->
 				<label>$VAR[SeekTimeLabelVar]</label>
-				<visible>!String.IsEmpty(Player.Duration)</visible>
+				<visible>!String.IsEmpty(Player.Duration) | !String.IsEmpty(PVR.EpgEventDuration)</visible>
 			</control>
 			<control type="label">
 				<!--remaining Time-->
@@ -2856,9 +2851,8 @@
 				<textcolor>white</textcolor>
 				<!-- <label>$INFO[Player.TimeRemaining,- ]</label> -->
 				<label>$INFO[Player.TimeRemaining,- ]</label>
-				<visible>!String.IsEmpty(Player.Duration)</visible>
+				<visible>!String.IsEmpty(Player.Duration) | !String.IsEmpty(PVR.EpgEventDuration)</visible>
 			</control>
-
 			<control type="progress">
 				<description>ProgressbarCache</description>
 				<left>120</left>
@@ -2874,6 +2868,16 @@
 				<width>230</width>
 				<height>15</height>
 				<info>Player.Progress</info>
+				<visible>!VideoPlayer.HasEpg</visible>
+			</control>
+			<control type="progress" id="23">
+				<description>Progress Bar</description>
+				<left>120</left>
+				<top>104</top>
+				<width>230</width>
+				<height>15</height>
+				<info>PVR.EpgEventProgress</info>
+				<visible>VideoPlayer.HasEpg</visible>
 			</control>
                  <control type="slider" id="401">
 				<description>Seek Slider</description>
@@ -2884,6 +2888,7 @@
 				<texturesliderbar>colors/color_transparent.png</texturesliderbar>
                 <textureslidernib border="5" colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">diffuse/seekslider2.png</textureslidernib>
                 <textureslidernibfocus>colors/color_white.png</textureslidernibfocus>
+				<!-- <info>$VAR[seeksliderposition]</info> -->
 				<info>Player.Progress</info>
 				<!-- <visible>Player.Seeking</visible> -->
 				<visible>Player.SeekEnabled</visible>
@@ -3259,7 +3264,7 @@
 		<value condition="Player.Rewinding16x">[B]$LOCALIZE[31254][/B] x16</value>
 		<value condition="Player.Rewinding32x">[B]$LOCALIZE[31254][/B] x32</value>
 		<!-- malvinas2 -->
-		<value condition="!String.isempty(Player.Duration) + Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]">$INFO[Player.FinishTime,$LOCALIZE[31112]: ]</value>
+		<value condition="!String.IsEmpty(Player.Duration) + Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]">$INFO[Player.FinishTime,$LOCALIZE[31112]: ]</value>
 		<value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventFinishTime,$LOCALIZE[31112]: ]</value>
 		<!-- Ende malvinas2 -->
 		<value condition="!String.IsEmpty(player.FinishTime)">$LOCALIZE[31112]: $INFO[Player.FinishTime]</value>
