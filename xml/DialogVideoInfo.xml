@@ -366,21 +366,18 @@
 							<visible>System.HasAddon(script.tvtunes) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,musicvideo)] + String.IsEmpty(Window(movieinformation).Property(TvTunes_HideVideoInfoButton))</visible>
 							<visible>false</visible>
 						</control>
-						
-						<!-- Artwork Beef -->
+
+						<!-- Artwork -->
 						<control type="button" id="104">
-							<!--Get Thumb Artwork Beef-->
+							<!--If AB is installed open Custom_MediaDialog, otherwise use build in Dialog-->
 							<label>13511</label>
 							<width>285</width>
 							<height>60</height>
 							<align>center</align>
 							<textoffsetx>0</textoffsetx>
-							<onclick condition="String.IsEqual(ListItem.DBType,episode) + System.HasAddon(script.artwork.beef)">RunScript(script.artwork.beef, mode=gui, mediatype=episode, dbid=$INFO[ListItem.DBID])</onclick>
-							<onclick condition="String.IsEqual(ListItem.DBType,tvshow) + System.HasAddon(script.artwork.beef)">RunScript(script.artwork.beef, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-							<onclick condition="String.IsEqual(ListItem.DBType,movie) + System.HasAddon(script.artwork.beef)">RunScript(script.artwork.beef, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-							<onclick condition="!System.HasAddon(script.artwork.beef)">RunPlugin(plugin://script.artwork.beef)</onclick>
 							<description>Get Artwork</description>
-							<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,episode)] + System.HasAddon(script.artwork.beef)</visible>
+							<onclick condition="System.HasAddon(script.artwork.beef)">ActivateWindow(3004)</onclick>
+							<onclick condition="!System.HasAddon(script.artwork.beef)">SendClick(12003,10)</onclick>
 							<visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
 							<visible>Skin.HasSetting(videoinfo_button_artwork)</visible>
 						</control>
