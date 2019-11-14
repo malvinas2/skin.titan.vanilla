@@ -149,7 +149,7 @@ msgid "All TV Shows"
 msgstr "全てのテレビ番組"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "アートワークダウンローダ"
 
 msgctxt "#31053"

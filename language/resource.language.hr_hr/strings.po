@@ -197,7 +197,7 @@ msgid "All TV Shows"
 msgstr "Sve TV serije"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "Preuzimatelj slika omota"
 
 msgctxt "#31053"

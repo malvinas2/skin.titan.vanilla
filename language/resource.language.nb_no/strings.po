@@ -73,7 +73,7 @@ msgid "All TV Shows"
 msgstr "Alle TV-programmer"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "Artwork Nedlaster"
 
 msgctxt "#31053"

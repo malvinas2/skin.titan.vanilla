@@ -25,7 +25,7 @@ msgid "Latest Movies"
 msgstr "ภาพยนตร์ ล่าสุด"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "ตัวดึงข้อมูล งานศิลป์"
 
 msgctxt "#31053"

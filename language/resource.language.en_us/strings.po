@@ -197,8 +197,8 @@ msgid "All TV Shows"
 msgstr "All TV Shows"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
-msgstr "Artwork Downloader"
+msgid "Artwork Beef"
+msgstr "Artwork Beef"
 
 msgctxt "#31053"
 msgid "Poster"
@@ -384,9 +384,7 @@ msgctxt "#31098"
 msgid "BannerPlex"
 msgstr "BannerPlex"
 
-msgctxt "#31099"
-msgid "Enable automatic download during library scan (artwork downloader addon)"
-msgstr "Enable automatic download during library scan (artwork downloader addon)"
+# empty string with id 31099
 
 msgctxt "#31100"
 msgid "==unused position=="
@@ -2963,3 +2961,11 @@ msgstr "Don't use rich artwork on the OSD at livetv playback"
 msgctxt "#31826"
 msgid "Select country flags / icons"
 msgstr "Select country flags / icons"
+
+msgctxt "#31827"
+msgid "Internal Artwork Dialog"
+msgstr "Internal Artwork Dialog"
+
+msgctxt "#31828"
+msgid "External Artwork Dialog"
+msgstr "External Artwork Dialog"

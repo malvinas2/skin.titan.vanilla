@@ -137,7 +137,7 @@ msgid "All TV Shows"
 msgstr "Alla TV-serier"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "Omslagsnedladdare"
 
 msgctxt "#31053"

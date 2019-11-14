@@ -145,7 +145,7 @@ msgid "All TV Shows"
 msgstr "Všechny seriály"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "Stahování artwork"
 
 msgctxt "#31053"
