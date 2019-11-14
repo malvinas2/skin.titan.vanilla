@@ -197,7 +197,7 @@ msgid "All TV Shows"
 msgstr "Semua Rancangan TV"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "Pemuat Turun Kerja Seni"
 
 msgctxt "#31053"
@@ -384,9 +384,7 @@ msgctxt "#31098"
 msgid "BannerPlex"
 msgstr "BannerPlex"
 
-msgctxt "#31099"
-msgid "Enable automatic download during library scan (artwork downloader addon)"
-msgstr "Benarkan muat turun berautomatik ketika imbas pustaka (tambahan pemuat turun kerja seni)"
+# empty string with id 31099
 
 msgctxt "#31100"
 msgid "==unused position=="

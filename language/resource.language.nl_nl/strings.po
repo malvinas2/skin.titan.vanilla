@@ -197,7 +197,7 @@ msgid "All TV Shows"
 msgstr "Alle TV series"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "Illustatie Downloader"
 
 msgctxt "#31053"
@@ -384,9 +384,7 @@ msgctxt "#31098"
 msgid "BannerPlex"
 msgstr "BannerPlex"
 
-msgctxt "#31099"
-msgid "Enable automatic download during library scan (artwork downloader addon)"
-msgstr "Activeer automatische download gedurende bibliotheek scan (illustatie downloader add-on)"
+# empty string with id 31099
 
 msgctxt "#31100"
 msgid "==unused position=="

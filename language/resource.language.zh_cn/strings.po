@@ -185,7 +185,7 @@ msgid "All TV Shows"
 msgstr "所有剧集"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "艺术图片下载器"
 
 msgctxt "#31053"

@@ -197,8 +197,8 @@ msgid "All TV Shows"
 msgstr "Alle Fernsehserien"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
-msgstr "Programm zum Herunterladen von Illustrationen"
+msgid "Artwork Beef"
+msgstr "Artwork Beef"
 
 msgctxt "#31053"
 msgid "Poster"
@@ -2791,6 +2791,14 @@ msgstr "Textfarbe im EPG-Guide (kein Fokus)"
 msgctxt "#31780"
 msgid "PVR Guide focused item textcolor"
 msgstr "Textfarbe im EPG-Guide (Fokus)"
+
+msgctxt "#31827"
+msgid "Internal Artwork Dialog"
+msgstr "Interner Artwork Dialog"
+
+msgctxt "#31828"
+msgid "External Artwork Dialog"
+msgstr "Externer Artwork Dialog"
 
 
 # malvinas2

@@ -55,26 +55,27 @@
                 <posy>300</posy>
                 <width>644</width>
                 <height>60</height>
-                <label>$LOCALIZE[13511]</label>
+                <label>$LOCALIZE[31827]</label>
                 <align>left</align>
                 <textoffsetx>20</textoffsetx>
                 <include>DialogButton</include>
                 <texturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]">colors/color_white.png</texturefocus>
                 <texturenofocus>dialogs/default/separator.png</texturenofocus>
-                <onclick>SendClick(2003,10)</onclick>
+                <onclick condition="Window.IsActive(DialogVideoInfo.xml)">SendClick(12003,10)</onclick>
+                <onclick condition="Window.IsActive(DialogMusicInfo.xml)">SendClick(12001,10)</onclick>
                 <onup>3</onup>
                 <ondown>3</ondown>
                 <onleft>7</onleft>
                 <onright>7</onright>
                 <visible>Window.IsActive(DialogVideoInfo.xml | Window.IsActive(DialogMusicInfo.xml)</visible>
             </control>
-            <!--Label Artwork beef-->
+            <!--Label External Artwork-->
             <control type="button">
                 <posx>638</posx>
                 <posy>368</posy>
                 <width>644</width>
                 <height>53</height>
-                <label>[B]$LOCALIZE[31052][/B]</label>
+                <label>[B]$LOCALIZE[31828][/B]</label>
                 <align>left</align>
                 <textoffsetx>20</textoffsetx>
                 <include>DialogButton</include>
@@ -155,7 +156,7 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
-                        <!--Get poster-->
+                        <!--Get artwork-->
                         <label>31052</label>
                         <onclick condition="Container.Content(movies)">RunScript(script.artwork.beef,mode=gui,mediatype=movie,dbid=$INFO[ListItem.DBID])</onclick>
                         <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.beef,mode=gui,mediatype=tvshow,dbid=$INFO[ListItem.DBID])</onclick>
@@ -163,6 +164,7 @@
                         <onclick condition="Container.Content(artists)">RunScript(script.artwork.beef,mode=gui,mediatype=artist,dbid=$INFO[ListItem.DBID])</onclick>
                         <onclick condition="Container.Content(albums)">RunScript(script.artwork.beef,mode=gui,mediatype=album,dbid=$INFO[ListItem.DBID])</onclick>
                         <onclick condition="Container.Content(songs)">RunScript(script.artwork.beef,mode=gui,mediatype=song,dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.beef,mode=gui,mediatype=musicvideo,dbid=$INFO[ListItem.DBID])</onclick>
                     </item>
                 </content>
             </control>

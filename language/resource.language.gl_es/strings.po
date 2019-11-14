@@ -45,7 +45,7 @@ msgid "All TV Shows"
 msgstr "Todas as Series de TV"
 
 msgctxt "#31052"
-msgid "Artwork Downloader"
+msgid "Artwork Beef"
 msgstr "Descargador de Ilustracións"
 
 msgctxt "#31053"
