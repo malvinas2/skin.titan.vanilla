@@ -374,7 +374,7 @@
                             <textoffsetx>0</textoffsetx>
                             <description>Get Artwork</description>
                             <onclick condition="System.HasAddon(script.artwork.beef)">ActivateWindow(3004)</onclick>
-                            <onclick condition="!System.HasAddon(script.artwork.beef)">SendClick(2003,10)</onclick>
+                            <onclick condition="!System.HasAddon(script.artwork.beef)">SendClick(12001,10)</onclick>
                             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
                             <visible>Skin.HasSetting(musicinfo_button_artwork)</visible>
                         </control>
