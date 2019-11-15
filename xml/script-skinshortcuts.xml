@@ -335,7 +335,7 @@
                         <disabledcolor>$INFO[Skin.String(GeneralTextColor)]</disabledcolor>
                         <textcolor>$INFO[Skin.String(GeneralTextColor)]</textcolor>
                         <texturenofocus></texturenofocus>
-                        <label>[B]$LOCALIZE[19190]:[/B]</label>
+                        <label>[B]$LOCALIZE[33068]:[/B]</label>
                         <label2 fallback="231">$INFO[Container(211).Listitem.Property(backgroundName)]</label2>
                         <enable>false</enable>
                         <visible>Skin.HasSetting(UseSectionBackground)</visible>
