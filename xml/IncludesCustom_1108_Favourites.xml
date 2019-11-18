@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 178 -->
+<!-- 179 -->
 
 <includes>
     <include name="custom_content">
@@ -1335,6 +1335,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.rtlnow)">RunAddon(plugin.video.rtlnow)</onclick>
 						<visible>System.hasAddon(plugin.video.rtlnow)</visible>
+					</item>
+					<item id="179">
+						<description>TV Now 2</description>
+						<label>TV Now 2</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.tvnow.de)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tvnow.de)">RunAddon(plugin.video.tvnow.de)</onclick>
+						<visible>System.hasAddon(plugin.video.tvnow.de)</visible>
 					</item>
 					<item id="87">
 						<description>TV Spielfilm - Das Beste aus den Mediatheken</description>
