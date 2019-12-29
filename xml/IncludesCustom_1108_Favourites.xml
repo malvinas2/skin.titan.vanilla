@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 179 -->
+<!-- 183 -->
 
 <includes>
     <include name="custom_content">
@@ -986,13 +986,13 @@
 						<visible>System.hasAddon(plugin.video.wiesn)</visible>
 					</item>
 					<item id="65">
-						<description>OSMOSIS</description>
-						<label>OSMOSIS</label>
+						<description>Joyn 2</description>
+						<label>Joyn 2</label>
 						<label2></label2>
-						<icon>$INFO[System.AddonIcon(plugin.video.osmosis)]</icon>
+						<icon>$INFO[System.AddonIcon(plugin.video.joyn_app)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.osmosis)">RunAddon(plugin.video.osmosis)</onclick>
-						<visible>System.hasAddon(plugin.video.osmosis)</visible>
+						<onclick condition="System.hasAddon(plugin.video.osmosis)">RunAddon(plugin.video.joyn_app)</onclick>
+						<visible>System.hasAddon(plugin.video.joyn_app)</visible>
 					</item>
 					<item id="153">
 						<description>Phoenix Mediathek</description>
@@ -1596,6 +1596,42 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.tivi_de)</onclick>
 						<visible>System.hasAddon(plugin.video.tivi_de)</visible>
+					</item>
+					<item id="180">
+						<description>ZDF tivi 2</description>
+						<label>ZDF tivi 2</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.zdftivi)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zdftivi)</onclick>
+						<visible>System.hasAddon(plugin.video.zdftivi)</visible>
+					</item>
+					<item id="181">
+						<description>Zattoo Box</description>
+						<label>Zattoo Box</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.zattoobox)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zattoobox)</onclick>
+						<visible>System.hasAddon(plugin.video.zattoobox)</visible>
+					</item>
+					<item id="182">
+						<description>Zattoo Box Extended</description>
+						<label>Zattoo Box Extended</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.zattooboxExt)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zattooboxExt)</onclick>
+						<visible>System.hasAddon(plugin.video.zattooboxExt)</visible>
+					</item>
+					<item id="183">
+						<description>Zattoo Box Extended Beta</description>
+						<label>Zattoo Box Extended Beta</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.zattooboxExt.beta)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zattooboxExt.beta)</onclick>
+						<visible>System.hasAddon(plugin.video.zattooboxExt.beta)</visible>
 					</item>
 
 	

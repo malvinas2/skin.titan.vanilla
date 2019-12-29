@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.titan.vanilla" version="18.19.11.18" name="Titan Vanilla for Kodi Leia" provider-name="canuma,cartman.dos,malvinas2,marcelveldt,mardukL,mgonzales">
+<addon id="skin.titan.vanilla" version="18.19.12.29" name="Titan Vanilla for Kodi Leia" provider-name="canuma,cartman.dos,malvinas2,marcelveldt,mardukL,mgonzales">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />	
 		<import addon="script.skinshortcuts" version="0.6.5"/>
