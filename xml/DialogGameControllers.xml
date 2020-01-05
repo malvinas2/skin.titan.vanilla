@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>3</defaultcontrol>
-	<include>Animation_DialogPopupOpenClose</include>
+	<!-- <include>Animation_DialogPopupOpenClose</include> -->
+	<include>animation_window_open_close</include>
 	<controls>
 		<include>DialogOverlayExtra</include>
 		<control type="group">
