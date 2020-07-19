@@ -550,25 +550,25 @@
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Genre))">$INFO[Window(Home).property(SkinHelper.ListItem.Genre)]</value>
     </variable>
   
-  <variable name="Plots">
-    <value condition="Container.Content(addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
-    <value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Plot) + !String.IsEmpty(ListItem.Title)">$INFO[ListItem.Plot]</value>
-	<value condition="Container.Content(Seasons) + !String.IsEmpty(Container.ShowPlot) + !String.IsEmpty(ListItem.Title)">$INFO[Container.ShowPlot]</value>
-    <value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
-    <value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
-    <value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
-	<value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
-	<value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
-    <value condition="Window.IsActive(tvchannels) + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Season,S,]$INFO[ListItem.Episode,E, - ]$INFO[ListItem.EpisodeName,,[CR]]$INFO[ListItem.Plot]$INFO[Container.ListItem.NextTitle,[CR][CR][B]$LOCALIZE[19031]: [/B]]</value>
-    <value condition="Window.IsActive(pictures ) + !String.IsEmpty(ListItem.PictureDesc)">$INFO[ListItem.PictureDesc]</value>
-    <value condition="Window.IsActive(pictures ) + !String.IsEmpty(ListItem.PictureComment)">$INFO[ListItem.PictureComment]</value>
-    <value condition="Window.IsActive(pictures ) + !String.IsEmpty(ListItem.PictureKeywords)">$INFO[ListItem.PictureKeywords]</value>
-	<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-    <value condition="!String.IsEmpty(ListItem.Property(Plot))">$INFO[ListItem.Property(Plot)]</value>
-	<value condition="!String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
-    <value condition="!String.IsEmpty(Window(Home).property(SkinHelper.ListItem.ExtendedPlot))">$INFO[Window(Home).property(SkinHelper.ListItem.ExtendedPlot)]</value>
-    <value condition="!String.IsEmpty(Window(Home).property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).property(SkinHelper.ListItem.Plot)]</value>
-  </variable>
+    <variable name="Plots">
+        <value condition="Container.Content(addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
+        <value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Plot) + !String.IsEmpty(ListItem.Title)">$INFO[ListItem.Plot]</value>
+	    <value condition="Container.Content(Seasons) + !String.IsEmpty(Container.ShowPlot) + !String.IsEmpty(ListItem.Title)">$INFO[Container.ShowPlot]</value>
+        <value condition="Container.Content(albums) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+        <value condition="Container.Content(artists) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+        <value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
+	    <value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+	    <value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+        <value condition="Window.IsActive(tvchannels) + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Season,S,]$INFO[ListItem.Episode,E, - ]$INFO[ListItem.EpisodeName,,[CR]]$INFO[ListItem.Plot]$INFO[Container.ListItem.NextTitle,[CR][CR][B]$LOCALIZE[19031]: [/B]]</value>
+        <value condition="Window.IsActive(pictures ) + !String.IsEmpty(ListItem.PictureDesc)">$INFO[ListItem.PictureDesc]</value>
+        <value condition="Window.IsActive(pictures ) + !String.IsEmpty(ListItem.PictureComment)">$INFO[ListItem.PictureComment]</value>
+        <value condition="Window.IsActive(pictures ) + !String.IsEmpty(ListItem.PictureKeywords)">$INFO[ListItem.PictureKeywords]</value>
+	    <value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+        <value condition="!String.IsEmpty(ListItem.Property(Plot))">$INFO[ListItem.Property(Plot)]</value>
+	    <value condition="!String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
+        <value condition="!String.IsEmpty(Window(Home).property(SkinHelper.ListItem.ExtendedPlot))">$INFO[Window(Home).property(SkinHelper.ListItem.ExtendedPlot)]</value>
+        <value condition="!String.IsEmpty(Window(Home).property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).property(SkinHelper.ListItem.Plot)]</value>
+    </variable>
     
    <variable name="HomeButtonDownAction">
 		<value condition="!Skin.HasSetting(DisableAllSubmenus) + !String.IsEmpty(Container(300).ListItem.Property(widget)) + [Skin.String(HomeLayout, 2) + [String.IsEqual(Container(300).Position,1) | String.IsEqual(Container(300).Position,3) | String.IsEqual(Container(300).Position,5)]]">$VAR[focusWidget]</value>
