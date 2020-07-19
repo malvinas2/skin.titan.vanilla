@@ -630,7 +630,7 @@
 			<control type="label">
 				<!--Total duration-->      <!-- Tag: total_duration -->
 				<animation type="Conditional" condition="Player.Paused | Player.Forwarding | Player.Rewinding">
-					<effect type="slide" start="0,0" end="-160,0" time="200" tween="cubic" easing="inout" delay="0" />
+				<effect type="slide" start="0,0" end="-160,0" time="200" tween="cubic" easing="inout" delay="0" />
 				</animation>
 				<right>60</right>
 				<posy>140</posy>
