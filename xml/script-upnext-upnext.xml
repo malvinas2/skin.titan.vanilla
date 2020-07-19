@@ -164,7 +164,7 @@
 							<include>DialogButtonOther</include>
 						</control>
 						<control type="button" id="3013">
-							<!-- <include>DialogButtonOther</include> -->
+							<!-- <include>DialogButtonOther</include>  -->
 							<label>$ADDON[service.upnext 30034]</label>
 							<!-- <height>56</height> -->
 							<width min="50">auto</width>

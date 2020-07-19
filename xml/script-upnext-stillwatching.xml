@@ -149,7 +149,7 @@
 							<width min="50">auto</width>
 							<textoffsetx>55</textoffsetx>
 							<include>DialogButtonOther</include>
-														<!-- <width min="50">auto</width> -->
+													<!-- <width min="50">auto</width> -->
                             <onclick>SendClick(3012)</onclick>
                             <visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
                             <!-- <height>56</height> -->
@@ -165,7 +165,7 @@
 							<width min="50">auto</width>
 							<textoffsetx>55</textoffsetx>
 							<include>DialogButtonOther</include>
-														<!-- <width min="50">auto</width> -->
+													<!-- <width min="50">auto</width> -->
                             <onclick>SendClick(3012)</onclick>
                             <visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
                             <!-- <height>56</height> -->

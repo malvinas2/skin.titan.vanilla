@@ -121,7 +121,7 @@
 							<label>$ADDON[service.upnext 30034]</label>
                             <!-- <height>56</height> -->
                             <width min="50">auto</width>
-                            <!-- <font>font20_title</font> -->
+                            <!-- <font>font20_title</font>  -->
                             <textoffsetx>15</textoffsetx>
                             <aligny>center</aligny>
                             <align>center</align>
