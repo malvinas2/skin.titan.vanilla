@@ -87,7 +87,8 @@
 						<font>font25_title</font>
 						<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
 						<shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
-						<label>$ADDON[service.upnext 30008] $ADDON[service.upnext 30036] [COLOR $INFO[Skin.String(ButtonFocusColor)]]$INFO[Player.TimeRemaining(ss),,][/COLOR] $ADDON[service.upnext 30035]</label>
+						<label>$LOCALIZE[30036]</label>
+						 <!-- $INFO[Player.TimeRemaining(ss),,] -->
 						<visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 					<control type="label">
@@ -168,7 +169,6 @@
 							<!-- <height>56</height> -->
 							<width min="50">auto</width>
 							<textoffsetx>15</textoffsetx>
-
 							<aligny>center</aligny>
 							<align>center</align>
 							<include>DialogButtonOther</include>

@@ -2957,3 +2957,16 @@ msgstr "No usar arte pesado en el OSD mientras se reproduce tv en directo"
 msgctxt "#31826"
 msgid "Select country flags / icons"
 msgstr "Seleccionar iconos / banderas de país"
+
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Continuar viendo en$INFO[Window.Property(remaining)] segundos"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "El siguiente en $INFO[Window.Property(remaining)] segundos"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Siguiente episodio en $INFO[Window.Property(remaining)] segundos"

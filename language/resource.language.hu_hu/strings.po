@@ -2645,3 +2645,15 @@ msgstr "Alapértelmezett zeneháttér (tartalékként, ha nincs előadó fanart 
 msgctxt "#31826"
 msgid "Select country flags / icons"
 msgstr "Ország zászlók/ikonok kiválasztása"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Lejátszás folytatásának indítása $INFO[Window.Property(remaining)] másodperc múlva"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr " indítása $INFO[Window.Property(remaining)] másodperc múlva"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr " indítása $INFO[Window.Property(remaining)] másodperc múlva"

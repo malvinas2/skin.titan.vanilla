@@ -160,7 +160,8 @@
                             <align>center</align>
                         </control>
                         <control type="button" id="11">
-							<label>    $ADDON[service.upnext 30010] $ADDON[service.upnext 30036] $INFO[Player.TimeRemaining(ss),,] $ADDON[service.upnext 30035]</label>
+							<label>    $LOCALIZE[30035]</label>
+							 <!-- $INFO[Player.TimeRemaining(ss),,] -->
 							<width min="50">auto</width>
 							<textoffsetx>55</textoffsetx>
 							<include>DialogButtonOther</include>

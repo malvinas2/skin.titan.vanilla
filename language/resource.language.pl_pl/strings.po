@@ -2853,3 +2853,15 @@ msgstr "Domyślne tło muzyki (jako zapasowe, gdy brak fototapet wykonawcy)"
 msgctxt "#31826"
 msgid "Select country flags / icons"
 msgstr "Wybierz pakiet flag państw"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Kontynuuj oglądanie za $INFO[Window.Property(remaining)] sekundy"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "Kolejny za $INFO[Window.Property(remaining)] sekundy"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Następny odcinek za $INFO[Window.Property(remaining)] sekundy"

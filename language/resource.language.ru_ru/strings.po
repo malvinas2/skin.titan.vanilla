@@ -2107,3 +2107,15 @@ msgstr "Декодер"
 msgctxt "#31823"
 msgid "Use fixed focus"
 msgstr "Постоянный фокус"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Продолжить просмотр через $INFO[Window.Property(remaining)] секунд"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "Продолжение через $INFO[Window.Property(remaining)] секунд"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Следующая серия через $INFO[Window.Property(remaining)] секунд"

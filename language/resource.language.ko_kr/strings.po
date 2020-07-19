@@ -343,3 +343,15 @@ msgstr "하드웨어 디코딩"
 msgctxt "#31784"
 msgid "Decoder"
 msgstr "디코더"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "$INFO[Window.Property(remaining)]초 후에 다음 에피소드 시작"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "다음 편 시작까지 $INFO[Window.Property(remaining)]초"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "다음 에피소드까지 $INFO[Window.Property(remaining)]초"

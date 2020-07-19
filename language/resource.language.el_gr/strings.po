@@ -483,3 +483,15 @@ msgstr "Πάνελ"
 msgctxt "#31749"
 msgid "Show info"
 msgstr "Προβολή πληροφοριών"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Συνέχιση παρακολούθησης σε $INFO[Window.Property(remaining)] δευτερόλεπτα"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "Επόμενο σε $INFO[Window.Property(remaining)] δευτερόλεπτα"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Επόμενο επεισόδιο σε $INFO[Window.Property(remaining)] δευτερόλεπτα"

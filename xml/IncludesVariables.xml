@@ -298,9 +298,8 @@
 	</variable>
 	
 	<variable name="MusicPlayerClearLogo">
-	<value condition="!String.IsEmpty(MusicPlayer.Artist) + !String.Contains(Container.FolderPath,plugin://)">$INFO[Player.FolderPath,,../logo.png]</value>
+		<value condition="!String.IsEmpty(MusicPlayer.Artist) + !String.Contains(Container.FolderPath,plugin://)">$INFO[Player.FolderPath,,../logo.png]</value>
 		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
-		
 	</variable>
 		
 	<variable name="View_Item_Header">
@@ -317,8 +316,8 @@
 	
 	<variable name="HDIndicator">
 		<value condition="ListItem.IsStereoscopic">3D</value>
-        <value condition="Integer.IsGreater(ListItem.VideoResolution,1080) | String.IsEqual(ListItem.VideoResolution,4K) | String.IsEqual(ListItem.VideoResolution,8K)">UHD</value>
-        <value condition="Integer.IsGreater(ListItem.VideoResolution,720)">FHD</value>
+	    <value condition="Integer.IsGreater(ListItem.VideoResolution,1080) | String.IsEqual(ListItem.VideoResolution,4K) | String.IsEqual(ListItem.VideoResolution,8K)">UHD</value>
+	    <value condition="Integer.IsGreater(ListItem.VideoResolution,720)">FHD</value>
 		<value condition="Integer.IsGreater(ListItem.VideoResolution,700)">HD</value>
 		<value condition="!String.IsEmpty(ListItem.VideoResolution)">SD</value>
 	</variable>
@@ -344,10 +343,10 @@
     </variable>
 	
 	<variable name="NowPlayingLabel">
+		<value condition="!String.IsEmpty(VideoPlayer.Duration) + !VideoPlayer.Content(livetv)">[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[VideoPlayer.Duration])</value>
+		<value condition="!String.IsEmpty(PVR.EpgEventDuration)">[B]$LOCALIZE[31040][/B]  ($INFO[PVR.EpgEventElapsedTime] / $INFO[PVR.EpgEventDuration])</value>
         <value condition="Player.IsInternetStream">[B]$LOCALIZE[31040][/B]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.Duration)">[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[MusicPlayer.Duration])</value>
-		<value condition="!String.IsEmpty(VideoPlayer.Duration)">[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[VideoPlayer.Duration])</value>
-		<value condition="!String.IsEmpty(PVR.EpgEventDuration)">[B]$LOCALIZE[31040][/B]  ($INFO[PVR.EpgEventElapsedTime] / $INFO[PVR.EpgEventDuration])</value>
         <value>[B]$LOCALIZE[31040][/B]  ($INFO[Player.Time] / $INFO[Player.Duration])</value>
     </variable>
 

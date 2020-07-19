@@ -535,3 +535,15 @@ msgstr "非アクティブ"
 msgctxt "#31784"
 msgid "Decoder"
 msgstr "デコーダー"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "続きを観るまで$INFO[Window.Property(remaining)]秒"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "次まで$INFO[Window.Property(remaining)]秒"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "次のエピソードまで$INFO[Window.Property(remaining)]秒"

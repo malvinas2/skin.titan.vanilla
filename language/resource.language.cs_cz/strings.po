@@ -1115,3 +1115,15 @@ msgstr "Skrýt panel s plakáty"
 msgctxt "#31826"
 msgid "Select country flags / icons"
 msgstr "Vyberte vlajky/ikony zemí"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Pokračovat ve sledování za $INFO[Window.Property(remaining)] sekund"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "Další za $INFO[Window.Property(remaining)] sekund"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Další epizoda za $INFO[Window.Property(remaining)] sekund"

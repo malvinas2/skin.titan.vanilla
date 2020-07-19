@@ -104,7 +104,8 @@
 							<alttexturefocus colordiffuse="$INFO[Skin.String(ButtonFocusColor)]" border="20">dialogs/keyboard/key-nf-left.png</alttexturefocus>
 							<alttexturenofocus colordiffuse="$INFO[Skin.String(ButtonColor)]" border="20">dialogs/keyboard/key-nf-left.png</alttexturenofocus>
 							<!-- <include>DialogButtonOther</include> -->
-                            <label>$ADDON[service.upnext 30037] [B]$INFO[Player.TimeRemaining(ss),,][/B] $ADDON[service.upnext 30035]</label>
+                            <label>$LOCALIZE[30037]</label>
+							 <!-- [B]$INFO[Player.TimeRemaining(ss),,][/B] -->
                             <onclick>SendClick(3012)</onclick>
                             <visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
                             <!-- <height>56</height> -->

@@ -2957,3 +2957,15 @@ msgstr "Non usare artwork ricchi nell'OSD durante la riproduzione della LiveTV"
 msgctxt "#31826"
 msgid "Select country flags / icons"
 msgstr "Seleziona bandiere / icone"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Continua a guardare fra $INFO[Window.Property(remaining)] secondi"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "Prossimo fra $INFO[Window.Property(remaining)] secondi"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Prossimo episodio fra $INFO[Window.Property(remaining)] secondi"

@@ -2003,3 +2003,15 @@ msgstr "Utiliser une sélection fixe"
 msgctxt "#31824"
 msgid "Default music background (as fallback if no artist fanart or fanart disabled)"
 msgstr "Musique d'arrière-plan par défaut (en cas d'absence ou désactivation du fanart de l'artiste)"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Continuer à regarder dans $INFO[Window.Property(remaining)] secondes"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "À suivre dans $INFO[Window.Property(remaining)] secondes"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Prochain épisode dans $INFO[Window.Property(remaining)] secondes"

@@ -307,3 +307,15 @@ msgstr "Neaktívne"
 msgctxt "#31784"
 msgid "Decoder"
 msgstr "Dekóder"
+
+msgctxt "#30035"
+msgid "Continue watching in $INFO[Window.Property(remaining)] seconds"
+msgstr "Pokračovať v pozeraní o $INFO[Window.Property(remaining)] sekúnd"
+
+msgctxt "#30036"
+msgid "Up next in $INFO[Window.Property(remaining)] seconds"
+msgstr "Ďalšie v poradí začne o $INFO[Window.Property(remaining)] sekúnd"
+
+msgctxt "#30037"
+msgid "Next episode in $INFO[Window.Property(remaining)] seconds"
+msgstr "Ďalšia epizóda začne o $INFO[Window.Property(remaining)] sekúnd"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 183 -->
+<!-- 195 -->
 
 <includes>
     <include name="custom_content">
@@ -166,6 +166,15 @@
 						<onclick condition="System.hasAddon(plugin.video.l0re.arte)">RunAddon(plugin.video.l0re.arte)</onclick>
 						<visible>System.hasAddon(plugin.video.l0re.arte)</visible>
 					</item>
+					<item id="190">
+						<description>ARTE.TV</description>
+						<label>ARTE.TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.arte)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.l0re.arte)">RunAddon(plugin.video.tyl0re.arte)</onclick>
+						<visible>System.hasAddon(plugin.video.tyl0re.arte)</visible>
+					</item>
 					<item id="124">
 						<description>ARTE Mediathek (DE/FR)</description>
 						<label>ARTE Mediathek (DE/FR)</label>
@@ -210,6 +219,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.br3)">RunAddon(plugin.video.br3)</onclick>
 						<visible>System.hasAddon(plugin.video.br3)</visible>
+					</item>
+					<item id="184">
+						<description>BBC Radio</description>
+						<label>BBC Radio</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.audio.bbc)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.audio.bbc)">RunAddon(plugin.audio.bbc)</onclick>
+						<visible>System.hasAddon(plugin.audio.bbc)</visible>
 					</item>
 					<item id="127">
 						<description>BBC iPlayer</description>
@@ -283,6 +301,15 @@
 						<onclick condition="System.hasAddon(plugin.video.bild_bundesliga)">RunAddon(plugin.video.bild_bundesliga)</onclick>
 						<visible>System.hasAddon(plugin.video.bild_bundesliga)</visible>
 					</item>
+					<item id="185">
+						<description>Catch-up TV & More</description>
+						<label>Catch-up TV & More</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.catchuptvandmore)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.chefkoch_de)">RunAddon(plugin.video.catchuptvandmore)</onclick>
+						<visible>System.hasAddon(plugin.video.catchuptvandmore)</visible>
+					</item>
 					<item id="33">
 						<description>Chefkoch.de</description>
 						<label>Chefkoch.de</label>
@@ -337,6 +364,15 @@
 						<onclick condition="System.hasAddon(plugin.video.l0re.comedycentral)">RunAddon(plugin.video.l0re.comedycentral)</onclick>
 						<visible>System.hasAddon(plugin.video.l0re.comedycentral)</visible>
 					</item>
+					<item id="186">
+						<description>Comedycentral</description>
+						<label>Comedycentral</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.comedycentral)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.l0re.comedycentral)">RunAddon(plugin.video.comedycentral)</onclick>
+						<visible>System.hasAddon(plugin.video.comedycentral)</visible>
+					</item>
 					<item id="35">
 						<description>DailyMotion</description>
 						<label>DailyMotion</label>
@@ -363,6 +399,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.daserstemediathek)">RunAddon(plugin.video.daserstemediathek)</onclick>
 						<visible>System.hasAddon(plugin.video.daserstemediathek)</visible>
+					</item>
+					<item id="187">
+						<description>DAZN</description>
+						<label>DAZN</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.dazn)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.daserstemediathek)">RunAddon(plugin.video.dazn)</onclick>
+						<visible>System.hasAddon(plugin.video.dazn)</visible>
 					</item>
 					<item id="36">
 						<description>Deluxe Music</description>
@@ -426,6 +471,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.l0re.dmax)">RunAddon(plugin.video.l0re.dmax)</onclick>
 						<visible>System.hasAddon(plugin.video.l0re.dmax)</visible>
+					</item>
+					<item id="191">
+						<description>DMAX Mediathek</description>
+						<label>DMAX Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.dmax)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.l0re.dmax)">RunAddon(plugin.video.tyl0re.dmax)</onclick>
+						<visible>System.hasAddon(plugin.video.tyl0re.dmax)</visible>
 					</item>
 					<item id="137">
 						<description>DMAX Videothek</description>
@@ -580,6 +634,15 @@
 						<onclick condition="System.hasAddon(plugin.video.l0re.fohlentv)">RunAddon(plugin.video.l0re.fohlentv)</onclick>
 						<visible>System.hasAddon(plugin.video.l0re.fohlentv)</visible>
 					</item>
+					<item id="188">
+						<description>Fox News</description>
+						<label>Fox News</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.fox.news)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.fox.news)">RunAddon(plugin.video.fox.news)</onclick>
+						<visible>System.hasAddon(plugin.video.fox.news)</visible>
+					</item>	
 					<item id="141">
 						<description>Funk Mediathek</description>
 						<label>Funk Mediathek</label>
@@ -685,7 +748,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.joyn_app)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.osmosis)">RunAddon(plugin.video.joyn_app)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.joyn_app)">RunAddon(plugin.video.joyn_app)</onclick>
 						<visible>System.hasAddon(plugin.video.joyn_app)</visible>
 					</item>
 					<item id="51">
@@ -859,6 +922,15 @@
 						<onclick condition="System.hasAddon(plugin.video.mtv_de)">RunAddon(plugin.video.mtv_de)</onclick>
 						<visible>System.hasAddon(plugin.video.mtv_de)</visible>
 					</item>
+					<item id="195">
+						<description>MTV Mediathek</description>
+						<label>MTV Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.mtv)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tyl0re.mtv)">RunAddon(plugin.video.tyl0re.mtv)</onclick>
+						<visible>System.hasAddon(plugin.video.tyl0re.mtv)</visible>
+					</item>
 					<item id="58">
 						<description>Music Video Mix</description>
 						<label>Music Video Mix</label>
@@ -993,6 +1065,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.wiesn)">RunAddon(plugin.video.wiesn)</onclick>
 						<visible>System.hasAddon(plugin.video.wiesn)</visible>
+					</item>
+					<item id="189">
+						<description>ORF Mediathek</description>
+						<label>ORF Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.orftvthek)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.wiesn)">RunAddon(plugin.video.orftvthek)</onclick>
+						<visible>System.hasAddon(plugin.video.orftvthek)</visible>
 					</item>
 					<item id="153">
 						<description>Phoenix Mediathek</description>
@@ -1165,6 +1246,15 @@
 						<onclick condition="System.hasAddon(plugin.video.l0re.spiegeltv)">RunAddon(plugin.video.l0re.spiegeltv)</onclick>
 						<visible>System.hasAddon(plugin.video.l0re.spiegeltv)</visible>
 					</item>
+					<item id="192">
+						<description>SPIEGEL.TV</description>
+						<label>SPIEGEL.TV</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.spiegeltv)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.l0re.spiegeltv)">RunAddon(plugin.video.tyl0re.spiegeltv)</onclick>
+						<visible>System.hasAddon(plugin.video.tyl0re.spiegeltv)</visible>
+					</item>
 					<item id="78">
 						<description>Sport1</description>
 						<label>Sport1</label>
@@ -1299,6 +1389,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.l0re.tlc)">RunAddon(plugin.video.l0re.tlc)</onclick>
 						<visible>System.hasAddon(plugin.video.l0re.tlc)</visible>
+					</item>
+					<item id="193">
+						<description>TLC Mediathek</description>
+						<label>TLC Mediathek</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.tlc)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.l0re.tlc)">RunAddon(plugin.video.tyl0re.tlc)</onclick>
+						<visible>System.hasAddon(plugin.video.tyl0re.tlc)</visible>
 					</item>
 					<item id="102">
 						<description>TuneIn2017</description>
@@ -1488,6 +1587,15 @@
 						<onclick>Dialog.Close(all)</onclick>
 						<onclick condition="System.hasAddon(plugin.video.l0re.weltderwunder)">RunAddon(plugin.video.l0re.weltderwunder)</onclick>
 						<visible>System.hasAddon(plugin.video.l0re.weltderwunder)</visible>
+					</item>
+					<item id="194">
+						<description>Welt der Wunder</description>
+						<label>Welt der Wunder</label>
+						<label2></label2>
+						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.weltderwunder)]</icon>
+						<onclick>Dialog.Close(all)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.l0re.weltderwunder)">RunAddon(plugin.video.tyl0re.weltderwunder)</onclick>
+						<visible>System.hasAddon(plugin.video.tyl0re.weltderwunder)</visible>
 					</item>
 					<item id="95">
 						<description>WTA TV</description>

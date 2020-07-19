@@ -636,11 +636,11 @@
 				<posy>140</posy>
 				<width>940</width>
 				<align>right</align>
-				<font>Light28</font>
+				<font>Reg30</font>
 				<textcolor>$INFO[Skin.String(OSDPrimaryTextColor)]</textcolor>
 				<shadowcolor>$INFO[Skin.String(OSDPrimaryTextShadowColor)]</shadowcolor>
 				<!-- <label>$INFO[Player.Duration,[B]$LOCALIZE[180]: [/B]]</label> -->  
-				<label>$VAR[TotalDuration,[B]$LOCALIZE[180]: [/B]]</label>
+				<label>$VAR[TotalDuration,$LOCALIZE[180]: ]</label>
 				<!-- <visible>!String.IsEmpty(Player.Duration)</visible>  --> 
 				<visible>!String.IsEmpty(Player.Duration) | !String.IsEmpty(PVR.EpgEventDuration)</visible>
 				<visible>!String.IsEqual(Window(Home).Property(subtitlemenu),show)</visible>
@@ -3291,7 +3291,7 @@
 		<value condition="Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]">$INFO[Player.FinishTime,$LOCALIZE[31112]: ]</value>
 		<value condition="VideoPlayer.HasEpg">$INFO[PVR.EpgEventFinishTime,$LOCALIZE[31112]: ]</value>
 		<!-- Ende malvinas2 -->
-		<value condition="!String.IsEmpty(Player.FinishTime)">[B]$LOCALIZE[31112]:[/B] $INFO[Player.FinishTime]</value>
+		<value condition="!String.IsEmpty(Player.FinishTime)">$LOCALIZE[31112]: $INFO[Player.FinishTime]</value>
 	 </variable>
 	 
 	 <variable name="PlayerActionLabelLarge">
