@@ -10,7 +10,7 @@
             <visible>!Window.IsActive(settings) + !Window.IsActive(SettingsCategory.xml) + !Window.IsActive(systeminfo) + !Window.IsActive(skinsettings) + !Control.IsVisible(57)</visible>
             <visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog) + !Window.IsActive(movieinformation)</visible>
 			<visible>String.IsEmpty(Window(Home).Property(ThemeMediaMB3IsAlive))</visible>
-			<!-- <visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible> -->
+			<!-- <visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible>  -->
 			<visible>String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible>
 			<visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | VideoPlayer.Content(livetv) | VideoPlayer.Content(files) | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | MusicPlayer.Content(livetv)</visible>
             <posx>650</posx>
