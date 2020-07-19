@@ -172,7 +172,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.arte)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.l0re.arte)">RunAddon(plugin.video.tyl0re.arte)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tyl0re.arte)">RunAddon(plugin.video.tyl0re.arte)</onclick>
 						<visible>System.hasAddon(plugin.video.tyl0re.arte)</visible>
 					</item>
 					<item id="124">
@@ -307,7 +307,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.catchuptvandmore)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.chefkoch_de)">RunAddon(plugin.video.catchuptvandmore)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.catchuptvandmore)">RunAddon(plugin.video.catchuptvandmore)</onclick>
 						<visible>System.hasAddon(plugin.video.catchuptvandmore)</visible>
 					</item>
 					<item id="33">
@@ -370,7 +370,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.comedycentral)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.l0re.comedycentral)">RunAddon(plugin.video.comedycentral)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.comedycentral)">RunAddon(plugin.video.comedycentral)</onclick>
 						<visible>System.hasAddon(plugin.video.comedycentral)</visible>
 					</item>
 					<item id="35">
@@ -406,7 +406,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.dazn)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.daserstemediathek)">RunAddon(plugin.video.dazn)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.dazn)">RunAddon(plugin.video.dazn)</onclick>
 						<visible>System.hasAddon(plugin.video.dazn)</visible>
 					</item>
 					<item id="36">
@@ -478,7 +478,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.dmax)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.l0re.dmax)">RunAddon(plugin.video.tyl0re.dmax)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tyl0re.dmax)">RunAddon(plugin.video.tyl0re.dmax)</onclick>
 						<visible>System.hasAddon(plugin.video.tyl0re.dmax)</visible>
 					</item>
 					<item id="137">
@@ -1072,7 +1072,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.orftvthek)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.wiesn)">RunAddon(plugin.video.orftvthek)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.orftvthek)">RunAddon(plugin.video.orftvthek)</onclick>
 						<visible>System.hasAddon(plugin.video.orftvthek)</visible>
 					</item>
 					<item id="153">
@@ -1252,7 +1252,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.spiegeltv)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.l0re.spiegeltv)">RunAddon(plugin.video.tyl0re.spiegeltv)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tyl0re.spiegeltv)">RunAddon(plugin.video.tyl0re.spiegeltv)</onclick>
 						<visible>System.hasAddon(plugin.video.tyl0re.spiegeltv)</visible>
 					</item>
 					<item id="78">
@@ -1396,7 +1396,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.tlc)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.l0re.tlc)">RunAddon(plugin.video.tyl0re.tlc)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tyl0re.tlc)">RunAddon(plugin.video.tyl0re.tlc)</onclick>
 						<visible>System.hasAddon(plugin.video.tyl0re.tlc)</visible>
 					</item>
 					<item id="102">
@@ -1594,7 +1594,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.tyl0re.weltderwunder)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.l0re.weltderwunder)">RunAddon(plugin.video.tyl0re.weltderwunder)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.tyl0re.weltderwunder)">RunAddon(plugin.video.tyl0re.weltderwunder)</onclick>
 						<visible>System.hasAddon(plugin.video.tyl0re.weltderwunder)</visible>
 					</item>
 					<item id="95">
@@ -1675,7 +1675,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.zattoobox)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zattoobox)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zattoobox)">RunAddon(plugin.video.zattoobox)</onclick>
 						<visible>System.hasAddon(plugin.video.zattoobox)</visible>
 					</item>
 					<item id="182">
@@ -1684,7 +1684,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.zattooboxExt)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zattooboxExt)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zattooboxExt)">RunAddon(plugin.video.zattooboxExt)</onclick>
 						<visible>System.hasAddon(plugin.video.zattooboxExt)</visible>
 					</item>
 					<item id="183">
@@ -1693,7 +1693,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.zattooboxExt.beta)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zattooboxExt.beta)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zattooboxExt.beta)">RunAddon(plugin.video.zattooboxExt.beta)</onclick>
 						<visible>System.hasAddon(plugin.video.zattooboxExt.beta)</visible>
 					</item>
 					<item id="169">
@@ -1738,7 +1738,7 @@
 						<label2></label2>
 						<icon>$INFO[System.AddonIcon(plugin.video.zdftivi)]</icon>
 						<onclick>Dialog.Close(all)</onclick>
-						<onclick condition="System.hasAddon(plugin.video.tivi_de)">RunAddon(plugin.video.zdftivi)</onclick>
+						<onclick condition="System.hasAddon(plugin.video.zdftivi)">RunAddon(plugin.video.zdftivi)</onclick>
 						<visible>System.hasAddon(plugin.video.zdftivi)</visible>
 					</item>
 
