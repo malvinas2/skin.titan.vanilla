@@ -73,7 +73,7 @@
 				<onleft>1</onleft>
                 <height>455</height>
                 <onup>11</onup>
-                <ondown>1</ondown>
+                <ondown>11</ondown>
                 <scrolltime>100</scrolltime>
 				
 				<itemlayout width="545" height="65">
@@ -151,7 +151,9 @@
                 <width>545</width>
                 <itemgap>5</itemgap>
                 <orientation>vertical</orientation>
-                <onup>11</onup>
+				<onleft>11</onleft>
+                <onup>1</onup>
+				<ondown>1</ondown>
                 <onright>Dialog.Close(all,true)</onright>
                 <control type="button" id="2">
                     <description>Add</description>
