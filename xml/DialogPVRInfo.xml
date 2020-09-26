@@ -224,17 +224,29 @@
             </control>
             <!--Button Group-->
             <control type="grouplist" id="9000">
-                <posx>680</posx>
+                <posx>675</posx>
                 <posy>940</posy>
-				<onleft>back</onleft>
+				<!-- <onleft>back</onleft> -->
 				<orientation>horizontal</orientation>
-				<itemgap>20</itemgap>
+				<itemgap>15</itemgap>
                 <onup>60</onup>
                 <ondown>60</ondown>
-                <defaultcontrol>5</defaultcontrol>
+				<width>1210</width>
+                <defaultcontrol>7</defaultcontrol>
+				
+				
+				<control type="button" id="7">
+                    <!--Cancel-->
+                    <width>290</width>
+                    <label>$LOCALIZE[222]</label>
+                    <include>DialogButtonOther</include>
+					<font>Reg26</font>
+                    <!-- <visible>Window.IsActive(PVRGuideInfo)</visible>  -->
+                </control>
                 <control type="button" id="5">
                     <!--Switch-->
                     <width>290</width>
+					<textwidth>260</textwidth>
                     <include>DialogButtonOther</include>
                     <label>$LOCALIZE[19165]</label>
 					<font>Reg26</font>
@@ -243,6 +255,7 @@
                 <control type="button" id="6">
                     <!--Record-->
                     <width>290</width>
+					<textwidth>260</textwidth>
                     <label></label>
                     <include>DialogButtonOther</include>
                     <visible>Window.IsActive(PVRGuideInfo)</visible> 
@@ -250,6 +263,7 @@
                 <control type="button" id="9">
                     <!--Add timer-->
                     <width>290</width>
+					<textwidth>260</textwidth>
                     <label>19061</label>
                     <include>DialogButtonOther</include>
                     <visible>Window.IsActive(PVRGuideInfo)</visible> 
@@ -257,12 +271,14 @@
                 <control type="button" id="8">
                     <!--play Recording-->
                     <width>290</width>
+					<textwidth>260</textwidth>
                     <label>19687</label>
                     <include>DialogButtonOther</include>
                     <visible>Window.IsActive(PVRRecordingInfo)</visible> 
                 </control>
 				<control type="button" id="4">
 					<width>290</width>
+					<textwidth>260</textwidth>
 					<description>Find similar</description>
 					<include>DialogButtonOther</include>
 					<label>19003</label>
@@ -270,6 +286,7 @@
 				</control>
                 <control type="button" id="444">
 					<width>290</width>
+					<textwidth>260</textwidth>
 					<description>Trailer</description>
 					<include>DialogButtonOther</include>
 					<label>20410</label>
@@ -279,6 +296,7 @@
                 </control>
                 <control type="button" id="445">
 					<width>290</width>
+					<textwidth>260</textwidth>
 					<description>Youtube</description>
 					<include>DialogButtonOther</include>
 					<label>31797</label>
@@ -286,15 +304,48 @@
                     <onclick condition="!System.HasAddon(plugin.video.youtube)">ActivateWindow(Videos,plugin://plugin.video.youtube)</onclick>
                     <visible>Skin.HasSetting(videoinfo_button_youtubevideos)</visible>
 				</control>
-				<control type="button" id="7">
-                    <!--Cancel-->
+				<!-- Switch Timer Button -->
+                <control type="button" id="31">
                     <width>290</width>
-                    <label>$LOCALIZE[222]</label>
+					<textwidth>260</textwidth>
+                    <label>$ADDON[service.kn.switchtimer 30040]</label>
+                    <onclick>RunScript(service.kn.switchtimer,action=add,channel=$INFO[ListItem.ChannelName],icon=$INFO[ListItem.Icon],date=$INFO[ListItem.Date],title=$INFO[ListItem.Title])</onclick>
+                    <onclick>Action(Close,10600)</onclick>
                     <include>DialogButtonOther</include>
-					<font>Reg26</font>
-                    <visible>Window.IsActive(PVRGuideInfo)</visible> 
+                    <visible>System.HasAddon(service.kn.switchtimer)</visible>
+                    <visible>Window.IsActive(PVRGuideInfo)</visible>
                 </control>
+
             </control>
+			
+			            <!--Arrows-->
+            <control type="image">
+                <animation effect="fade" start="100" end="50" tween="sine" easing="inout" time="800" pulse="true" reversible="false" condition="true">Conditional</animation>
+                <right>10</right>
+                <bottom>72</bottom>
+                <posy>50</posy>
+                <width>20</width>
+                <height>60</height>
+                <aspectratio>keep</aspectratio>
+                <texture>dialogs/videoinfo/arrow.png</texture>
+                <visible>!Control.HasFocus(51)</visible>
+                <colordiffuse>white</colordiffuse>
+                <visible>Container(9000).HasNext</visible>
+            </control>
+            <control type="image">
+                <animation effect="fade" start="100" end="50" tween="sine" easing="inout" time="800" pulse="true" reversible="false" condition="true">Conditional</animation>
+                <right>1250</right>
+                <bottom>72</bottom>
+                <posy>50</posy>
+                <width>20</width>
+                <height>60</height>
+                <aspectratio>keep</aspectratio>
+                <texture flipx="true">dialogs/videoinfo/arrow.png</texture>
+                <visible>!Control.HasFocus(51)</visible>
+                <colordiffuse>white</colordiffuse>
+                <visible>Container(9000).HasPrevious</visible>
+            </control>
+			
         </control>
     </controls>
 </window>
