@@ -166,7 +166,7 @@
     <include name="disabledFanart">
         <!-- disabled fanart per view -->
         <visible>
-            ![Control.IsVisible(10) + Skin.HasSetting(View10_DisableFanArt)] + 
+            ![Control.IsVisible(109) + Skin.HasSetting(View109_DisableFanArt)] + 
             ![Control.IsVisible(50) + Skin.HasSetting(View50_DisableFanArt)] + 
             ![Control.IsVisible(51) + Skin.HasSetting(View51_DisableFanArt)] + 
             ![Control.IsVisible(52) + Skin.HasSetting(View52_DisableFanArt)] + 
@@ -207,7 +207,7 @@
     <include name="disabledExtraFanart">
         <!-- disabled fanart per view -->
         <visible>
-            ![Control.IsVisible(10) + Skin.HasSetting(View10_DisableExtraFanArt)] + 
+            ![Control.IsVisible(109) + Skin.HasSetting(View109_DisableExtraFanArt)] + 
             ![Control.IsVisible(50) + Skin.HasSetting(View50_DisableExtraFanArt)] + 
             ![Control.IsVisible(51) + Skin.HasSetting(View51_DisableExtraFanArt)] + 
             ![Control.IsVisible(52) + Skin.HasSetting(View52_DisableExtraFanArt)] + 
