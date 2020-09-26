@@ -30,23 +30,23 @@
 			<!-- <include>animation_window_open_close</include> -->
             <!-- <visible>!Window.IsVisible(filebrowser) + !Window.IsVisible(selectdialog) + !Window.IsVisible(selectdialog) + !Window.IsVisible(progressdialog) + !Window.IsVisible(virtualkeyboard) + !Window.IsVisible(yesnodialog) + !Window.IsVisible(okdialog) + !Window.IsVisible(addonsettings)</visible> -->
 
-<include>animation_view_change</include>  <!-- was macht das? -->
-<visible>Control.IsVisible(50)</visible>	<!-- was macht das? -->
+<include>animation_view_change</include>
+<visible>Control.IsVisible(50)</visible>
 
 			<control type="panel" id="50">
 				<posx>60</posx>
 				<bottom>13%</bottom>
 				<width>1820</width>
 				<height>765</height>
-				<!-- <orientation>vertical</orientation> <!-- ist das hier zwingend notwendig?--> -->
+				<!-- <orientation>vertical</orientation>  -->
 				<!-- <onleft>9000</onleft> -->
 				<onright condition="Skin.HasSetting(EnableQuickJump)">6000</onright>
 				<onright condition="!Skin.HasSetting(EnableQuickJump)">60</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<viewtype label="536">icon</viewtype> <!-- was ist viewtype ?? -->
-				<preloaditems>4</preloaditems>  <!-- was macht das? -->
-				<pagecontrol>60</pagecontrol>   <!-- was macht das? -->
+				<viewtype label="536">icon</viewtype> 
+				<preloaditems>4</preloaditems>
+				<pagecontrol>60</pagecontrol>
 				<!-- <animation effect="fade" time="200">VisibleChange</animation> -->
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
 				<itemlayout height="255" width="260">
