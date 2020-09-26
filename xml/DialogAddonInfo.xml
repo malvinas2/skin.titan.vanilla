@@ -202,7 +202,7 @@
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
 				<onup>50</onup>
-				<width>1200</width>
+				<width>1205</width>
 				
                 <control type="button" id="11111">
                     <!--Close-->
