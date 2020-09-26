@@ -518,7 +518,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
-						<label>[B]$INFO[ListItem.Property(ChannelName)][/B]</label>
+						<label>$INFO[ListItem.Property(Starttime)]</label>
 						<autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
 						<visible>Container.Content(livetv)</visible>
 					</control>
@@ -596,7 +596,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>$INFO[Skin.String(TagOverlaysTextColor)]</textcolor>
-							<label>[B]$INFO[ListItem.Property(ChannelName)][/B]</label>
+							<label>[B]$INFO[ListItem.Property(Starttime)][/B]</label>
 							<autoscroll delay="2000" time="2000" repeat="500">true</autoscroll>
 							<visible>Container.Content(livetv)</visible>
 						</control>
