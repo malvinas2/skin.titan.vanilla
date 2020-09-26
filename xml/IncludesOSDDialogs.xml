@@ -97,7 +97,7 @@
                 <width>530</width>
                 <height>875</height>
                 <onleft>PreviousChannelGroup</onleft>
-                <onright>NextChannelGroup</onright>
+                <onright>back</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
                 <viewtype label="535">list</viewtype>
