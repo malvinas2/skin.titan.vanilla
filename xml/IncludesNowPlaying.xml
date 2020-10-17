@@ -12,7 +12,7 @@
 			<visible>String.IsEmpty(Window(Home).Property(ThemeMediaMB3IsAlive))</visible>
 			<!-- <visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible>  -->
 			<visible>String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible>
-			<visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | VideoPlayer.Content(livetv) | VideoPlayer.Content(files) | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | MusicPlayer.Content(livetv)</visible>
+			<visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | VideoPlayer.Content(livetv) | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | MusicPlayer.Content(livetv)</visible>
             <posx>650</posx>
             <posy>-30</posy>
             <control type="image">
@@ -98,7 +98,7 @@
             <visible>!Window.IsActive(notification) + !Window.IsActive(extendedprogressdialog) + !Window.IsActive(movieinformation)</visible>
 			<!-- <visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible> -->
 			<visible>String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible>
-			<visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | VideoPlayer.Content(livetv) | VideoPlayer.Content(files) | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | MusicPlayer.Content(livetv)</visible>
+			<visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | VideoPlayer.Content(livetv) | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | MusicPlayer.Content(livetv)</visible>
 			
             <posx>590</posx>
             <posy>-30</posy>
@@ -184,7 +184,7 @@
 			<visible>[[Player.HasVideo + !String.IsEmpty(VideoPlayer.Title)] | [Player.HasAudio + !String.IsEmpty(MusicPlayer.Title)] | Player.IsInternetStream]</visible>
 			<!-- <visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible> -->
 			<visible>String.IsEmpty(Window(Home).Property(TrailerPlaying))</visible>
-			<visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | VideoPlayer.Content(livetv) | VideoPlayer.Content(files) | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | MusicPlayer.Content(livetv)</visible>
+			<visible>String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | VideoPlayer.Content(livetv) | VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | MusicPlayer.Content(livetv)</visible>
 			<include>DimensionsFullscreen</include>
 			<animation effect="slide" start="0,-400" end="0,0" tween="cubic" easing="out" delay="0" time="250" reversible="false">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,-400" tween="cubic" easing="out" delay="0" time="250" reversible="false">Hidden</animation>
