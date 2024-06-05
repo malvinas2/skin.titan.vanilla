@@ -4,3 +4,6 @@ __Skin Titan Vanilla for Kodi Leia__
 
 __For Kodi 20/Nexus:__
 (https://github.com/malvinas2/repository.vanilla20)
+
+__For Kodi 21/Omega:__
+(https://github.com/malvinas2/repository.vanilla21)
