@@ -7,3 +7,6 @@ __For Kodi 20/Nexus:__
 
 __For Kodi 21/Omega:__
 (https://github.com/malvinas2/repository.vanilla21)
+
+__For Kodi 22/Piers:__
+(https://github.com/malvinas2/repository.vanilla22)
